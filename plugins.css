@@ -1,0 +1,57 @@
+/* plugin search results */
+
+nav.title-bar.tab-bar
+{
+/*	display: none; */
+}
+
+div#searchPane
+{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+div#searchPane h1#results-heading
+{
+	margin: 0;
+	margin-left: 0;
+	font-weight: 400;
+	mc-hyphenate: never;
+	color: #6d2077;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	line-height: 1.4em;
+	font-family: Roboto, Arial;
+	font-size: 22px;
+	margin-bottom: .375;
+	margin-top: 1em;
+}
+
+div#searchPane h3.title
+{
+	margin: 0;
+	margin-bottom: .375em;
+	margin-left: 0;
+	font-weight: 400;
+	font-size: 16px;
+	color: #6d2077;
+	mc-hyphenate: never;
+	font-family: Roboto, Arial;
+	margin-top: 0.8em;
+}
+
+div#searchPane ul#resultList div.description
+{
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+div#searchPane ul#resultList div.url cite
+{
+	font-size: 14px;
+}
+
+
+
