@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Capability_Function Set.Scoring and Decisioning,Product.Strategy Design Studio,Product.Originations,Product.Customer Management,Product.Debt Management,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Use the Panel designer to create a treatment table design" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Use the Panel designer to create a Treatment Table Design</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Header.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Example.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="84GxgzqiPU6Qxd6hD-3bgg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="84GxgzqiPU6Qxd6hD-3bgg:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Use the Panel designer to create a Treatment Table Design</h1>
+                                                <p class="bodytext">Treatment Tables are designed using the Treatment Table Design component. </p>
+                                                <p class="bodytext">When the Treatment Table Design editor is opened the Column View Table will be displayed. Each row created in the Treatment Table Design will form a column in the Treatment Table.</p>
+                                                <p class="bodytext">The Panel Designer is used to create a Treatment Panel; a Panel from which Treatments can be created. Treatments are created by selecting the required controls and arranging them on the Panel Designer. </p>
+                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Once a control has been added to the Treatment Panel the user will be prevented from using the table to create Treatments. They will not be able to enter data directly into the table. Instead they will need to use the Treatment Panel. This is to ensure that the validation script is not by-passed.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Create Treatment Table Design</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">A Treatment Table Design can be created from the Explorer window. </p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You will only be able to add a component type that has been allowed for the selected folder. If it is not allowed it will not be listed and therefore cannot be selected. </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="procedureheading">To create a treatment table design </p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">From the Explorer window right click at the required folder level and select Add a component.</li>
+                                                            <li class="listnumber" value="2">Select Treatment Table Design from the list of available components.</li>
+                                                            <li class="listnumber" value="3">In the Create component dialog enter the name of the Treatment Table Design.</li>
+                                                            <li class="listnumber" value="4">Select the Open new components in component editor check box.</li>
+                                                            <li class="listnumber" value="5">Click on the OK button.<br />The <a id="h4496" class="jumpxreftemplate" title="Treatment Table Design editor" href="TreatmentTableDesigneditor.htm" target="_self">Treatment Table Design editor</a> will open allowing you to edit the Treatment Table Design.<br />The Treatment Table Design name will be listed in the Explorer under the selected folder level. The component is identified by the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/treatment_table_des_icon.jpg" data-mc-popup-alt="treatment_table_design_icon"><img class="MCPopupThumbnail img" data-mc-width="16" data-mc-height="16" src="Images/treatment_table_des_icon_thumb_0_150.jpg" alt="treatment_table_design_icon" tabindex="" /></a> icon.</li>
+                                                        </ol>
+                                                        <p class="bodytext">If you do not wish the editor to open, keep the check box de-selected. From the Explorer window right click on the Treatment Table Design and select Open. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Creating the Panel Design</a><a name="Creating_panel"></a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="procedureheading">To create a Treatment Panel Design</p>
+                                                        <p>With the Treatment Table Design editor open click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/panel_designer_icon.jpg" data-mc-popup-alt="Panel_designer_icon"><img class="MCPopupThumbnail img" data-mc-width="26" data-mc-height="26" src="Images/panel_designer_icon_thumb_0_150.jpg" alt="Panel_designer_icon" tabindex="" /></a> icon to display the Panel Designer.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Add a control</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A Treatment Panel Design is created by selecting the required controls and adding them on the panel. </p>
+                                                                <p class="bodytext">When a Control is added to a panel the <a href="AddFormControldialog.htm">Add Form Control dialog</a> is automatically activated. It is from this dialog that you can set whether the control is for Panel use only or will be linked to a column name that has been already created in the Column View Table. Linking a control to a column name ensures that the values that are selected or entered are returned to the column name and the characteristic that has been mapped to it.  </p>
+                                                                <p class="bodytext">Controls can be used for:</p>
+                                                                <ul class="listbullet2">
+                                                                    <li class="MadCap1">Panel use only</li>
+                                                                    <li class="MadCap1">Assigned to a column name that has been mapped to a Logical Data Source characteristic (values returned at runtime)</li>
+                                                                    <li class="MadCap1">Assigned to a column name that has been mapped to a 'local' characteristic (required to perform calculations, but not returned at runtime)</li>
+                                                                </ul>
+                                                                <p class="procedureheading">To add a control</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Design editor open and with the Panel Designer in view, in the Palette locate the Form Control category.</li>
+                                                                    <li class="listnumber" value="2">Expand the Form Control category to display all the available controls that can be used in the Panel.</li>
+                                                                    <li class="listnumber" value="3">Drag and drop the required Control onto the panel.<br />The system will open the Add Form Control dialog.</li>
+                                                                    <li class="listnumber" value="4">From the drop down box select the column name you require.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                    <p>To assign a control to a column name, the column name must already exist in the Column View Table. </p>
+                                                                                    <p>You will not be able to assign a control to a column name once it has been applied to the panel.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </ol>
+                                                                <ol class="listnumber" data-mc-continue="true">
+                                                                    <li class="listnumber" value="5">To move this Control to another position on the panel, click on the border and then drag it to another position on the form.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                    <p>If a Container control is moved, then all contained controls will also be moved. </p>
+                                                                                    <p>To select a Control that is inside a Container control, make sure that the Container control is 'at the back', using the Send to Back right click option.</p>
+                                                                                    <p>You cannot reposition the Container 1 since this is the Panel Design itself</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </ol>
+                                                                <ol class="listnumber" data-mc-continue="true">
+                                                                    <li class="listnumber" value="6">Repeat this process to add all the Controls that are required to create the form.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You will not be able to select a column name that has already been assigned to a control, since this column name will be removed from the drop down list that is displayed in the Add Form Control dialog.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="bodytext">Every Control once it has been positioned on the form will need the values that can be selected or entered in it configured. This is carried out by accessing the properties for each control. </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Configuring a control</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Every control used within a Treatment Table Design will need the values that can be selected or entered in it configured. This is carried out by accessing the properties for each control. The Properties window can be accessed by selecting Properties from the Window menu.</p>
+                                                                <p class="procedureheading">To configure a control</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Design editor open,<br />either:<br />	- click on the row you require; <br />or:<br />	- once a control has been added to the Panel Designer, select it.<br />The Properties window for the control type that has been selected will be displayed in the Properties window.</li>
+                                                                    <li class="listnumber" value="2">In the field next to the property description specify the property and enter the information that you require.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">From where you select the control affects the property that is listed in the Properties Window.</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </ol>
+                                                                <p class="bodytext">There are eight different types of Control that can be configured. The Control you select will affect what needs to be configured. To learn more about the common and unique properties of Controls see the topic Control Properties.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                    <thead>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Icon</th>
+                                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Control</th>
+                                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Additional Information</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/container.jpg" data-mc-popup-alt="container"><img class="MCPopupThumbnail img" data-mc-width="66" data-mc-height="15" src="Images/container_thumb_0_150.jpg" alt="container" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext">Container</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="tablebodytext">Container adds a Container to the treatment panel design. A container allows the nesting (one inside the other) of other controls.</p>
+                                                                                <p class="tablebodytext">Container 1is the Panel design itself.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/checkbox.jpg" data-mc-popup-alt="checkbox"><img class="MCPopupThumbnail img" data-mc-width="80" data-mc-height="13" src="Images/checkbox_thumb_0_150.jpg" alt="checkbox" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext">Check box</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="tablebodytext">Check box adds text and a check box to the panel design. This allows the user to select or deselect it by clicking on it. Within a panel design the user can select more than one checkbox.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/drop_down.png" data-mc-popup-alt="Drop_down"><img class="MCPopupThumbnail img" data-mc-width="72" data-mc-height="11" src="../Images/drop_down_thumb_0_150.png" alt="Drop_down" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext">Drop Down box</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="tablebodytext">Drop Down box adds either a 'combination' text list/edit box or a 'combination' numeric list/edit box to the panel design depending on the data type of the column to which the control has been assigned. This allows the user, depending on how this box has been configured, to select from a drop-down box either a list of pre-entered values or from an external list of values or enter values themselves.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/label.png" data-mc-popup-alt="Text_Label"><img class="MCPopupThumbnail img" data-mc-width="44" data-mc-height="15" src="../Images/label_thumb_0_150.png" alt="Text_Label" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext">Label</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="tablebodytext">Label adds text to the panel design</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/listbox.jpg" data-mc-popup-alt="listbox"><img class="MCPopupThumbnail img" data-mc-width="56" data-mc-height="16" src="Images/listbox_thumb_0_150.jpg" alt="listbox" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext">List box</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="tablebodytext">List box adds either a text list box or a numeric list box to the panel design depending on the data type of the column to which the control has been assigned. This allows the user to select from a list of pre-entered values or select from an external list of values and use the values contained in the file.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/radiobutton.jpg" data-mc-popup-alt="radiobutton"><img class="MCPopupThumbnail img" data-mc-width="80" data-mc-height="9" src="Images/radiobutton_thumb_0_150.jpg" alt="radiobutton" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext">Radio button</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="tablebodytext">Radio button adds text and a radio button to the panel design. Radio buttons are typically grouped together. This allows the user to select one, causing another to be deselected.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/slider.jpg" data-mc-popup-alt="slider"><img class="MCPopupThumbnail img" data-mc-width="45" data-mc-height="13" src="Images/slider_thumb_0_150.jpg" alt="slider" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="tablebodytext">Slider</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="tablebodytext">Slider adds a slider control to the panel design. This allows the user to use a slide rule to easily select a value within a defined range.</p>
+                                                                                <p class="tablebodytext">When a slider is added to the panel design only columns of integer data type will be available for selection.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                                <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/textbox.jpg" data-mc-popup-alt="textbox"><img class="MCPopupThumbnail img" data-mc-width="62" data-mc-height="11" src="Images/textbox_thumb_0_150.jpg" alt="textbox" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                                <p class="tablebodytext">Text Box</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                                <p class="tablebodytext">Text box adds a text edit box to the panel design. This allows the user to key in some text.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Control Properties|ControlProperties.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Move a Control</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A Treatment Table is designed by selecting the required controls and arranging them on the panel. Once a control has been added to the panel it can be moved.</p>
+                                                                <p class="procedureheading">To move a control</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Designer editor open and the Panel Designer active, <br />either:<br />click on the Control that needs moving. The control will be selected.</li>
+                                                                    <li class="listnumber" value="2">Drag it to the position you require.<br />or:</li>
+                                                                    <li class="listnumber" value="3">Within the Properties Window type new values for the x and y position of the control.<br />or:</li>
+                                                                    <li class="listnumber" value="4">Using the arrow keys on your keyboard you can move the control to the position you require.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The control will be moved.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">If a container control is moved, then all controls held in the container will also be moved. You cannot reposition Container 1 since this is the Panel design itself.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Resize a control</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A treatment table is designed by selecting the required controls and arranging them on the panel. Once a control has been added to the panel the control can be resized.</p>
+                                                                <p class="procedureheading">To resize a control</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Designer editor open and the Panel Designer active, <br />either:<br />click on the Control that needs resizing. The control will be selected.</li>
+                                                                    <li class="listnumber" value="2">Click on the black box nearest to the resizing that you wish to make.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/resize.png" data-mc-popup-alt="resize_2"><img class="MCPopupThumbnail img" data-mc-width="134" data-mc-height="47" src="../Images/resize_thumb_0_150.png" alt="resize_2" tabindex="" /></a></li>
+                                                                    <li class="listnumber" value="3">Drag the black box until the control is the size you require.<br />or:</li>
+                                                                    <li class="listnumber" value="4">Within the Properties window type new values for the Height (px) and Width (px) values.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The control will be resized.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Resizing is not possible if multiple controls are selected.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Rename a Control</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">When a control is added to the Panel and assigned to Panel Use Only it will be given a unique name by the system. To help identify the different controls within the panel and within the Resources window it is recommended that they are renamed.</p>
+                                                                <p class="procedureheading">To rename a control using the Properties window</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With Treatment Table Design editor open and the Panel Designer in view select the control to activate the Properties window.</li>
+                                                                    <li class="listnumber" value="2">In the Properties window, next to the Control Name, either type directly into the field or click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button to open the Default Data dialog to and type the name you require.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">When a control has been assigned to a column, the name of the control cannot be amended.</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </ol>
+                                                                <p class="bodytext">The system will check to ensure that this name is unique within the treatment table design and update the name of the control in the Properties window and Resources window.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Delete a Control</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A Treatment Table is designed by selecting the required controls and arranging them on the panel. Once a control has been added to the panel the control it can be deleted.</p>
+                                                                <p class="procedureheading">To delete a control</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Designer editor open and the Panel Designer active, <br />either:<br />right click on the Control on the panel and select Delete. <br />or:<br />select the Control and press the Delete key on the keyboard.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The Control you have selected will be deleted.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyE-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyD-Column2-Body1">If the control you have selected to delete is a Container control, all the controls held within the container will also be deleted.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">If you delete a control that is referenced in any of the scripts for the treatment, the script(s) will no longer work. You must amend the relevant scripts</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Ordering the controls on the panel</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A Treatment Table is designed by selecting the required controls and arranging them on the panel. When controls are placed near to each other one control may obscure another. When controls are put inside a Container control of these controls may no longer be selectable, since the Container itself may be obscuring them. Both of these problems are caused by the order in which the controls have been placed on the panels and whether they are placed at the back or the front of the panel in relation to each other. By using the Send to Back and Bring to Front options, controls can be ordered so that labels are no longer hidden by the edges of other controls and controls located inside a Container can be selected.</p>
+                                                                <p class="procedureheading">To send a control to the back of the panel</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Design editor open and the Panel Designer in view, right click on the Control and select Send to Back.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The control will be sent to the back of the panel, and be displayed behind any controls that exist near to it.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Send to Back will not send the control behind Container 1, the Panel design itself</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To bring a control to the front of the panel</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Design editor open and the Panel Designer in view, right click on the Control and select Bring to Front.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The control will be brought to the front of the panel, and be displayed in front of any controls that exist near to it.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Define the tabbing order</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">To help the user create Treatments more easily the designer can define the tabbing order of the Treatment. Once this order has been set the Tab key on the keyboard can be used by the user to move the focus within the Treatment Table to the next field that requires an entry, so speeding up the inputting process.</p>
+                                                                <p class="bodytext">It will only be possible to define the tabbing order when those controls that require values applied or selections made to them have been added to the Panel Designer. To learn more about adding controls to the Treatment Table Design refer to the section, Add a control.</p>
+                                                                <p class="bodytext">To ensure that the right controls are ordered correctly it is recommended that prior to defining the tabbing order the controls are given unique descriptions. </p>
+                                                                <p class="procedureheading">To define the tabbing order</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Design editor open and the Panel Designer active, ensure that the Panel View Table view is active by selecting the following icon: <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/toggle_view.jpg" data-mc-popup-alt="toggle_between_panel"><img class="MCPopupThumbnail img" data-mc-width="26" data-mc-height="26" src="Images/toggle_view_thumb_0_150.jpg" alt="toggle_between_panel" tabindex="" /></a><br></br>The names of all the controls that have been added to the panel will be listed. They will be listed in the order in which they were added to the panel. The order in which they are listed will be the tabbing order.</li>
+                                                                    <li class="listnumber" value="2">In the table, select the name of a control that you wish to move.<br></br><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/tabbing_order.jpg" data-mc-popup-alt="tabbing_order"><img class="MCPopupThumbnail img" data-mc-width="175" data-mc-height="28" src="Images/tabbing_order_thumb_0_150.jpg" alt="tabbing_order" tabindex="" /></a></li>
+                                                                    <li class="listnumber" value="3">Drag and drop this to the position you require.</li>
+                                                                    <li class="listnumber" value="4">Repeat step 2 to 3 until all the controls are listed in the correct order.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The tabbing order will have been changed</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Creating Treatment Table script</a><a name="script"></a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Treatment Table script is created by dragging the names of controls, column names or Logical Data Characteristics from the Resources window to the specific tab where they are going to be used and adding script by freehand or by dragging and dropping functions from the Palette. To find out more about using Script see the  <a href="../Derived_Data_Scripts/DerivedDataScriptsoverview.htm">Derived Data Script</a> overview. </p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">User Defined Functions are not currently supported in Treatment Table script.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="bodytext">The tab to which the object is being dragged will affect whether the script is automatically converted into valid script or whether the <a href="AddFormPropertydialog.htm">Add Form Property dialog</a> is activated so that the appropriate command can be selected. Once dropped onto the script area the system converts the information into valid script. The following lists the commands that can be chosen and how these commands appear in the script area once they have been dragged there.</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Command</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Script</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Additional Information</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Value</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/value.jpg" data-mc-popup-alt="value"><img class="MCPopupThumbnail img" data-mc-width="196" data-mc-height="18" src="Images/value_thumb_0_150.jpg" alt="value" tabindex="" /></a>
+                                                                        </p>
+                                                                        <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/value_1.jpg" data-mc-popup-alt="value_1"><img class="MCPopupThumbnail img" data-mc-width="241" data-mc-height="20" src="Images/value_1_thumb_0_150.jpg" alt="value_1" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p class="tablebodytext">Used in all tabs.</p>
+                                                                        <p class="tablebodytext">Appropriate operators and values need to be added to the script. A space needs to be added to either side of the operator. Double quote marks need to be added to the value.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Visible</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/visible.jpg" data-mc-popup-alt="visible"><img class="MCPopupThumbnail img" data-mc-width="249" data-mc-height="18" src="Images/visible_thumb_0_150.jpg" alt="visible" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p class="tablebodytext">Used in the Control Script Tab</p>
+                                                                        <p class="tablebodytext">Once dropped onto the script area the system converts the information into valid script. .visible = 1 ensures that the control will be displayed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Not Visible</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/not_visible.jpg" data-mc-popup-alt="not_visible"><img class="MCPopupThumbnail img" data-mc-width="245" data-mc-height="18" src="Images/not_visible_thumb_0_150.jpg" alt="not_visible" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p class="tablebodytext">Used in the Control Script Tab</p>
+                                                                        <p class="tablebodytext">Once dropped onto the script area the system converts the information into valid script. .visible = 0 ensures that the control will be hidden from the user.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Enable</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/enabled.jpg" data-mc-popup-alt="enabled"><img class="MCPopupThumbnail img" data-mc-width="257" data-mc-height="18" src="Images/enabled_thumb_0_150.jpg" alt="enabled" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p class="tablebodytext">Used in the Control Script Tab</p>
+                                                                        <p class="tablebodytext">Once dropped onto the script area the system converts the information into valid script. .enable = 1 ensures that the control will be available for use by the user.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="tablebodytext">Not Enable</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/notenabled.jpg" data-mc-popup-alt="notenabled"><img class="MCPopupThumbnail img" data-mc-width="255" data-mc-height="18" src="Images/notenabled_thumb_0_150.jpg" alt="notenabled" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                        <p class="tablebodytext">Once dropped onto the script area the system converts the information into valid script. .enable = 0 prevents the user from being able to activate the control. The control will be greyed out.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="procedureheading">To create Treatment Table script</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open and the appropriate script tab activated you can drag and drop the appropriate names of controls, column names or Logical Data Characteristics to the script, add script freehand or using the required resources from the Palette you can:</li>
+                                                            <li class="listnumber" value="2"><a id="h2063" class="jumpxreftemplate" title="Add an operator or function to a script" href="../Derived_Data_Scripts/DerivedDataScriptsoverview.htm#Add_opertor" target="_self" alt="Add an operator or function to a script">Add an operator or function to a script</a>
+                                                            </li>
+                                                            <li class="listnumber" value="3">Click on the Compile Script <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/compile.jpg"><img class="MCPopupThumbnail img" data-mc-width="24" data-mc-height="24" src="../Images/global/compile_thumb_0_150.jpg" tabindex="" /></a> button to check the script.</li>
+                                                        </ol>
+                                                        <p class="bodytext">Once your script is valid you will be able to test it.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="validation"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Define the Validation script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Within the Treatment Table Design script area there are three tabs. The Validation Script for a Treatment Table is written in the first tab and will produce error message(s) to prompt users that they have entered information into the tables incorrectly. The user will not be able create a Treatment by selecting the Update button unless the correction is made. </p>
+                                                                <p class="bodytext">It will only be possible to write Validation script when those controls that require Validation script applied to them have been added to the Panel Designer.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                                <p>In this example, if the Cash Card check box is selected and the Daily Limit List box is set to 0 then an error is displayed. </p>
+                                                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/validation_eg.jpg" data-mc-popup-alt="validation_eg"><img class="MCPopupThumbnail img" data-mc-width="471" data-mc-height="45" src="Images/validation_eg_thumb_0_150.jpg" alt="validation_eg" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To define a Treatment Table Validation script</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Design editor open.</li>
+                                                                    <li class="listnumber" value="2">Click on the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/script_tab.jpg" data-mc-popup-alt="script_tab_tool_bar"><img class="MCPopupThumbnail img" data-mc-width="26" data-mc-height="25" src="Images/script_tab_thumb_0_150.jpg" alt="script_tab_tool_bar" tabindex="" /></a> to open and select the Validation Script tab for the Treatment Table.</li>
+                                                                    <li class="listnumber" value="3">Add script freehand or use the required resources from the Palette and Resources window to create your Table execution script.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Use the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/resource_icon.jpg" data-mc-popup-alt="Resource_palette_fields"><img class="MCPopupThumbnail img" data-mc-width="26" data-mc-height="26" src="Images/resource_icon_thumb_0_150.jpg" alt="Resource_palette_fields" tabindex="" /></a> to display in the Resources window either the Logical Data Sources that are available or the columns and controls created for the table in the Column View and the Panel View. </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <ol class="listnumber" data-mc-continue="true">
+                                                                    <li class="listnumber" value="4">Click on the Compile icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/compile.jpg"><img class="MCPopupThumbnail img" data-mc-width="24" data-mc-height="24" src="../Images/global/compile_thumb_0_150.jpg" tabindex="" /></a> in the tool bar to <a id="h2027" class="jumpxreftemplate" title="Check the script syntax" href="../Derived_Data_Scripts/Check_the_script_syntax.htm" target="_self" alt="Check the script syntax">check the script syntax</a>.</li>
+                                                                    <p class="bodytext">The system will provide you with information regarding the validity of the script. Details of any errors will be displayed to provide you with information so that you can correct them.</p>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You cannot test a Table execution script using Tester unless the script is valid.</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="control"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Define the Control script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Within the Treatment Table Design script area there are three tabs. The Control Script  for a treatment table is written in the second tab and specifies what is shown or hidden on the form depending on the selections made by the user as well as how the Treatment is initialised.</p>
+                                                                <p class="bodytext">It will only be possible to write Control script when those controls that require Control script applied to them have been added to the panel designer. </p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                                <p>For a Treatment Table the contents of the Card Type container should only be shown to the user who is creating Treatments when the Assign Card radio button is selected, otherwise these controls should be hidden.</p>
+                                                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/control_eg.jpg" data-mc-popup-alt="control_eg"><img class="MCPopupThumbnail img" data-mc-width="673" data-mc-height="332" src="Images/control_eg_thumb_0_150.jpg" alt="control_eg" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To define a Treatment Table Control script</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Design editor open.</li>
+                                                                    <li class="listnumber" value="2">Click on the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/script_tab.jpg" data-mc-popup-alt="script_tab_tool_bar"><img class="MCPopupThumbnail img" data-mc-width="26" data-mc-height="25" src="Images/script_tab_thumb_0_150.jpg" alt="script_tab_tool_bar" tabindex="" /></a> to open and select the Control Script tab for the Treatment Table.</li>
+                                                                    <li class="listnumber" value="3">Add script freehand or use the required resources from the Palette and Resources window to create your Table execution script.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Use the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/resource_icon.jpg" data-mc-popup-alt="Resource_palette_fields"><img class="MCPopupThumbnail img" data-mc-width="26" data-mc-height="26" src="Images/resource_icon_thumb_0_150.jpg" alt="Resource_palette_fields" tabindex="" /></a> to display in the Resources window either the Logical Data Sources that are available or the columns and controls created for the table in the Column View and the Panel View. </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <ol class="listnumber" data-mc-continue="true">
+                                                                    <li class="listnumber" value="4">Click on the Compile icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/compile.jpg"><img class="MCPopupThumbnail img" data-mc-width="24" data-mc-height="24" src="../Images/global/compile_thumb_0_150.jpg" tabindex="" /></a> in the tool bar to <a id="h2027" class="jumpxreftemplate" title="Check the script syntax" href="../Derived_Data_Scripts/Check_the_script_syntax.htm" target="_self" alt="Check the script syntax">check the script syntax</a>.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The system will provide you with information regarding the validity of the script. Details of any errors will be displayed to provide you with information so that you can correct them.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You cannot test a Table execution script using Tester unless the script is valid.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="execution"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Define the Execution script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Within the Treatment Table Design script area there are three tabs. The Execution Script for a treatment table is written in the third tab and enables calculations to be performed using characteristics located in the Logical Data Source and column names that refer to values returned to 'local' characteristics (characteristics created specifically for use in the panel), enabling values from one or more controls and/or characteristics to be used in an equation to generate an output that will be returned to the Logical Data Source Characteristic. </p>
+                                                                <p class="bodytext">The Treatment Table Execution script tab is the only tab where Segmentation functions can be used. For more information on using Segmentation functions see <a href="../Derived_Data_Scripts/DerivedDataScriptsoverview.htm#add_Segmentation">Adding Segmentation Functions to  script.</a></p>
+                                                                <p class="bodytext">It will only be possible to write Execution script when those controls that require Execution script applied to them have been added to the panel designer.   </p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                                <p>You could use script to carry out a calculation to obtain a value only when another value is true:</p>
+                                                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/execution_eg.jpg" data-mc-popup-alt="execution_eg"><img class="MCPopupThumbnail img" data-mc-width="849" data-mc-height="106" src="Images/execution_eg_thumb_0_150.jpg" alt="execution_eg" tabindex="" /></a>
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To define a Treatment Table Execution script</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Treatment Table Design editor open.</li>
+                                                                    <li class="listnumber" value="2">Click on the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/script_tab.jpg" data-mc-popup-alt="script_tab_tool_bar"><img class="MCPopupThumbnail img" data-mc-width="26" data-mc-height="25" src="Images/script_tab_thumb_0_150.jpg" alt="script_tab_tool_bar" tabindex="" /></a> to open and select the Execution Script tab for the Treatment Table.</li>
+                                                                    <li class="listnumber" value="3">Add script freehand or use the required resources from the Palette and Resources window to create your Table execution script.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                    <p>You will only be able to add characteristics and column names to the execution script.</p>
+                                                                                    <p>Use the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/resource_icon.jpg" data-mc-popup-alt="Resource_palette_fields"><img class="MCPopupThumbnail img" data-mc-width="26" data-mc-height="26" src="Images/resource_icon_thumb_0_150.jpg" alt="Resource_palette_fields" tabindex="" /></a> to display in the Resources window either the Logical Data Sources that are available or the columns and controls created for the table in the Column View and the Panel View.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </ol>
+                                                                <ol class="listnumber" data-mc-continue="true">
+                                                                    <li class="listnumber" value="4">Click on the Compile icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/compile.jpg"><img class="MCPopupThumbnail img" data-mc-width="24" data-mc-height="24" src="../Images/global/compile_thumb_0_150.jpg" tabindex="" /></a> in the tool bar to <a id="h2027" class="jumpxreftemplate" title="Check the script syntax" href="../Derived_Data_Scripts/Check_the_script_syntax.htm" target="_self" alt="Check the script syntax">check the script syntax</a>.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The system will provide you with information regarding the validity of the script. Details of any errors will be displayed to provide you with information so that you can correct them.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You cannot test a Table execution script using Tester unless the script is valid.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="bodytext">The Treatment Table Design will now be ready to be created into a Treatment Table</p>
+                                                <p class="bodytext"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Define a Treatment Table Column using the Column View|DefineaTreatmentTableColumnusingtheColumnView.htm||Treatment Tables overview|TreatmentTablesoverview.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

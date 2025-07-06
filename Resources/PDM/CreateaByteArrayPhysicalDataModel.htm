@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Product.Originations,Product.Strategy Design Studio,Capability_Function Set.Strategy Definition,Product.Debt Management,Product.Collections,Product.Customer Management" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Create a Byte Array Physical Data Model" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Working with Byte Array Physical Data Models</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="RAnx-6-Hp0S8Pa_xSvmrdQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="RAnx-6-Hp0S8Pa_xSvmrdQ:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Working with Byte Array Physical Data Models</h1>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Toolbar</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">The Byte Array Physical Data Model editor's tool bar is used to alter the contents of the Physical Data Model.</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/pdm_toolbar_byte.jpg" data-mc-popup-alt="pdm_byte_array_tool_bar"><img class="MCPopupThumbnail img" data-mc-width="119" data-mc-height="29" src="Images/pdm_toolbar_byte_thumb_0_150.jpg" alt="pdm_byte_array_tool_bar" tabindex="" /></a>
+                                                        </p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/recal_offsets.jpg" data-mc-popup-alt="recal_offsets"><img class="MCPopupThumbnail img" data-mc-width="25" data-mc-height="25" src="Images/recal_offsets_thumb_0_150.jpg" alt="recal_offsets" tabindex="" /></a><strong class="specialbold">Recalculates Offsets</strong> - recalculates the offsets for each characteristic in the data model and amends it as required.</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/recal_length.jpg" data-mc-popup-alt="recal_length"><img class="MCPopupThumbnail img" data-mc-width="25" data-mc-height="25" src="Images/recal_length_thumb_0_150.jpg" alt="recal_length" tabindex="" /></a><strong class="specialbold">Recalculates Lengths</strong> - reapplies the default style sheet just on the physical length column and recalculates the lengths of each characteristic in the data model and amends them as required.</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/recal_length_offsets.jpg" data-mc-popup-alt="recal_length_offset"><img class="MCPopupThumbnail img" data-mc-width="25" data-mc-height="25" src="Images/recal_length_offsets_thumb_0_150.jpg" alt="recal_length_offset" tabindex="" /></a><strong class="specialbold">Recalculates Lengths and Offsets</strong> - reapplies the default style sheet on the physical length column and then recalculates the offsets for each characteristic and amends the model as required.</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/default_ssheet.jpg" data-mc-popup-alt="apply_def_stylesheet"><img class="MCPopupThumbnail img" data-mc-width="29" data-mc-height="27" src="Images/default_ssheet_thumb_0_150.jpg" alt="apply_def_stylesheet" tabindex="" /></a><strong class="specialbold">Apply default style sheet</strong> - the settings defined in the default style sheet will be applied to this interface, overwriting/amending previous settings.</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/synch.png"><img class="MCPopupThumbnail img" data-mc-width="15" data-mc-height="15" src="../Images/synch_thumb_0_150.png" tabindex="" /></a><strong class="specialbold">Synchronise Physical Data Model</strong> - when the Physical Data Model no longer matches the Logical Data Source or Logical Data Model from which it was created, selecting the Synchronize Physical Data Model on the tool bar will bring the model back into line.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Create</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">A Byte Array Physical Data Model can be created from the Explorer window from either a Logical Data Model or Logical Data Source. </p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyD-Column2-Body1">You will only be able to add a component type that has been allowed for the selected folder. If it is not allowed it will not be listed and therefore cannot be selected. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Byte Array Physical Data Models do not support dynamic data - so all arrays in the Logical Data Source must be defined with fixed lengths.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="procedureheading">To create a byte array physical data model</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">From the Explorer window, right click on the name of the Logical Data Model or Logical Data Source and select Add PDM followed by Byte Array.</li>
+                                                            <li class="listnumber" value="2">In the Create component dialog, enter the name of the Byte Array Physical Data Model.</li>
+                                                            <li class="listnumber" value="3">Select the Open new components in component editor checkbox.</li>
+                                                            <li class="listnumber" value="4">Click  OK.<br />The Physical Data Model editor - Byte Array  will open allowing you to amend the model as required.<br />The Byte Array Physical Data Model name will be listed in the Explorer under the selected folder level. The component is identified by the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/pdm_icon_small.jpg" data-mc-popup-alt="pdm_icon_small"><img class="MCPopupThumbnail img" data-mc-width="16" data-mc-height="16" src="Images/pdm_icon_small_thumb_0_150.jpg" alt="pdm_icon_small" tabindex="" /></a> icon.</li>
+                                                        </ol>
+                                                        <p class="bodytext">If you do not wish the editor to open, keep the checkbox de-selected. From the Explorer Window, right click on the Byte Array Physical Data Model and select Open.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Edit</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When a Physical Data Model for a Byte Array is created, the system automatically selects the data formats that have been defined in the Byte Array Style Sheet and automatically generates the physical names for each characteristic using the logical name for the characteristic. The user can modify the specific detail of a Physical Data Model if required.</p>
+                                                        <p class="procedureheading">To edit a Byte Array Physical Data Model</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Physical Data Model for a Byte Array open you can alter the specific detail for the data model.<br /><p class="procedureheading">To change the Physical Data type for the characteristic</p></li>
+                                                            <li class="listnumber" value="2">Select the characteristic you require, then in the Physical Type column, from the drop down list select the type you require. <br></br>For more information on the individual numeric types (integer, float, decimal) see the topic  Numeric Physical Data Types for more information on the individual string types see the topic  <a id="h2820" class="jumpxreftemplate" title="String Physical Data Types" href="StringPhysicalDataTypes.htm" target="_self">String Physical Data Types</a> .<br></br><p class="procedureheading"><strong class="specialbold" style="font-weight: normal;">To recalculate the offsets for all the characteristics</strong></p></li>
+                                                            <li class="listnumber" value="3">Click on the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/recal_offsets.jpg" data-mc-popup-alt="recal_offsets"><img class="MCPopupThumbnail img" data-mc-width="25" data-mc-height="25" src="Images/recal_offsets_thumb_0_150.jpg" alt="recal_offsets" tabindex="" /></a><br></br><p class="procedureheading"><strong class="specialbold" style="font-weight: normal;">To recalculate the length of all the characteristics</strong></p></li>
+                                                            <li class="listnumber" value="4">Click on the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/recal_length.jpg" data-mc-popup-alt="recal_length"><img class="MCPopupThumbnail img" data-mc-width="25" data-mc-height="25" src="Images/recal_length_thumb_0_150.jpg" alt="recal_length" tabindex="" /></a><br></br><p class="procedureheading"><strong class="specialbold" style="font-weight: normal;">To recalculate the length and offset for all characteristics</strong></p></li>
+                                                            <li class="listnumber" value="5">Click on the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/recal_length_offsets.jpg" data-mc-popup-alt="recal_length_offset"><img class="MCPopupThumbnail img" data-mc-width="25" data-mc-height="25" src="Images/recal_length_offsets_thumb_0_150.jpg" alt="recal_length_offset" tabindex="" /></a><br></br><p class="procedureheading"><strong class="specialbold" style="font-weight: normal;">To change the order of a characteristic</strong></p></li>
+                                                            <li class="listnumber" value="6">Select the row number of the characteristic you wish to move. <br />A green arrow will be displayed <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/greenarrow.jpg"><img class="MCPopupThumbnail img" data-mc-width="73" data-mc-height="16" src="Images/greenarrow_thumb_0_150.jpg" tabindex="" /></a>. Drag and drop this to the position you require in the model.<br /></li>
+                                                        </ol>
+                                                        <p class="bodytext">The Physical Data Model can now be validated.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Validate</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Validate checks the Byte Array Physical Data Model to ensure that it matches the Logical Data Model or Logical Data Source that it references. Valid means the component is complete, that each logical characteristic in the Logical Data Model is mapped appropriately to a physical characteristic.</p>
+                                                        <p class="procedureheading">To validate a Byte Array Physical Data Model</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Byte Array Physical Data Model editor open, click on the Validate icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/Validate_Icon.jpg" data-mc-popup-alt="validate"><img class="MCPopupThumbnail img" data-mc-width="27" data-mc-height="30" src="Images/Validate_Icon_thumb_0_150.jpg" alt="validate" tabindex="" /></a></li>
+                                                            <li class="listnumber" value="2">The system will check the validity of the Physical Data Model and display information on areas of the Physical Data Model that are invalid in the Validation Results window.<br /></li>
+                                                            <li class="listnumber" value="3">The Description column contains details of the validation.</li>
+                                                        </ol>
+                                                        <p class="bodytext">To fix the model, the user could reapply the default settings, select Synchronise or continue editing the Physical Data Model.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

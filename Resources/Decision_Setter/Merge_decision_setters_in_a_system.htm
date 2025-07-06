@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Capability_Function Set.Scoring and Decisioning,Product.Strategy Design Studio,Product.Originations,Product.Customer Management,Release State.Peer Review,Product.Debt Management,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Create the output decision table, Merge decision setters in a system, Merge Decision Tables" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Merge Decision Setters in a system</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Header.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="26XEi1DV_E-q1snKL0jmKA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="26XEi1DV_E-q1snKL0jmKA:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Merge Decision Setters in a system</h1>
+                                                <p class="bodytext">In a system where multiple Decision Setters are used at different points within the decisioning process, if a consolidated overall decision is required, then the individual Decision Results Tables, need to be merged together into a table producing the final top ranking decision. Within the Derived Data Script component there is a specific function called Merge Tables. This function has been created to enable the user to merge multiple Decision Result Tables.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Overview</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">The Merge Tables function takes in the results from two Decision Tables, sorts them according to the priority of the categories defined in the Decision Set and outputs the top ranking decisions to the output table. If more than one Reason Code is associated with a Decision Category then the codes are kept in the same order that they appeared in the input tables but precedence is given to input table 1. The top ranking Decision Category, Decision Text and Reason Code will be returned to the characteristics that have been mapped to the &lt;decision category&gt; field, the &lt;decision text&gt; field and the &lt;reason code table&gt; field. Providing the user with not only all the Decisions that have been triggered, but also the Decision Category, Decision Text and Reason Code of the highest priority Decision.</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 154px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Input Table 1</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Input Table 2</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Priority Order (Decision Set)</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Output Table</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Decline ARR1</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Refer BBR2</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Decline</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p class="tablebodytext">Decline ARR1</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Refer BBR1</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Accept</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p class="tablebodytext">Refer BBR1</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Refer BBR3</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Refer</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p class="tablebodytext">Refer BBR3</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">Accept ARR2</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p class="tablebodytext">Refer BBR2</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="tablebodytext">&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="tablebodytext">&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="tablebodytext">&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                        <p class="tablebodytext">Accept ARR2</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="bodytext">The three Decision Tables used in the merge are selected by the user from the Logical Data Source and will be created as a result of defining the mappings required for the Decision Setters in the Decision Process Flow. The output table is not created automatically within the merge process so will need to be created either manually or using an existing Decision Setter.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Create the output Decision Table</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">The two Decision Tables used in the merge are selected by the user from the Logical Data Source and will be created as a result of defining the mappings required for the Decision Setters in the Decision Process Flow. </p>
+                                                        <p class="procedureheading">To manually create the output Decision Table</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Logical Data Source editor open and the required results Logical Data Source in view, right click on the last row and select Add Row.</li>
+                                                            <li class="listnumber" value="2">Type Final Decision Table as the "Name" of the characteristic.</li>
+                                                            <li class="listnumber" value="3">Select "String" as the Type.</li>
+                                                            <li class="listnumber" value="4">Type 256 as the "Length".</li>
+                                                            <li class="listnumber" value="5">In the array size either leave the size as *, which will cause a dynamic array to be created or type the number you require to create a static array. </li>
+                                                        </ol>
+                                                        <p class="bodytext">The table required for the Merge Tables function will be created.</p>
+                                                        <p class="procedureheading">To create an output Decision Table using an existing mapping contained in a Decision Setter process</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Decision Process Flow editor open,   right click on the Decision Setter and select Results Mapping.</li>
+                                                        </ol>
+                                                        <ol class="listnumber" data-mc-continue="true">            The Define Result Mappings dialog opens.
+<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/Define_Results_Mapping.png"><img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../Images/Define_Results_Mapping_thumb_0_150.png" tabindex="" /></a><br /><![CDATA[        ]]><li class="listnumber" value="2">Click on the Typical Result in the Results Mappings to map to the Logical Data Source.</li><li class="listnumber" value="3">Click on the Logical Data Source where the Decision Setter Results Mappings already exist, (Results in this example), and click the Map button.</li><p>The Mapped Characteristics table populates with the characteristics from the Logical Data Source.</p><li class="listnumber" value="4">Use the "Name" column to rename the table so it can be identified as the output table.</li><li class="listnumber" value="5">For the Sorted Reason Code Table characteristic, in the "Array Size" column, either leave the size as *, which will cause a dynamic array to be created or type the number you require to create a static array.</li><li class="listnumber" value="6">For the Sorted Decision Table characteristic, in the "Array Size" column, either leave the size as *, which will cause a dynamic array to be created or type the number you require to create a static array.</li><li class="listnumber" value="7">Click Save to save the changes. You have created the output table which will be used in the Merge Tables function. This table is where the merged decision result will be returned.</li><p>You will now need to unmap this output table from the Decision Setter process and map the appropriate results table to this process. To do this:</p><li class="listnumber" value="8">Click the Unmap All button to clear the data from the Mapped Characteristics table. This does not unmap the data from the Logical Data Source. The output table will still be available for selection in the Merge Tables function of the Derived Data Script.</li><li class="listnumber" value="9">Repeat steps 4-7, but rename the table so it can be identified as a results table (Results Table Two, for example).</li><li class="listnumber" value="10">Click the Close button to close the dialog.</li></ol>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The three Decision Tables used in the MergeTable function are selected by the user from the Logical Data Source and will be created as a result of defining the mappings required for the Decision Setters in the Decision Process Flow.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="bodytext">The table required for the MergeTable function will be created and the correct Decision Setter Results Mappings will be assigned to the Decision setter process.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Merge Decision Tables</a><a name="Merge_dec_tables"></a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Within the Derived Data Script component there is a specific function called <a id="h1340" class="jumpxreftemplate" title="Merge Decision Tables" href="../Derived_Data_Scripts/Otherfunctions.htm" target="_self" alt="Merge Decision Tables">Merge Tables</a>. This function has been created to enable the user to merge multiple Decision Result Tables.</p>
+                                                        <p class="procedureheading">To merge Decision Tables</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">From the Explorer window, right click at the required folder level and select Add component.</li>
+                                                        </ol>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You will only be able to add a component type that has been allowed for the selected folder. If it is not allowed it will not be listed and therefore cannot be selected. </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <ol class="listnumber" data-mc-continue="true">
+                                                            <li class="listnumber" value="2">Select Derived Data Script.</li>
+                                                            <li class="listnumber" value="3">In the Create Component dialog enter the name of the Derived Data Script and click OK.</li>
+                                                            <li class="listnumber" value="4">The Derived Data Script name will be listed in the Explorer window under the selected folder level. The component is identified by the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/1948.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="18" data-mc-height="18" src="Images/1948_thumb_0_150.jpg" alt="" tabindex="" /></a> icon.</li>
+                                                            <li class="listnumber" value="5">Right click on the Derived Data Script and select Open. <br />The Derived Data Script editor will open.</li>
+                                                            <li class="listnumber" value="6">In the Palette window, click on the Expand + button to expand Functions - Other.</li>
+                                                            <li class="listnumber" value="7">Drag and drop the Merge Tables function onto the script editor.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/merge_table_script.jpg" data-mc-popup-alt="merge_table_script"><img class="MCPopupThumbnail img" data-mc-width="994" data-mc-height="19" src="Images/merge_table_script_thumb_0_150.jpg" alt="merge_table_script" tabindex="" /></a></li>
+                                                        </ol>
+                                                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Parameter or Return
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Data Type
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Description
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Mandatory<br />/Optional</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">table1</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>String array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>A reference to a String array, which contains the values of the first decision results table.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Mandatory</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">table2</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>String array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>A reference to a String array, which contains the values of the second decision results table.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Mandatory</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">decision set</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>String or String array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>A reference to the name of a Decision Set component that is used to sort the input tables in decision category priority order. A String array may also be specified for testing purposes.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Mandatory</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">output table</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>String array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>A reference to a String array, which is used by the function to store the merge of <span class="monospaced">&lt;</span><code style="color: #0000cd;">table1</code><span class="monospaced">&gt; and &lt;</span><code style="color: #0000cd;">table2</code><span class="monospaced">&gt;</span>.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Mandatory</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">decision category</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>String</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>A reference to a String characteristic which is used by the function to store the name of the highest priority decision category, obtained from the first row of the <span class="monospaced">&lt;</span><code style="color: #0000cd;">output table</code><span class="monospaced">&gt;</span>.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Optional</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">decision text</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>String</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>A reference to a String characteristic which is used by the function to store the description of the highest priority decision category, obtained from the first row of the <span class="monospaced">&lt;</span><code style="color: #0000cd;">output table</code><span class="monospaced">&gt;</span>.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Optional</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">reason code table</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>String array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>A reference to a String array which is used by the function to store the reason codes, obtained from the <span class="monospaced">&lt;</span><code style="color: #0000cd;">output table</code><span class="monospaced">&gt;</span>.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">Optional</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>If you wish the Merge Tables function to return details on the highest priority decision returned, the three optional parameters need to be mapped too.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <ol class="listnumber" data-mc-continue="true">
+                                                            <li class="listnumber" value="8">In the Resources window, expand Logical Data Source and locate the Logical Data Source that contains the Decision Tables.</li>
+                                                            <li class="listnumber" value="9">Drag and drop the Logical Data Source onto the script editor just before &lt;table1&gt;.<br />The Select Characteristic dialog will open.</li>
+                                                            <li class="listnumber" value="10">Expand the Logical Data Source to list all the characteristics contained in it and locate the Decision Table that you wish to use as &lt;table1&gt;.</li>
+                                                            <li class="listnumber" value="11">Select the table you require.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/table_element.jpg" data-mc-popup-alt="table_script"><img class="MCPopupThumbnail img" data-mc-width="209" data-mc-height="127" src="Images/table_element_thumb_0_150.jpg" alt="table_script" tabindex="" /></a></li>
+                                                            <li class="listnumber" value="12">Click OK.<br />The table will be added to the script. </li>
+                                                            <li class="listnumber" value="13">Delete &lt;table1&gt; from the script.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/table_script.jpg" data-mc-popup-alt="table_script"><img class="MCPopupThumbnail img" data-mc-width="1422" data-mc-height="18" src="Images/table_script_thumb_0_150.jpg" alt="table_script" tabindex="" /></a></li>
+                                                            <li class="listnumber" value="14">Repeat steps 9 -13 to add table 2 to the script.</li>
+                                                            <li class="listnumber" value="15">In the Resources window expand Decision Set and locate the Decision Set you require.</li>
+                                                            <li class="listnumber" value="16">Drag and drop the Decision Set just before &lt;decision set&gt; in the script.</li>
+                                                            <li class="listnumber" value="17">Delete &lt;decision set&gt; from the script.</li>
+                                                            <li class="listnumber" value="18">Repeat steps 9 -13 to add the output table to the script.</li>
+                                                            <li class="listnumber" value="19">Using the same Logical Data Source you used for the output table, repeat steps 9 -13 to add the Decision Category to the script.</li>
+                                                            <li class="listnumber" value="20">Repeat step 19 to add the Decision Text to the script.</li>
+                                                            <li class="listnumber" value="21">Repeat step 19 to add the Reason Code Table to the script.</li>
+                                                            <li class="listnumber" value="22">Click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/compile.jpg" data-mc-popup-alt="compile icon"><img class="MCPopupThumbnail img" data-mc-width="24" data-mc-height="24" src="../Images/global/compile_thumb_0_150.jpg" alt="compile icon" tabindex="" /></a> icon to check the validity of the script.<br />The Compilation dialog is displayed.</li>
+                                                            <li class="listnumber" value="23">Click OK to close the dialog.</li>
+                                                        </ol>
+                                                        <p class="bodytext">The Merge Table Derived Data Script can now be used in a Decision Process Flow to obtain an overall decision.</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p> The Merge Table Derived Data Script can be used separately from Decision Setters in a Decision Process Flow. If this occurs and data is added manually or modified then the data will need to be padded in the following way:</p>
+                                                                        <p>&lt;20 character name&gt;&lt;20 character description&gt;&lt;10 character reason code&gt;</p>
+                                                                        <p>Failure to do this will cause the Decision Agent to generate an error, for example:</p>
+                                                                        <p>An error occurred executing Merge Tables, the length of input table &lt;name of table&gt; is 49 when it is required to be 50. An error occurred executing Derived Data &lt;name of script&gt;.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <p class="bodytext"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Decision Setters|Decision_Setter_overview.htm||Look up descriptions for codes|Look_up_descriptions_for_codes.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

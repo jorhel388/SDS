@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Product.Connectivity,Product.Connectivity and Enrichment,Product.Customer Management,Product.Originations,Product.Strategy Design Studio,Product.Debt Management,Product.Collections,Product.Originations Lite,Product.Pre-Screening,Capability_Function Set.Common Data Management" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Using Interactive Tester with dynamic arrays" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Using the Interactive Tester with dynamic arrays</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Example.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="C_wvkJnSM0-3sT0YcZdezQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="C_wvkJnSM0-3sT0YcZdezQ:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Using the Interactive Tester with dynamic arrays</h1>
+                                                <p class="bodytext">When the Interactive Tester is run on scripting components which contain dynamic arrays, these are not shown in the Table View, as they have a size of 0. Users need to go to the Tree View to add elements.</p>
+                                                <p class="bodytext">In the Tree View, dynamic array elements are initially shown with [n] at the end of the Name. See below, where PUBLICDATA is a dynamic array.</p>
+                                                <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/12241.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="863" data-mc-height="231" src="Images/12241_thumb_0_150.png" alt="" tabindex="" /></a>
+                                                </p>
+                                                <p class="bodytext">In the Interactive Tester, dynamic arrays can be sized in the Tree View by using the Add Element(s) option, by copying and pasting an existing dynamic array or via the import of a .csv or .xml file.  The .csv or .xml file is scanned on import to find the maximum array size specified for any dynamic arrays, and that is used as the array size when the .csv or .xml has been loaded.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Changing the dynamic array size during execution</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">In the Interactive Tester, initial array sizes are detected and configured based on the input data configuration. The user can change the size of a dynamic array during execution, through the use of the ADDELEMENT and CLEAR scripting functions. </p>
+                                                        <ul class="listbullet">
+                                                            <li class="listbullet">CLEAR sets the size of the dynamic array to 0, and if the dynamic array is a group array, then any dynamic arrays contained in it are also set to 0 array size.</li>
+                                                            <li class="listbullet">ADDELEMENT on dynamic leaf array initialises that new array value to Null.</li>
+                                                            <li class="listbullet">ADDELEMENT on dynamic group array initialises the contents of that new element to Null. So contained array values will be Null, contained dynamic arrays (group and leaf) will be size 0; contained static arrays will be their fixed size, but all elements within will be initialised to Null.</li>
+                                                        </ul>
+                                                        <p class="bodytext">The size of an array may be reduced or increased, resulting in a mismatch between the fixed format of the output files and the actual results. Interactive tester handles inconsistencies as follows:</p>
+                                                        <ul class="listbullet">
+                                                            <li class="listbullet">Where an array size has been reduced during execution the results output will need to be padded for the missing data. In this case, the Results table will be populated with Null values for each array element that is missing in the results:<p class="listcontinue"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/9832.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="196" data-mc-height="82" src="Images/9832_thumb_0_150.png" alt="" tabindex="" /></a></p><p class="listcontinue">If the results are exported, the data will be padded with Nulls.</p><p class="listcontinue">A warning is displayed in the Results window: </p><p class="listcontinue">'Warning: The dynamic array characteristic 'ldsname.arraycharacteristicname' was reduced in size for one or more records during execution, the results file will contain Nulls for each record where this occurred'. </p></li>
+                                                            <li class="listbullet">Where an array size has been increased beyond the bounds of the input file, the Results table will be populated only up to the upper bound of the array. So, for example, if there are seven unique results but the size of the array is fixed at five, then two of the results will not be displayed.<p class="listcontinue">A warning is displayed in the Results window: </p><p class="listcontinue">'Warning: The dynamic array characteristic 'ldsname.arraycharacteristicname' was increased in size, to a maximum of n occurrences, for one or more records (the results output will be truncated to the upper bounds configured by the input data)'. </p><table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0"><col class="TableStyle-DATableStyle_Note-Column-Column1"></col><col class="TableStyle-DATableStyle_Note-Column-Column2"></col><tbody><tr class="TableStyle-DATableStyle_Note-Body-Body1"><td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td><td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">It is the responsibility of the user to understand their data and ensure an appropriate upper bound is configured on the input data file. The warnings will allow the user to understand when that upper bound is exceeded and how much it needs to be increased in order to be able to capture all their results into the output file or UI.</td></tr></tbody></table>
+&#160;</li>
+                                                            <li class="listbullet">Information about the dynamic processes can also be found in the trace log files. </li>
+                                                            <table style="mc-table-style-original: url('mczip:///C:/Users/luongtu/OneDrive - EXPERIAN SERVICES CORP/1_MASTER/0_task/20_SP3/FY23-6/TAD-1304_eo_dynamic_arrays_note_interactive_tester/TAD-1304_eo_dynamic_arrays_note_it.fltrev/Content/Resources/Stylesheets/DATableStyle_Note.css');mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Where Semi Structured Data Definitions are used, and the size of dynamic arrays are changed during test execution, no warning is written to the output file. Users should use the Tree View to assess the impact on the new array sizes.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Add Elements</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Tests of components using dynamic array characteristics can be run interactively by entering test cases manually into the Input section of the Tree View tab in the Interactive Tester. Dynamic array characteristics (illustrated in the input area by the [n]) will need to have their structure built, by adding elements, before values can be assigned to the leaf nodes. The user is only able to add elements in the Tree View of the Interactive Tester. Elements can be removed by selecting Remove Element.</p>
+                                                        <p class="procedureheading">To add a new element to the input data</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">Within any component editor, click on the Test button <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/test_icon.jpg" data-mc-popup-alt="test"><img class="MCPopupThumbnail img" data-mc-width="29" data-mc-height="29" src="../Images/global/test_icon_thumb_0_150.jpg" alt="test" tabindex="" /></a> or right click the name of the component in the Explorer window and select Test. The Interactive Tester editor is displayed.</li>
+                                                            <li class="listnumber" value="2"> Select the Tree View tab. The  Tree View tab Interactive Tester Editor is displayed.</li>
+                                                            <li class="listnumber" value="3">Right click on the dynamic array and select Add Element(s)...<br /><br /></li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/AddElement.png"><img class="MCPopupThumbnail img" data-mc-width="529" data-mc-height="298" src="Images/AddElement_thumb_0_150.png" tabindex="" /></a><![CDATA[
+]]><br />            &#160;
+            <li class="listnumber" value="4">The Add Array Elements dialog appears.<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/AddArrayElements.png"><img class="MCPopupThumbnail img" data-mc-width="298" data-mc-height="156" src="Images/AddArrayElements_thumb_0_150.png" tabindex="" /></a><br /><br /></li><li class="listnumber" value="5">Enter the number of elements to add into the Add field. Select whether they should be added before the first element or after the last element by clicking the appropriate radio button.</li><li class="listnumber" value="6">Click on the OK button.</li><li class="listnumber" value="7">The system will add a new element(s) to the structure in the chosen location. If nested array elements exist in the structure, the system will only create the outer array element.<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/nested.png" data-mc-popup-alt="nested"><img class="MCPopupThumbnail img" data-mc-width="272" data-mc-height="76" src="Images/nested_thumb_0_150.png" alt="nested" tabindex="" /></a><br /><br /></li><li class="listnumber" value="8">Repeat Add Elements on the initial dynamic array to create the structure you require.<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/lots_elements.png" data-mc-popup-alt="many_elements"><img class="MCPopupThumbnail img" data-mc-width="129" data-mc-height="127" src="Images/lots_elements_thumb_0_150.png" alt="many_elements" tabindex="" /></a><br /><br /></li><li class="listnumber" value="9">Once the outer array elements have been created, right click on the next dynamic array in the input area and select Add Elements as required. The following is an example where Add Elements has been used to create four  customer records with one or two accounts in each.<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/structure.png" data-mc-popup-alt="structure"><img class="MCPopupThumbnail img" data-mc-width="397" data-mc-height="566" src="Images/structure_thumb_0_150.png" alt="structure" tabindex="" /></a></li></ol>
+                                                        <p class="bodytext">Values will now need to be entered into each leaf node to create the test record.</p>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Once an initial dynamic array has been created, the copy and paste options can be used to duplicate the element(s) and values, including those of any child characteristics, within the same dynamic array or another dynamic array of the same base type. For further information refer to the Copy and Paste Elements section.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Copy and Paste Elements</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Tests of components using dynamic array characteristics can be run interactively by entering test cases manually into the Input section of the Tree View tab in the Interactive Tester. Dynamic array characteristics (illustrated in the input area by the [n]) will need to have their structure built, by adding elements, before values can be assigned to the leaf nodes. The user is only able to add elements in the Tree View of the Interactive Tester. Elements can be removed by selecting Remove Element.</p>
+                                                        <p>Once an initial dynamic array has been created, the copy and paste options can be used to duplicate the element(s) and value(s), including those of any child characteristics or child Logical Data Models, within the same dynamic array or another dynamic array of the same type.</p>
+                                                        <p>The Copy option will only be enabled if the selected characteristic is a dynamic array  container (illustrated by the [n]) or an element of a dynamic array (illustrated by a number e.g. [1]). All elements or a single element of a dynamic array can therefore be copied.</p>
+                                                        <p>The Paste option(s) will only be enabled if the chosen characteristic is a dynamic array  container or an element of a dynamic array and also a valid target for the copied item.</p>
+                                                        <ul>
+                                                            <li class="MadCap1">
+                                                                <p><b>Logical Data Model arrays</b>: The source and target must be dynamic array characteristics that are instances of the same Logical Data Model.<br /></p>
+                                                            </li>
+                                                            <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">For example, if ‘Current Address’ and ‘Previous Address’ are both dynamic arrays and both instances of the same ‘Address’ Logical Data Model then ‘Current Address’ can be copied and pasted to ‘Previous Address’.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <p><b>Primitive characteristic arrays</b>: The source and target must be dynamic array characteristics that are the same data type. For example, both String, both Integer, both Decimal, both Float or both Date</p>
+                                                            </li>
+                                                        </ul>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The Remove Elements option can be used to delete unwanted elements created by the paste option.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="procedureheading">To copy and paste all elements of an input dynamic array</p>
+                                                        <p>With the Tree View tab of the Interactive Tester Editor open and with elements added to the input data:</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Right click on the dynamic array container you wish to copy (illustrated by the [n]).<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/copy_all_elements_1.png"><img class="MCPopupThumbnail img" data-mc-width="466" data-mc-height="367" src="../Images/copy_all_elements_1_thumb_0_150.png" tabindex="" /></a></p>
+                                                            </li>
+                                                        </ol>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="2">
+                                                                <p>Right click on the dynamic array characteristic you wish to paste to.<br />When the paste is performed on a dynamic array container, new elements will be added to the end of the dynamic array.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/copy_all_elements_2.png"><img class="MCPopupThumbnail img" data-mc-width="456" data-mc-height="368" src="../Images/copy_all_elements_2_thumb_0_150.png" tabindex="" /></a><br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/copy_all_elements_3.png"><img class="MCPopupThumbnail img" data-mc-width="414" data-mc-height="400" src="../Images/copy_all_elements_3_thumb_0_150.png" tabindex="" /></a><br /><br />When the paste is performed on an existing element within a dynamic array, Paste Before and Paste After options are available to select where the copied elements should be inserted.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/copy_paste_before.png"><img class="MCPopupThumbnail img" data-mc-width="583" data-mc-height="408" src="Images/copy_paste_before_thumb_0_150.png" tabindex="" /></a><br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/copy_paste_before_result.png"><img class="MCPopupThumbnail img" data-mc-width="587" data-mc-height="440" src="Images/copy_paste_before_result_thumb_0_150.png" tabindex="" /></a><br />All paste options will add the appropriate number of new elements to the target array and populate these elements with the copied values.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The Copy functionality will paste everything that you have selected to copy.
+<br />For example, if you copy an array that contains three elements, and during the copy you not only select the array, but also the first element, the whole array and the first element will be pasted.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="procedureheading">To copy and paste  elements of an input dynamic array</p>
+                                                        <p>With the Tree View tab of the Interactive Tester Editor open and with elements added to the input data:</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Right click on the element of the dynamic array characteristic you wish to copy.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/copy_single_element_1.png"><img class="MCPopupThumbnail img" data-mc-width="581" data-mc-height="515" src="../Images/copy_single_element_1_thumb_0_150.png" tabindex="" /></a></p>
+                                                            </li>
+                                                        </ol>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="2">
+                                                                <p>Right click on the dynamic array characteristic you wish to paste to.<br />When the paste is performed on a dynamic array container, only one Paste option is available and new elements will be added to the end of the dynamic array.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/copy_single_element_2.png"><img class="MCPopupThumbnail img" data-mc-width="585" data-mc-height="548" src="../Images/copy_single_element_2_thumb_0_150.png" tabindex="" /></a></p>
+                                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/copy_single_element_3.png"><img class="MCPopupThumbnail img" data-mc-width="445" data-mc-height="344" src="../Images/copy_single_element_3_thumb_0_150.png" tabindex="" /></a>
+                                                                    <br />
+                                                                    <br />When the paste is performed on an existing element within a dynamic array, Paste Before and Paste After options are available to select where the copied elements should be inserted.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/copy_paste_before_after_2.png"><img class="MCPopupThumbnail img" data-mc-width="494" data-mc-height="575" src="../Images/copy_paste_before_after_2_thumb_0_150.png" tabindex="" /></a><br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/copy_paste_before_after_2_results.png"><img class="MCPopupThumbnail img" data-mc-width="492" data-mc-height="351" src="../Images/copy_paste_before_after_2_results_thumb_0_150.png" tabindex="" /></a><br /><br />All paste options will add the appropriate number of new elements to the target  array and populate it with the copied values.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Multiple elements from one or more dynamic arrays can be copied at the same time by selecting them with Ctrl + left click or Shift + left click before using right click and the Copy option. The Copy option will only be enabled if all the selected characteristics are part of a dynamic array and all of the same type. When pasting the copied characteristics, they will be concatenated in the same order they appear in the Tree View.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Remove Element</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Tests on components can be run interactively by entering test cases manually into the Input section of the Interactive Tester. Dynamic array characteristics (illustrated in the input area by the [n]) will need to have their structure built, by adding elements, before values can be assigned to the leaf nodes. The user is only able to add elements in the Tree View of the Interactive Tester. Elements can also be removed when using the Tree view tab.</p>
+                                                        <p class="procedureheading">To remove an element from the input data</p>
+                                                        <p>With the Interactive Tester Editor open and with elements added to the input data:</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">Right click on the  element you wish to remove and select Remove Element(s).<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/RemoveElements_1.png" data-mc-popup-alt="remove"><img class="MCPopupThumbnail img" data-mc-width="155" data-mc-height="234" src="../Images/RemoveElements_1_thumb_0_150.png" alt="remove" tabindex="" /></a><br /><table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0"><col class="TableStyle-DATableStyle_Note-Column-Column1" /><col class="TableStyle-DATableStyle_Note-Column-Column2" /><tbody><tr class="TableStyle-DATableStyle_Note-Body-Body1"><td class="TableStyle-DATableStyle_Note-BodyE-Column1-Body1">&#160;</td><td class="TableStyle-DATableStyle_Note-BodyD-Column2-Body1">You can select to Remove any dynamic part of the structure and the appropriate branch will be removed.</td></tr><tr class="TableStyle-DATableStyle_Note-Body-Body1"><td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td><td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1"><p>If you click on the parent element and select Remove Element(s), all child elements will be removed as well.</p><p>Multiple elements from one or more dynamic arrays can be removed at the same time by selecting them with Ctrl + left click or Shift + left click before using right click and the Remove Element(s) option. The Remove Element(s) option will only be enabled if all the selected characteristics are part of a dynamic array.</p></td></tr></tbody></table></li>
+                                                        </ol>
+                                                        <p>The  element will be removed. <br /></p>
+                                                        <ol class="listnumber" data-mc-continue="true">
+                                                            <li value="2">Repeat as necessary.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

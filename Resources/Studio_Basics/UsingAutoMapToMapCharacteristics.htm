@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Product.Connectivity,Product.Connectivity and Enrichment,Product.Customer Management,Product.Originations,Product.Originations Lite,Product.Strategy Design Studio,Product.Pre-Screening,Capability_Function Set.Framework,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Merge a source characteristic into a target characteristic
+using Automap</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Caution.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="dtKdA9DvR02XDIVrtm-HjQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="dtKdA9DvR02XDIVrtm-HjQ:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Merge a source characteristic into a target characteristic
+using Automap</h1>
+                                                <p>The <a href="Merge_editor.htm">Merge editor</a> allows the user to define the mappings between a source and target Data Model components including their Data Views (if any)  automatically. </p>
+                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Note-BodyE-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Note-BodyD-Column2-Body1">In this topic Logical Data Sources, Logical Data Model characteristics and Logical Data Source characteristics will be referred to as ‘Data Model components’.</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Note-BodyE-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Note-BodyD-Column2-Body1">
+                                                                <p>Only users with the Architect functional role and access to the Content and Solution Repositories will be able to use the Merge editor. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                <p>Ensure the source Logical Data Sources have been loaded into your solution, see Add From Template topic for more information.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Caution.css');" class="TableStyle-DATableStyle_Caution" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Caution-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Caution-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Caution-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Caution-BodyB-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Caution-BodyA-Column2-Body1">When the Merge process is being used in a multi-user environment, all the Data Model dependencies (e.g. Entity Models, Logical Data Sources, Logical Data Models, Data Views etc.) should be locked during the process of merging (from configuration to Apply).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="procedureheading">To merge a source characteristic into a target characteristic
+using Automap </p>
+                                                <p>The Automap process can be triggered for one or several selected source components. It can also be triggered after selecting a Logical Data Source (their characteristics are also considered in the process).    </p>
+                                                <ol start="1" class="ol_1">
+                                                    <li class="li_listnumber" value="1">Within the Explorer window, right click on the name of the source Logical Data Source(s) that you wish to use and select Merge. The Merge editor is displayed with all the characteristics and Logical Data Models contained in the selected Logical Data Source(s) listed in the Characteristic Mapping panel.
+            </li>
+                                                    <li class="li_listnumber" value="2">Within the <a href="Characteristic_Mapping_panel.htm">Characteristic Mapping panel</a> of the editor,  select a source Data Model component(s) that you wish to perform an Automap target mapping. </li>
+                                                    <li class="li_listnumber" value="3">Right click on any row to access the context menu (or use the Automap button on the tool bar), select Automap and then choose an Automap option of your choice (e.g. History or Perfect only or Best Candidate). The editor panels are updated with the selected target component mapping details including their Data Views (if any). These details are displayed in the Characteristic Mapping panel Status, Target columns and the Data View Mapping panel source and target.<br /></li>
+                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Step 4 is only applicable for an Origination or Connectivity and Enrichment solution that contains Data View components. Go to step 7 for all other solutions.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </ol>
+                                                <ol start="4" class="ol_1" data-mc-continue="true">
+                                                    <li class="li_listnumber" value="4">During the mapping action all Data Views are mapped automatically. Ensure that all the target Data Views in the Target column from the Data View Mapping panel are correct and update as required. Steps 5 and 6 describe how these amendments can be made.</li>
+                                                    <li class="li_listnumber" value="5">Select a source component in the Characteristic Mappings panel that you wish to perform a Data View mapping. </li>
+                                                    <li class="li_listnumber" value="6">Select a target Data View by double clicking on a Target row to access the candidate Data View(s) drop-down list. <br /><br /></li>
+                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">To unselect a target Data View mapping use the Unmap option, either right click to access the context menu or the Unmap button on the tool bar.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+           &#160;
+            <li class="li_listnumber" value="7">In the Characteristic Mappings panel, for each mapped source Data Model component select their associated check box to make it ‘Ready’ for the Merge process. During the Merge process only source components with a Ready status will be merged. For multi selection you can use either the Ready button from the tool bar or the Toggle Ready action from the context menu. </li></ol>
+                                                <ol class="ol_1" data-mc-continue="true">
+                                                    <li value="8">Repeat step 2 to step 7 to map and set ready all the required source Data model components.<br /></li>
+                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                    <p>Before applying the Merge process it is highly recommended to check your Data Model component mappings are correct (including their Data Views)</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </ol>
+                                                <ol start="2" class="ol_1" data-mc-continue="true">
+                                                    <li class="li_listnumber" value="9">Click on the Apply button in the Characteristic Mappings panel toolbar to perform the Merge process. <br />The <a href="MergeEditorApply.htm"><a href="MergeEditorApply.htm">Merge Editor Apply Wizard</a></a> will be displayed.</li>
+                                                    <li class="li_listnumber" value="10">If the Entity Model mapping is available, select the target Entity Model to apply to the source Entity Model from the Entity Model mapping area.</li>
+                                                    <li class="li_listnumber" value="11">To launch the <a href="MovetoRecycleBinWizard.htm">Move to Recycle Bin Wizard</a> after the Merge process, select the check box within the Post-merge process area.</li>
+                                                    <li value="12">If you wish to execute the Merge process without viewing the preview click on the Finish button.</li>
+                                                    <li value="13">To preview the changes or exclude some components before executing the Merge process, click on the Next button. <br />The Pre-process screen will be displayed.</li>
+                                                    <li value="14">To exclude components from the Merge process, uncheck the corresponding check box in the Components tab.<br />Details about the changes are available in the different tabs (Components, Mappings, Log).</li>
+                                                    <li value="15">To save the information as an XML file, select the tab you wish to export and click on the Export  icon from the toolbar.</li>
+                                                    <li value="16">Click on the Next button.<br />The Confirm  screen will be displayed.</li>
+                                                    <li value="17">Click on the Next button.<br />The Report screen will be displayed.</li>
+                                                    <li value="18">Click on the Finish button to complete the Merge process.</li>
+                                                    <li class="li_listnumber" value="19">Repeat from step 1 for the next source Logical Data Source(s) that needs to be merged.           </li>
+                                                </ol>
+                                                <p>After the Merge process all components that previously used the source Data Model components including their Data Views (if any) will now use the newly merged target Data Model components and their target Data Views. This does not include those components that are not supported by the <a href="Merge_overview.htm">Merge process</a>.</p>
+                                                <p class="p_bodytext_5"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Copy and Paste Data View mappings|ReusetheDataViewMappings.htm||Merge a source characteristic into a target characteristic&#xA;using manual selection|Merge_characteristics_into_the_target_charcteristics.htm||Create a new target characteristic in a target destination|Createanewtargetcharacteristic.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

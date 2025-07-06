@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Supplementary Features" data-mc-conditions="Product.Strategy Design Studio,Product.Originations,Print.Print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Semi Structured Data Definition</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Row_and_ColumnHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_NoHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Header.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Caution.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="KRShxUHUY0W4cHSFsNEyWA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="KRShxUHUY0W4cHSFsNEyWA:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Semi Structured Data Definition</h1>
+                                                <p> The Semi Structured Data Definition component uses a loaded JSON schema to generate Logical Data Models of all or a subset of the contents of the selected JSON file. These Logical Data Models can then be used within other Design Studio components as normal depending on publishing rules. The Semi Structure Data Definition enables a user to use a central definition of their data model (JSON file) that could span the entire PowerCurve platform, if required. </p>
+                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Caution.css');" class="TableStyle-DATableStyle_Caution" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Caution-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Caution-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Caution-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Caution-BodyB-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Caution-BodyA-Column2-Body1">Although available for selection in all PowerCurve products, the Semi Structured Data Definition component is only supported in PowerCurve Strategy Management and PowerCurve Originations.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Overview</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Using the functionality within the Semi Structured Data Definition component,  the user can:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p> load a JSON schema that will be used to generate a root Logical Data Model and all the required child Logical Data Models defined in the JSON file</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>determine whether all or a subset of the data model that is defined in this JSON file is required and processed at runtime</p>
+                                                            </li>
+                                                            <li>
+                                                                <p> manipulate the data model prior to the generation of the required Logical Data Models (only data type, length, scale and array size can currently be modified)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>choose which Parser to use at runtime to load the file</p>
+                                                            </li>
+                                                            <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                            <p> The DOM parser is not yet supported.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </ul>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The name of the Semi Structured Data Definition component and names of all the nested elements in the JSON schema file must adhere to the rules defined within the <a href="../LDS/LogicalDataModeloverview.htm#Characteristic_properties">Characteristic Properties</a> section of the Logical Data Model overview.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>The Semi Structured Data Definition is supported in the following components:</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_NoHeader.css');" class="TableStyle-DATableStyle_NoHeader_eds" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_NoHeader_eds-Column-Column1" style="width: 195px;" />
+                                                                            <col class="TableStyle-DATableStyle_NoHeader_eds-Column-Column1" style="width: 175px;" />
+                                                                            <col class="TableStyle-DATableStyle_NoHeader_eds-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_NoHeader_eds-Column-Column1" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_NoHeader_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Adverse Reason Code Table</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Decision Reason Code</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Policy Rule</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyD-Column1-Body1">Treatment Table</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_NoHeader_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Boolean Expression</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Decision Set</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Policy Rule Set</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyD-Column1-Body1">Treatment Table Design</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_NoHeader_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Class Set</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Decision Setter</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Scorecard</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyD-Column1-Body1">Transformation Function</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_NoHeader_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Data Model Merge (Wizard)</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Derived Data Script</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Scorecard Function</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyD-Column1-Body1">User Defined Function</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_NoHeader_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Decision Process Flow</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Index Table</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Segmentation Tree</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyD-Column1-Body1">Value Setter</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_NoHeader_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Decision Process Sequence</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Logical Data Source/Model</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyE-Column1-Body1">Semi Structured Data Definition</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_NoHeader_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyB-Column1-Body1">Decision Process Tree</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyB-Column1-Body1">Matrix</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyB-Column1-Body1">Test Group Set</td>
+                                                                                    <td class="TableStyle-DATableStyle_NoHeader_eds-BodyA-Column1-Body1">&#160;</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>Only v7 of the JSON schema  is supported. </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>The following table provides details on the supported fields from the JSON schema.</p>
+                                                                        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 102px;" />
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 217px;" />
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                            <thead>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1" style="font-size: 14px;">Field                                                                                          </th>
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1" style="font-size: 14px;">Description</th>
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1" style="font-size: 14px;">Example</th>
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1" style="font-size: 14px;">Required</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p class="code" style="font-size: 14px;">$schema</p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">Marks the start of the schema.
+
+Used to identify if the JSON file contains JSON schema.</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p class="code" style="font-size: 14px;"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/schema.png"><img class="MCPopupThumbnail img" data-mc-width="593" data-mc-height="206" src="images/schema_thumb_0_150.png" tabindex="" /></a>
+                                                                                        </p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="font-size: 14px;">Yes</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p class="code" style="font-size: 14px;">properties</p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">Array containing all the fields of the defined object node.</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/properties.png"><img class="MCPopupThumbnail img" data-mc-width="582" data-mc-height="537" src="images/properties_thumb_0_150.png" tabindex="" /></a>
+                                                                                        </p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="font-size: 14px;">Yes</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p class="code"><span style="font-size: 14px;">items</span>
+                                                                                        </p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p><span style="font-size: 14px;">Defines the elements of an array node.</span>
+                                                                                        </p>
+                                                                                        <p><span style="font-size: 14px;">If only a single array element is defined and no maxItems is defined then the array is considered dynamic.</span>
+                                                                                        </p>
+                                                                                        <p><![CDATA[
+]]><span style="font-size: 14px;">If only a single array element is defined and maxItems is defined then the array is considered static with size being the maxItems value.
+</span></p>
+                                                                                        <p><![CDATA[
+]]><span style="font-size: 14px;">If multiple elements are defined in items then the array is considered static with size being the count of elements.
+
+If no elements are defined an exception is thrown.</span></p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/items.png"><img class="MCPopupThumbnail img" data-mc-width="667" data-mc-height="360" src="images/items_thumb_0_150.png" tabindex="" /></a>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="font-size: 14px;">Yes, but only for array nodes</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p class="code">type</p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p style="font-size: 14px;">	
+Defines the type of the node. It should contain one of the following values:
+
+</p>
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <p style="font-size: 14px;">object</p>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p style="font-size: 14px;">
+array</p>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p style="font-size: 14px;">
+string</p>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p style="font-size: 14px;">
+boolean</p>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p style="font-size: 14px;">
+number</p>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p style="font-size: 14px;">
+integer</p>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                        <p style="font-size: 14px;">
+JSON schema should start with an object at root level.</p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/type.png"><img class="MCPopupThumbnail img" data-mc-width="748" data-mc-height="514" src="images/type_thumb_0_150.png" tabindex="" /></a>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="font-size: 14px;">Yes</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p class="code">maxItems</p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">Used to limit the array size if only one array element is defined in the items section.</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/maxItmes.png"><img class="MCPopupThumbnail img" data-mc-width="656" data-mc-height="211" src="images/maxItmes_thumb_0_150.png" tabindex="" /></a>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="font-size: 14px;">Optional</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p class="code">maxLength</p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;">Used to read the length field of the String and the Date characteristic.</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="font-size: 14px;"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/maxLength.png"><img class="MCPopupThumbnail img" data-mc-width="457" data-mc-height="237" src="images/maxLength_thumb_0_150.png" tabindex="" /></a>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="font-size: 14px;">Optional</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="font-size: 14px;">
+                                                                                        <p class="code">maximum</p>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="font-size: 14px;">Used to construct length field of integer and decimal fields.
+
+<br /><br />For example, if maximum = 120, size of field is set to 3 (the character length of the maximum value)</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="font-size: 14px;"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/maximum.png"><img class="MCPopupThumbnail img" data-mc-width="489" data-mc-height="166" src="images/maximum_thumb_0_150.png" tabindex="" /></a>
+                                                                                    </td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1" style="font-size: 14px;">Optional</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p style="font-size: 16px;">Default values for data types if not available in schema file:</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');margin-left: 0;margin-right: auto;" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                            <thead>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Data Type</th>
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Length</th>
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Scale</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">string</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">50</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">integer</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">9</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">boolean</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">5</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">decimal</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">10</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">6</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">date</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">50</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">&#160;</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>The following table provides examples of the script that can be executed in the Derived Data Script  using Semi Structure Data Definition characteristics. It also shows the result of this update, using examples of the initial value of the payload before the updates have occurred in the table header.</p>
+                                                        <p>Where:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>the initial state of the payload is: {"name": "John", "surname": "Doe"}</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>when the following value is executed: LDS.SSDD.name = "Tim"</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>the following result will occur after the update: {"name": "Tim", "surname": "Doe"}</p>
+                                                            </li>
+                                                        </ul>
+                                                        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Row_and_ColumnHeader.css');" class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Column-Column2" />
+                                                            <col class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Column-Column2" />
+                                                            <col class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Column-Column2" style="width: 321px;" />
+                                                            <col class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Column-Column2" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-HeadE-Column1-Header1">Script executed in the Derived Data Script</th>
+                                                                    <th class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-HeadF-Column2-Header1">
+                                                                        <p>Initial value empty string</p>
+                                                                        <p><span style="font-weight: normal;">Null/Empty {}	</span>
+                                                                        </p>
+                                                                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-HeadE-Column2-Header1">
+                                                                        <p>Value with characteristics</p>
+                                                                        <p><span style="font-weight: normal;">{"name": "John", "surname": "Doe"}</span>
+                                                                        </p>
+                                                                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-HeadF-Column2-Header1">
+                                                                        <p>	Arrays</p>
+                                                                        <p><span style="font-weight: normal;">{"name": "John", "surname": "Doe", "telephones": [ null, null, "7836" ]}</span>
+                                                                        </p>
+                                                                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-HeadD-Column2-Header1">
+                                                                        <p>Malformed JSON</p>
+                                                                        <p><![CDATA[	]]><span style="font-weight: normal;">&lt;xml&gt;&lt;/xml&gt;</span></p>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column1-Body1" role="rowheader" style="font-size: 14px;">LDS.SSDD.name = LDS.personName,
+where LDS.personName is "Tim"</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"name":  "Tim"}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column2-Body1" style="font-size: 14px;">{"name": "Tim", "surname": "Doe"}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"name": "Tim", "surname": "Doe", "telephones": [ null, null, "7836" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyG-Column2-Body1" style="font-size: 14px;">throw exception</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column1-Body1" role="rowheader" style="font-size: 14px;">LDS.SSDD.surname = LDS.SSDD.familyName, where LDS.SSDD.familyName is "Dohn"</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"surname": "Dohn"}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column2-Body1" style="font-size: 14px;">	{"name": "John", "surname": "Dohn"}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">	{"name": "John", "surname": "Dohn", "telephones": [ null, null, "7836" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyG-Column2-Body1" style="font-size: 14px;">throw exception</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyE-Column1-Body1" role="rowheader" style="font-size: 14px;">LDS.SSDD.age = 30</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyF-Column2-Body1" style="font-size: 14px;">{"age": 30}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyE-Column2-Body1" style="font-size: 14px;">{"name": "John", "surname": "Doe", "age": 30}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyF-Column2-Body1" style="font-size: 14px;">{"name": "John", "surname": "Doe", "age": 30, "telephones": [ null, null, "7836" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyD-Column2-Body1" style="font-size: 14px;">throw exception</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column1-Body1" role="rowheader" style="font-size: 14px;">LDS.SSDD.name = "Tim"</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"name": "Tim"}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column2-Body1" style="font-size: 14px;">{"name": "Tim", "surname": "Doe"}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"name": "Tim", "surname": "Doe", "telephones": [ null, null, "7836" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyG-Column2-Body1" style="font-size: 14px;">throw exception</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column1-Body1" role="rowheader" style="font-size: 14px;">LDS.SSDD.name = null</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"name": null}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column2-Body1" style="font-size: 14px;">{"name": null, "surname": "Doe"}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"name": null, "surname": "Doe", "telephones": [ null, null, "7836" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyG-Column2-Body1" style="font-size: 14px;">throw exception</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyE-Column1-Body1" role="rowheader" style="font-size: 14px;">LDS.SSDD.address.street = "Oxford"</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyF-Column2-Body1" style="font-size: 14px;">{"address": {"street": "Oxford"} }</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyE-Column2-Body1" style="font-size: 14px;">{"name": "John", "surname": "Doe", "address": {"street": "Oxford"}}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyF-Column2-Body1" style="font-size: 14px;">{"name": "John", "surname": "Doe", "telephones": [ null, null, "7836" ], "address": {"street": "Oxford"}}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyD-Column2-Body1" style="font-size: 14px;">throw exception</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column1-Body1" role="rowheader" style="font-size: 14px;">LDS.SSDD.telephones[1] = "97462"</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"telephones": [ "97462" ] }</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column2-Body1" style="font-size: 14px;">{"name": "John," "surname": "Doe", "telephones": [ "97462" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1" style="font-size: 14px;">{"name": "John", "surname": "Doe", "telephones": [ "97462" , null, "7836" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyG-Column2-Body1" style="font-size: 14px;">throw exception</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyB-Column1-Body1" role="rowheader" style="font-size: 14px;">LDS.SSDD.telephones[3] = "97462"</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyC-Column2-Body1" style="font-size: 14px;">{"telephones": [null, null, "97462" ] }</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyB-Column2-Body1" style="font-size: 14px;">{"name": "John," "surname": "Doe", "telephones": [ null, null, "97462" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyC-Column2-Body1" style="font-size: 14px;">{"name": "John", "surname": "Doe", "telephones": [ null, null, "97462" ]}</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyA-Column2-Body1" style="font-size: 14px;">throw exception</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Edit a Semi Structured Data Definition</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Create</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>A Semi Structured Data Definition is created from the Explorer Window.</p>
+                                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You will only be able to add a component type that has been allowed for the selected folder. If it is not allowed it will not be listed and therefore cannot be created.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To create a Semi Structured Data Definition</p>
+                                                                <ol>
+                                                                    <li value="1">
+                                                                        <p>From the Explorer window, right click at the required folder level and select Add component.</p>
+                                                                    </li>
+                                                                    <li value="2">
+                                                                        <p>Select Semi Structure Data Definition.</p>
+                                                                    </li>
+                                                                    <li value="3">
+                                                                        <p>In the Create component dialog, enter the name of the Semi Structured Data Definition.</p>
+                                                                    </li>
+                                                                    <li value="4">
+                                                                        <p>Select the Open new components in the component editor check box.</p>
+                                                                    </li>
+                                                                    <li value="5">
+                                                                        <p>Click on the OK button.</p>
+                                                                    </li>
+                                                                    <li value="6">
+                                                                        <p>The Semi Structured Data Definition editor will open allowing you to define a Semi Structured Data Definition.</p>
+                                                                    </li>
+                                                                    <li value="7">
+                                                                        <p>The Semi Structured Data Definition name will be listed in the Explorer window, under the selected folder level. The component is identified by the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/ssdd_icon_sml.png"><img class="MCPopupThumbnail img" data-mc-width="22" data-mc-height="23" src="images/ssdd_icon_sml_thumb_0_150.png" tabindex="" /></a> icon.</p>
+                                                                    </li>
+                                                                </ol>
+                                                                <p>If you do not wish the editor to open, keep the check box de-selected. From the Explorer window select the Semi Structured Data Definition and select Open.</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="procedureheading">To define a Semi Structured Data Definition</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>With the Semi Structured Data Definition editor open, from the Protocol drop down box, select the required Protocol of the file.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>From the Parser drop down box, select the required Parser.</p>
+                                                            </li>
+                                                            <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1"> Only the SAX&#160;parser is currently supported.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </ol>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="3">
+                                                                <p>Leave the Read Only checkbox as it has been rendered.</p>
+                                                            </li>
+                                                            <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The Read Only feature is currently not supported.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </ol>
+                                                        <ol data-mc-continue="true">
+                                                            <li value="4">
+                                                                <p>Click Browse and Load.<br />The Open dialog will be displayed.</p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>Locate and select the JSON Schema file and click Open.<br />The Data Source Selection dialog will Open. The Data Source Selection dialog provides a preview of the Logical Data Models that will be generated when the Semi Structured Data Definition component is saved.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>Select the characteristics that you want to be included.</p>
+                                                            </li>
+                                                            <li value="7">
+                                                                <p>Click OK<br />The Data Source Selection dialog will close.<br />The details of the selected characteristics from the Data Source Selection dialog will be added to the Semi Structured Data Definition. The Schema field will be populated with the name of the selected file. </p>
+                                                            </li>
+                                                            <li value="8">
+                                                                <p>Click Save.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>The Logical Data Models will be generated in the folder where the Semi Structured Data Definition is located and be available for selection within the Explorer.</p>
+                                                        <p>The route Logical Data Model will be assigned the same name as the Semi Structured Data Definition, but with the suffix LDM.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/generated_ldm.png"><img class="MCPopupThumbnail img" data-mc-width="332" data-mc-height="50" src="images/generated_ldm_thumb_0_150.png" tabindex="" /></a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Test a Semi Structured Data Definition using Interactive Tester</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>In order to test a Semi Structured Data Definition using Interactive Tester, the value from the Semi Structured Data Definition characteristic needs to be assigned to the Logical Data Source characteristic.</p>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The Semi Structured Data Definition payload is Read Only in Interactive Tester. However, the payload can be modified externally and then imported into Interactive Tester.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The Semi Structured Data Definition payload is constructed dynamically when entering values into the leaf characteristics.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Export will contain both the Semi Structured Data Definition payload and the Semi Structured Data Definition leaf characteristics.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="procedureheading">To test a Semi Structured Data Definition using Interactive Tester</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Select the Test icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/test_icon.jpg"><img class="MCPopupThumbnail img" data-mc-width="29" data-mc-height="29" src="../Images/global/test_icon_thumb_0_150.jpg" tabindex="" /></a> to activate Interactive Tester.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Select the Tree View tab. <br /><br /><b>Characteristic of type String:</b><br />The default value for a string characteristic  in Interactive Tester is an empty string. To enable this for a Semi Structured Definition parent characteristic of type string, the payload will be already constructed to ensure that the value can be an empty string rather than a Null, as shown in the following example:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/payload_string.png"><img class="MCPopupThumbnail img" data-mc-width="425" data-mc-height="82" src="images/payload_string_thumb_0_150.png" tabindex="" /></a> <br />If the value is then modified the value in the payload will be updated with the new value.<br />Using Reset Value will set the value back to, in this scenario, an empty string.<br /><br /><b>Characteristic of type other than String:</b><br />In this scenario, the Semi Structured Data Definition's parent characteristic  will be displayed as Read Only and be set to Null, as shown in the following example:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/IT_SSDD.png"><img class="MCPopupThumbnail img" data-mc-width="505" data-mc-height="219" src="images/IT_SSDD_thumb_0_150.png" tabindex="" /></a></p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>To edit the input value, enter a value for the Logical Data Source characteristic and the payload for the Semi Structured Data Definition will be updated with the value:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="images/payload.png"><img class="MCPopupThumbnail img" data-mc-width="574" data-mc-height="227" src="images/payload_thumb_0_150.png" tabindex="" /></a></p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Continue entering input data as required.</p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>Click on the Execute Test button to begin running the test.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <p><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Semi Structured Data Definition editor|Semi_Structured_Data_Definition_editor.htm|| Logical Data Model overview |../LDS/LogicalDataModeloverview.htm||Derived Data Scripts|../Derived_Data_Scripts/DerivedDataScriptsoverview.htm||Physical Data Model editor - Java Object|../PDM/PhysicalDataModeleditor-JavaObject.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

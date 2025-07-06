@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Product.Connectivity,Product.Connectivity and Enrichment,Product.Customer Management,Product.Originations,Product.Originations Lite,Product.Strategy Design Studio,Product.Collections,Capability_Function Set.Common Data Management" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Swagger Client Library (SCL) and Server Connection Profile Key Configuration</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Header.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Swagger Client Library (SCL) and Server Connection Profile Key Configuration</h1>
+                                                <p>The Swagger Client Library (SCL) configuration properties allows the set up of specific REST Call connection, authentication and authorisation settings.</p>
+                                                <p>The Studio <b>scl.cfg</b> files are located in the following paths:</p>
+                                                <ul>
+                                                    <li class="MadCap1">
+                For Interactive Tester
+                <ul><li class="has-children">
+                        When testing a Business Process Flow component containing a REST Call, locate the file in <b>&lt;Job Server installation path&gt;/conf/scl.cfg</b><![CDATA[
+                    ]]></li><li class="has-children">
+                        When testing a Decision Process Flow component containing a REST Call, locate the file in <b>&lt;Studio installation path&gt;/conf/scl.cfg</b><![CDATA[
+                    ]]></li><li class="has-children">
+                        When testing ACE plugins containing a REST Call, locate the file in <b>&lt;Studio installation path&gt;/conf/scl.cfg</b><![CDATA[
+]]></li><li class="has-children">When testing a REST call component, locate the file in <b>&lt;Studio installation path&gt;/conf/scl.cfg</b><![CDATA[                    ]]></li></ul></li>
+                                                    <li class="MadCap1">
+                For Test Project
+                <ul><li class="has-children">
+                        Locate the file in <b>&lt;Job Server installation path&gt;/conf/scl.cfg</b></li></ul></li>
+                                                </ul>
+                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                <p>For Server Connection Profile, the &lt;ClientKey&gt; does not need to be specified as shown in the example below.</p>
+                                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/ServerConnProfile-Note.png"><img class="MCPopupThumbnail img" data-mc-width="943" data-mc-height="196" src="../Images/ServerConnProfile-Note_thumb_0_150.png" tabindex="" /></a>
+                                                                </p>
+                                                                <p>The similar configurations in the scl.cfg file are shown below.</p>
+                                                                <p class="CodeIndent1">scl.host.&lt;ClientKey&gt;= http://api.testserver.com</p>
+                                                                <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt;= FLEXI_AUTH</p>
+                                                                <p class="CodeIndent1">scl.authorization-server.token-endpoint.url.&lt;ClientKey&gt;=http://api.testserver.com/token</p>
+                                                                <p class="CodeIndent1">scl.auth.request.body.Authorization.&lt;ClientKey&gt;=abc</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h2>Configuration Keys in the <b>scl.cfg</b> file</h2>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Connection configurations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 72px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">No.</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Property</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Mandatory?</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Description</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Default value</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Valid values Valid values for Server Connection Profile (regular expression, not case sensitive)</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Example</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">1</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.host.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The host of the endpoint.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">	^(http(s)?):\/\/.*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.host.swagger=http://api.testserver.com</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.port.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The port of the endpoint. </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">80</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^([0-9]|[1-9][0-9]|[1-9] [0-9][0-9]|[1-9][0-9] [0-9][0-9]|[1-6][0-5] [0-5][0-3][0-5])$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.port.swagger=80</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">3</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.proxy.uri.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The Client key specific HTTP proxy URI.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">	^(http(s)?):\/\/.*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">4</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.proxy.username.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The Client key specific HTTP proxy username.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">5</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.proxy.password.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The Client key specific HTTP proxy password.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">6</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.timeout.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The execution timeout for all service calls (in milliseconds).</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">10000</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">	^[0-9]*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">7</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.config.service.cache.<br />timeout.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The configuration cache time out in milliseconds. When expired, the latest configuration in the config service will be retrieved.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^[0-9]*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">8</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">scl.config.service.cache.<br />timeout.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>The Client key used for calling Data link that is configured to accept REST&#160;calls. </p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">This property is only used in the Experian Cloud-based environment.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p>When the property is set to <code>true</code>, the following will be added to the REST&#160;call headers.</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                            <thead>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Header</th>
+                                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Description</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">X-RDS-URL</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">The value of<code> production.rds.service.url </code>from <b>com.experian.eda.ea.service.cfg</b>.</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">X-ConfigSvc-URL</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">The URL formed by the value of environment variable <b>CONFIG_SVC_HOST and CONFIG_SVC_PORT</b> (Config Service Host and Port).</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">X-ConfigSvc-UC</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">The value of environment variable CONFIG_SVC_UC (Config Service Usecase).</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">X-ConfigSvc-TenantId</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">The value of environment variable TENANT_ID.</td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">X-ConfigSvc-BranchId</td>
+                                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">The value of environment variable BRANCH_ID.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">false</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">	^(TRUE|FALSE)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">scl.datalink.mode.swagger=true</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Global configurations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">If the same key is configured in the individual connection profile, the individual connection profile configuration will override global configurations.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 72px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 487px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">No.</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Property</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Mandatory?</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Description</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Default value</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Valid values for Server Connection Profile (regular expression, not case sensitive)</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Example</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">1</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.proxy.uri</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The global HTTP proxy URI.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^(http(s)?):\/\/.*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.proxy.uri=https://proxyuri</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.proxy.username</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The global HTTP proxy user name.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.proxy.username=johndoe</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">3</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.proxy.password</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The global HTTP proxy password.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.proxy.password=password</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">4</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.connection.pool.enabled</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The configuration to enable connection pool.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">false</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^(TRUE|FALSE)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.connection.pool.enabled=true</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">5</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.connection.pool.maxPerRoute</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The  connection pool maximum concurrent connections per route or base URI.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^[0-9]*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.connection.pool.maxPerRoute=3</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">6</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">	scl.connection.pool.maxTotal</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The  	connection pool maximum total concurrent connections. </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">20</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^[0-9]*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.connection.pool.maxTotal=10</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">7</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.connection.pool.keepalive</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The  connection pool keep alive. The  unit is in milliseconds. The value, -1 means indefinitely.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">10000</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^[0-9]*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.connection.pool.keepalive=20000</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">8</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.config.service.enabled</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The configuration to indicate whether to overwrite the configuration from configuration service.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">false</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^(TRUE|FALSE)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">9</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">scl.config.service.cache.timeout</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">The configuration for cache timeout. It will go to the configuration service to retrieve the latest configuration once the session has expired. The  unit is in milliseconds.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">20000</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">^[0-9]*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Authentication related configurations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col style="width: 72px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 251px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">No.</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Key</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Mandatory</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Supported scl.authentication.type </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Description</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Default value</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Valid values for Server Connection Profile (regular expression, not case sensitive)</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Example</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">1</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.authentication.<br />overwrite-swagger-definition.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">All</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">This determines whether to overwrite authentication method specified in the Swagger.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">false</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^(TRUE|FALSE)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.authentication.<br />overwrite-swagger-definition.<br />swagger=true</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.authentication.type.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">N/A</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>The authentication type. The valid values are BASIC, APIKEY, OAUTH2, FLEXI_AUTH, INLINE_AUTH.</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">For <b>scl.authentication.type = FLEXI_AUTH</b>, the 
+<b>scl.authentication.overwrite-swagger-definition</b> needs to be set as true.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">follows the Swagger definitions</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^(BASIC|
+APIKEY|
+OAUTH2|
+FLEXI_AUTH| INLINE_AUTH)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.authentication.<br />type.swagger=OAUTH2</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">3</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">	scl.username.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td rowspan="2" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">BASIC</td>
+                                                                    <td rowspan="2" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The general login user name and password for all service calls.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">4</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.password.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">5</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.authorization-server.token-endpoint.url.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">OAUTH2<br />FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The endpoint URL of the token server.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^(http(s)?):\/\/.*$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">6</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.authorization.grant-type.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">OAUTH2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The valid values are CLIENT_CREDENTIALS, PASSWORD.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">CLIENT_CREDENTIALS</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^(CLIENT_ CREDENTIALS |PASSWORD)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">7</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.authorization.username.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">OAUTH2</td>
+                                                                    <td rowspan="2" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">This is used when the <b>scl.authorization.grant-type.&lt;ClientKey&gt;</b> is set to PASSWORD. <br />These are the user name and password<br />that is needed for the PASSWORD grant.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">8</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.authorization.password.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">OAUTH2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">9</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.authorization.client-id.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">OAUTH2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The client ID.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">10</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.authorization.client-secret.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">OAUTH2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The client secret.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">11</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">	scl.authorization.scope.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">OAUTH2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The authorisation scope.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">12</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.auth_header.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>APIKEY</p>
+                                                                        <p> FLEXI_AUTH</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>The value to be set in the authorisation header. <br />This depends on the <b>scl.authentication.overwrite-swagger-definition</b> key.</p>
+                                                                        <p>For APIKEY authentication type:</p>
+                                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">If overwrite == true</a></span>
+                                                                            <div class="MCDropDownBody dropDownBody">
+                                                                                <p>The header will be sent as:</p>
+                                                                                <p><code>Authorization: Bearer &lt;Value&gt;</code>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">If overwrite == false</a></span>
+                                                                            <div class="MCDropDownBody dropDownBody">
+                                                                                <p>The key depends on the <b>first</b> security definition set in the Swagger, for example:</p>
+                                                                                <p><u>Swagger</u>
+                                                                                </p>
+                                                                                <p><code>securityDefinitions:</code>
+                                                                                </p>
+                                                                                <p class="CodeIndent1"><code>api_key:</code>
+                                                                                </p>
+                                                                                <p class="CodeIndent1">api_key2:</p>
+                                                                                <p>Then the request will be sent with header:</p>
+                                                                                <p><code>api_key: &lt;value&gt;</code>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p>For FLEXI_AUTH authentication type:</p>
+                                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">If overwrite == true</a></span>
+                                                                            <div class="MCDropDownBody dropDownBody">
+                                                                                <p>The header will be sent as:</p>
+                                                                                <p><code>Authorization: Bearer &lt;Value&gt;</code>
+                                                                                </p>
+                                                                                <p>&#160;</p>
+                                                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                    <tbody>
+                                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">This is the same behaviour as setting the property <code>scl.auth_header.Authorization.&lt;ClientKey&gt; = Bearer &lt;Value&gt;</code></td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.auth_header.<br />swagger=1234asdfklj124</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">13</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.auth_header.&lt;Security Key&gt;.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>APIKEY</p>
+                                                                        <p> FLEXI_AUTH</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">This is the additional header key on top of what is being defined in the Swagger definitions.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.auth_header.<br />Authorization.<br />&lt;ClientKey&gt; = &lt;Value&gt;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">14</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.auth.request.method.<br />&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">Yes when <b>scl.authentication.type = FLEXI_AUTH</b></td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The HTTP method to be used to call token endpoint URL.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">	^(POST|GET)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.auth.request.<br />method.swagger=POST</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">15</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.auth.request.header.<br />&lt;headerkey&gt;.&lt;ClientKey&gt;</td>
+                                                                    <td rowspan="2" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">Either one of this key is mandatory when <b>scl.authentication.type = FLEXI_AUTH</b></td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>The header values to call token endpoint URL.</p>
+                                                                        <p>The <code>&lt;headerkey&gt;</code> denotes the header key used to call token endpoint URL.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.auth.request.header.<br />Authorization.swagger=abc</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">16</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.auth.request.body.<br />&lt;jsonpath&gt;.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>The request body to call token endpoint URL.</p>
+                                                                        <p>The <code>&lt;jsonpath&gt;</code> denotes the flattened path of the request field in the JSON request body used to call token endpoint URL.</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.auth.request.body.<br />Authorization.swagger=abc</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">17</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.auth.response.<br />token-path.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>This key determines the token extraction from response body (from token endpoint call). 
+</p>
+                                                                        <p>The value is flattened JSON path of the token’s key in response body.
+</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>scl.auth.response.token-path.swagger=token.path</p>
+                                                                        <p>For example:</p>
+                                                                        <p>{ “token” : <br />{ “path”: “ThisIsTheAccessToken”} }</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">18</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.auth.response.cache.<br />timeout.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>The token cache time out in seconds.</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">A hard limit of 1 hour has been set for the cache time out. Any value set above the hard limit will reset back to 1 hour.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^([0-9]|[1-9][0-9]+)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.auth.response.<br />cache.timeout.swagger=1</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">19</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.auth.response.<br />cache.timeout-path.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>This key determines the token cache extraction from response body (from token endpoint call), if the response body contains the token timeout value.</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                        <ul>
+                                                                                            <li class="MadCap1">
+                                                A hard limit of 1 hour has been set for the cache time out. Any value set above the hard limit will reset back to 1 hour.
+</li>
+                                                                                            <li class="MadCap1">Some token servers does not return cache time out value.</li>
+                                                                                            <li class="MadCap1">
+                                                The configuration only supports unit second. Some token servers does not return the value in second.
+                                            </li>
+                                                                                            <li class="MadCap1">
+                                                If both <b>cache.timeout</b> and <b>cache.timeout-path</b> are defined, the <b>cache timeout-path</b> will take precedence.
+                                            </li>
+                                                                                        </ul>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.auth.response.cache.timeout-path.swagger=token.timeout_path</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">20</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">scl.auth.inline.<br />&lt;jsonpath&gt;.
+&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">INLINE_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>The value of credential in the request body.
+
+</p>
+                                                                        <p>The &lt;jsonpath&gt; denotes the flatten path and key to this field or credential in the JSON request body.</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The INLINE_AUTH configuration will override Proxy configuration if the same JSON path is configured for both.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                                            <div class="codeSnippetCaption">
+                                                                                <p>Example of the request payload:</p>
+                                                                            </div>
+                                                                            <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>scl.auth.inline.authorization.Username.swagger=admin<br /><br />scl.auth.inline.authorization.Password.swagger=password<br /><br />The request results:<br /><br />&#160;&#160;&#160;&#160;{<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;….<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"authorization": {<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"Username": "admin",<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"Password":"password"<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;….<br /><br />&#160;&#160;&#160;&#160;}</code></pre>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">scl.auth.inline.auth.username.swagger=admin scl.auth.inline.auth.password.swagger=password</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Datasource Proxy configurations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col style="width: 72px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 487px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">No.</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Key</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Mandatory</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Description</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Default value</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Valid values for Server Connection Profile (regular expression, not case sensitive)</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Example</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">1</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.dsproxy.mode.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">This key indicates whether Proxy Add-on is enabled. <br />When set to true, it will retrieve the credentials for the <br />proxy to authenticate itself against the data source.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">False</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">^(TRUE|FALSE)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.dsproxy.mode.<br />swagger=true</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.dsproxy.json.path.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">This key is used to set the path to inject the credentials. <br />The JSON path is separated by a full stop (.).</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.dsproxy.json.<br />path.swagger=<br />Authentication.custom</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">3</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.dsproxy.credentials.&lt;identifier&gt;.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>This key can exist as one or several keys by defining a<br />unique identifier for each key. All identifiers will be<br /> combined into a JSON map. </p>
+                                                                        <p>For example:</p>
+                                                                        <p class="CodeIndent1">scl.dsproxy.credentials.username.swagger=admin</p>
+                                                                        <p class="CodeIndent1">scl.dsproxy.credentials.password.swagger=password</p>
+                                                                        <p>will be sent as:</p>
+                                                                        <p class="CodeIndent1">{</p>
+                                                                        <p class="CodeIndent1">"username":"admin",</p>
+                                                                        <p class="CodeIndent1">"password":"password",</p>
+                                                                        <p class="CodeIndent1">}</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">scl.dsproxy.credentials.<br />username.swagger=admin</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">4</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">scl.dsproxy.encode-credentials.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>This key indicates whether to encode the credentials in base64. </p>
+                                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+Example 1: SCL with encode = true</a></span>
+                                                                            <div class="MCDropDownBody dropDownBody">
+                                                                                <p class="CodeIndent1">scl.dsproxy.mode.swagger=true</p>
+                                                                                <p class="CodeIndent1">scl.dsproxy.json.path.swagger=Authentication.Custom</p>
+                                                                                <p class="CodeIndent1">scl.dsproxy.credentials.username.swagger=admin</p>
+                                                                                <p class="CodeIndent1">scl.dsproxy.credentials.password.swagger=password</p>
+                                                                                <p class="CodeIndent1">scl.dsproxy.encode-credentials.swagger=true</p>
+                                                                                <p>The  request results:</p>
+                                                                                <p class="CodeIndent1">POST /apiendpoint HTTP/1.1</p>
+                                                                                <p class="CodeIndent1">Host: tokenendpoint.url</p>
+                                                                                <p class="CodeIndent1">Content-Type: application/json</p>
+                                                                                <p class="CodeIndent1">&#160;</p>
+                                                                                <p class="CodeIndent1">{</p>
+                                                                                <p class="CodeIndent3">"Authentication": {</p>
+                                                                                <p class="CodeIndent4">"Custom": "ewoJInVzZXJuYW1lIjoiYWRtaW4iLAoJInBhc3N3b3JkIjoicGFzc3dvcmQiCn0="</p>
+                                                                                <p class="CodeIndent3">},</p>
+                                                                                <p class="CodeIndent3">"RequestPayload": {...},</p>
+                                                                                <p class="CodeIndent1">}</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Example 2: SCL with encode = false</a></span>
+                                                                            <div class="MCDropDownBody dropDownBody">
+                                                                                <p class="CodeIndent1">scl.dsproxy.mode.swagger=true</p>
+                                                                                <p class="CodeIndent1">scl.dsproxy.json.path.swagger=Authentication.custom</p>
+                                                                                <p class="CodeIndent1">scl.dsproxy.credentials.username.swagger=admin</p>
+                                                                                <p class="CodeIndent1">scl.dsproxy.credentials.password.swagger=password</p>
+                                                                                <p class="CodeIndent1">scl.dsproxy.encode-credentials.swagger=false</p>
+                                                                                <p>The request results- credentials are not encoded:</p>
+                                                                                <p class="CodeIndent1">POST /apiendpoint HTTP/1.1</p>
+                                                                                <p class="CodeIndent1">Host: tokenendpoint.url</p>
+                                                                                <p class="CodeIndent1">Content-Type: application/json</p>
+                                                                                <p class="CodeIndent1">&#160;</p>
+                                                                                <p class="CodeIndent1">{</p>
+                                                                                <p class="CodeIndent3">"Authentication": {</p>
+                                                                                <p class="CodeIndent4">"Custom": "{\"username\":\"admin\",\"password\":\"password\"}"</p>
+                                                                                <p class="CodeIndent3">},</p>
+                                                                                <p class="CodeIndent3">"RequestPayload": {...},</p>
+                                                                                <p class="CodeIndent1">}</p>
+                                                                                <p>&#160;</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p>&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">True</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">^(TRUE|FALSE)$</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">scl.dsproxy.encode-credentials.swagger=true </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">CSRF configurations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 72px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 487px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">No.</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Property</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Mandatory?</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Description</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Valid values for Server Connection Profile (regular expression, not case sensitive)</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">1</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.csrf.token.source.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>This defines how to extract the CSRF token. The valid values are:</p>
+                                                                        <ul>
+                                                                            <li class="MadCap_Table_List"><![CDATA[
+                                        ]]><b>CUSTOM-HEADER</b> - The value of the <b>csrf.token.key</b> property is used as CSRF token value. This value is used when the type of CSRF protection is custom header.
+                                    </li>
+                                                                            <li class="MadCap_Table_List"><![CDATA[
+                                        ]]><b>HEADER</b> - An HTTP request is made to a CSRF token URL. The CSRF token is extracted from an header of the returned response.
+                                    </li>
+                                                                            <li class="MadCap_Table_List"><b>
+                                        COOKIE</b> - An HTTP request is made to a CSRF token URL. The CSRF token is extracted from a cookie set by the returned response.
+                                    </li>
+                                                                            <li class="MadCap_Table_List"><b>
+                                        BODY</b>   - An HTTP request is made to a CSRF token URL. The CSRF token is extracted from the body of the returned response. The body should be in JSON format.
+                                    </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.csrf.token.key.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>This defines the name of the placeholder to extract the CSRF token from. The content of this property depends on the value of <b>scl.csrf.token.source</b> property.</p>
+                                                                        <p>If the value of <b>scl.csrf.token.source</b> is:</p>
+                                                                        <ul>
+                                                                            <li class="MadCap_Table_List"><b>
+                                        CUSTOM-HEADER</b> - this property contains the value of the CSRF token.
+                                    </li>
+                                                                            <li class="MadCap_Table_List"><b>
+                                        HEADER</b> - this property contains the name of the header holding the CSRF token.                                   </li>
+                                                                            <li class="MadCap_Table_List"><b>
+                                        COOKIE</b> - this property contains the name of the cookie holding the CSRF token.
+                                    </li>
+                                                                            <li class="MadCap_Table_List"><b>
+                                        BODY</b> - this property contains the JSON pointer to the CSRF token. The JSON pointer syntax is defined in RFC6901.
+</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">3</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.csrf.token.url.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The token URL.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">	^(http(s)?):\/\/.*$</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">4</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.csrf.token.http.method.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The token HTTP&#160;method.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">5</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.csrf.request.field.type.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The request field type.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">6</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">scl.csrf.header.name.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">The header name.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Miscellaneous configurations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 72px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 487px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" style="width: 137px;" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">No.</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Property</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Mandatory?</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Description</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Default value</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">	Valid values for Server Connection Profile (regular expression, not case sensitive)</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">1</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.allow.http.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">This determines whether to allow non-SSL connections.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">false</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">	^(TRUE|FALSE)$</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">scl.path-param.whitelist-regex.&lt;ClientKey&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">The path parameter regular expression.</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">3</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">com.experian.eda.crypto.<br />cfgfacade.encrypted.properties</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>This defines which of the properties are encrypted.</p>
+                                                                        <p>If a property is tagged as sensitive, it will be encrypted on the first access to the file, provided the encryption is enabled (in the <b>crypto.cfgfacade.properties</b> file).</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">This key is not available for Server Connection Profile</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">com.experian.eda.crypto.cfgfacade.encrypted.properties=scl.password.*, scl.auth_header.*, scl.authorization.client-secret.*</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">N/A</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Placeholder Variables</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col style="width: 53px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 129px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 225px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">&#160;</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Property</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Mandatory</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Supported scl.authentication.type</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Description</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Example</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">1</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">!{CORRELATION-ID}</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">APIKEY, FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>The system correlation ID value.</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">This property is only used in the Experian Cloud-based environment, where the REST call component executes in the BPS runtime server.
+
+</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td rowspan="2" class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p rowspan="2"><b>Example 1 (for Flexible Authentication)
+</b>
+                                                                        </p>
+                                                                        <p rowspan="2" class="code">scl.auth.request.header.X-User-Domain.swagger=!{USER-DOMAIN}
+</p>
+                                                                        <p rowspan="2" class="code">scl.auth.request.header.X-Correlation-Id.swagger=!{CORRELATION-ID}
+</p>
+                                                                        <p rowspan="2">This is sample configuration for Dynamic API Key.
+
+In this case, the correlation ID and user domain will be sent during the access token retrieval.
+</p>
+                                                                        <p rowspan="2"><![CDATA[
+
+
+]]><b>Example 2 (for Flexible Authentication)</b></p>
+                                                                        <p rowspan="2" class="code">
+
+scl.auth_header.X-User-Domain.swagger=!{USER-DOMAIN}
+</p>
+                                                                        <p rowspan="2" class="code">scl.auth_header.X-Correlation-Id.swagger=!{CORRELATION-ID}
+</p>
+                                                                        <p rowspan="2">This is a sample of adding correlation ID and user domain during the actual request.
+
+
+
+</p>
+                                                                        <p rowspan="2"><b>Example 3 (for APIKey Authentication)
+</b>
+                                                                        </p>
+                                                                        <p rowspan="2"><code>
+scl.auth_header.X-User-Domain.swagger=!{USER-DOMAIN}
+</code>
+                                                                        </p>
+                                                                        <p rowspan="2">or
+</p>
+                                                                        <p rowspan="2"><code>
+scl.auth_header.X-Correlation-Id.swagger=!{CORRELATION-ID}</code>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">!{USER-DOMAIN}</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">APIKEY, FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>The system user domain value.</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">This property is only used in the Experian Cloud-based environment, where the REST call component executes in the BPS runtime server.
+</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">3</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">	!{FLEXI-TOKEN}</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">FLEXI_AUTH</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>The token returned by the authentication service.</p>
+                                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">This property can be used in both the Experian Cloud-based environment and On-premise solution.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                        <p class="code">scl.auth_header.swagger=!{FLEXI-TOKEN}
+</p>
+                                                                        <p class="code">scl.auth_header.X-API-LOGIN-TOKEN.swagger=Bearer !{FLEXI-TOKEN}</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <p class="SubHeading">Supported Authentications</p>
+                                                <p>The following sample configurations show the required properties for the different types of authentication.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Basic Authentication</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt;=BASIC</p>
+                                                        <p class="CodeIndent1">scl.username.&lt;ClientKey&gt;=MyUsername</p>
+                                                        <p class="CodeIndent1">scl.password.&lt;ClientKey&gt;=MyPassword</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Bearer Authentication</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt;=APIKEY</p>
+                                                        <p class="CodeIndent1">scl.authentication.overwrite-swagger-definition.&lt;ClientKey&gt;=true</p>
+                                                        <p class="CodeIndent1">scl.auth_header.&lt;ClientKey&gt;=MyBearerToken</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">API&#160;Key Authentication - default</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt;=APIKEY</p>
+                                                        <p class="CodeIndent1">scl.authentication.overwrite-swagger-definition.&lt;ClientKey&gt;=false</p>
+                                                        <p class="CodeIndent1"># API key must be present in Swagger security definitions</p>
+                                                        <p class="CodeIndent1">scl.auth_header.&lt;ClientKey&gt;=MyApiKeyToken</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">API&#160;Key Authentication - specific</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt;=APIKEY</p>
+                                                        <p class="CodeIndent1">scl.authentication.overwrite-swagger-definition.&lt;ClientKey&gt;=false</p>
+                                                        <p class="CodeIndent1"># API key must be present in Swagger security definitions</p>
+                                                        <p class="CodeIndent1">scl.auth_header.my_api_key.&lt;ClientKey&gt;=MyApiKeyToken</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">OAUTH2 Authentication - Client Credential Grant Authorisation</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="CodeIndent1">scl.host.&lt;ClientKey&gt; = https://mock-rest-server-secure.xxxx.net</p>
+                                                        <p class="CodeIndent1">scl.port.&lt;ClientKey&gt; = 443</p>
+                                                        <p class="CodeIndent1">scl.authentication.overwrite-swagger-definition.&lt;ClientKey&gt; = true</p>
+                                                        <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt; = OAUTH2</p>
+                                                        <p class="CodeIndent1">scl.authorization-server.token-endpoint.url.&lt;ClientKey&gt; = https://dev-xxxx.xxxx.com/oauth2/token</p>
+                                                        <p class="CodeIndent1">scl.authorization.client-id.&lt;ClientKey&gt; = xxxx</p>
+                                                        <p class="CodeIndent1">scl.authorization.client-secret.&lt;ClientKey&gt; = xxxx-xxxx</p>
+                                                        <p class="CodeIndent1">scl.authorization.scope.&lt;ClientKey&gt; = xxxx_groups</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">OAUTH2 Authentication - Password Credential Grant Authorisation</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="CodeIndent1">scl.host.&lt;ClientKey&gt; = https://mock-rest-server-secure.xxxx.net</p>
+                                                        <p class="CodeIndent1">scl.port.&lt;ClientKey&gt; = 443</p>
+                                                        <p class="CodeIndent1">scl.authentication.overwrite-swagger-definition.&lt;ClientKey&gt; = true</p>
+                                                        <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt; = OAUTH2</p>
+                                                        <p class="CodeIndent1">scl.authorization-server.token-endpoint.url.&lt;ClientKey&gt; = https://dev-xxxx.xxxx.com/oauth2/token</p>
+                                                        <p class="CodeIndent1">scl.authorization.grant-type.&lt;ClientKey&gt; = password</p>
+                                                        <p class="CodeIndent1">scl.authorization.client-id.&lt;ClientKey&gt; = xxxx</p>
+                                                        <p class="CodeIndent1">scl.authorization.client-secret.&lt;ClientKey&gt; = xxxx-xxxx</p>
+                                                        <p class="CodeIndent1">scl.authorization.scope.&lt;ClientKey&gt; = xxxx_groups</p>
+                                                        <p class="CodeIndent1">scl.authorization.username.&lt;ClientKey&gt;=user@xxxx.com</p>
+                                                        <p class="CodeIndent1">scl.authorization.password.&lt;ClientKey&gt;=Passwordxxxx</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Flexible Authentication</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="CodeIndent1">scl.authentication.overwrite-swagger-definition.&lt;ClientKey&gt; = true</p>
+                                                        <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt; = FLEXI_AUTH</p>
+                                                        <p class="CodeIndent1">scl.authorization-server.token-endpoint.url.&lt;ClientKey&gt; = https://dev-916286.oktapreview.com/flexi-auth/default/v1/token</p>
+                                                        <p class="CodeIndent1">scl.auth.request.method.&lt;ClientKey&gt; = POST</p>
+                                                        <p class="CodeIndent1">scl.auth.request.header.Content-Type.&lt;ClientKey&gt;=application/json</p>
+                                                        <p class="CodeIndent1">scl.auth.request.header.Authorization.&lt;ClientKey&gt;=Basic exlayLSDKyhsk34Ccs03CX==</p>
+                                                        <p class="CodeIndent1">scl.auth.response.token-path.&lt;ClientKey&gt;=access_token</p>
+                                                        <p class="CodeIndent1">scl.auth.response.cache.timeout-path.&lt;ClientKey&gt;=expiresIn</p>
+                                                        <p class="CodeIndent1">scl.host.&lt;ClientKey&gt; = https://mock-rest-server-secure.xxxx.net</p>
+                                                        <p class="CodeIndent1">scl.port.&lt;ClientKey&gt; = 443</p>
+                                                        <p class="CodeIndent1">scl.auth_header.&lt;ClientKey&gt;=!{FLEXI-TOKEN}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Inline Authentication</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="CodeIndent1">scl.host.&lt;ClientKey&gt; = https://mock-rest-server-secure.xxxx.net</p>
+                                                        <p class="CodeIndent1">scl.port.&lt;ClientKey&gt;= 443</p>
+                                                        <p class="CodeIndent1">scl.authentication.type.&lt;ClientKey&gt; = INLINE_AUTH</p>
+                                                        <p class="CodeIndent1">scl.auth.inline.jpath.username.&lt;ClientKey&gt; = admin</p>
+                                                        <p class="CodeIndent1">scl.auth.inline.jpath.password.&lt;ClientKey&gt; = password123</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

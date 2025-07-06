@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Supplementary Features|Scripting" data-mc-conditions="Product.Connectivity,Product.Connectivity and Enrichment,Product.Customer Management,Product.Originations,Product.Originations Lite,Product.Strategy Design Studio,Capability_Function Set.Common Data Management,Product.Pre-Screening,Product.Debt Management,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Derived Data Scripts overview" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Derived Data Scripts</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Example.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Header.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="_b0su4eHekKxUHhj_5J0Cw">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="_b0su4eHekKxUHhj_5J0Cw:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="heading1">Derived Data Scripts</h1>
+                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Although available for selection in all PowerCurve products, the Semi Structured Data Definition component is only supported in PowerCurve Strategy Management and PowerCurve Originations.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="bodytext">A Derived Data Script is used to create new derived variable values by applying mathematical, logical or string manipulation operations to existing Logical Data Source characteristics. A script can be used to transform existing data, perform calculations, derive new permanent data characteristics, or modify the value of existing data characteristics.</p>
+                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                <p>A Derived Data Script may be written as:</p>
+                                                                <p>'Residual Income' = 'Net Monthly Income' - 'Monthly Outgoings'</p>
+                                                                <p>For each record processed through the script, data values will be calculated for the characteristic <br /></p>
+                                                                <p>'Residual Income' from the input data supplied in characteristics 'Net Monthly income' and 'Monthly Outgoings'</p>
+                                                                <p>For example: 'Net Monthly Income' = 1200, 'Monthly Outgoings' = 1000</p>&#160;therefore 'Residual Income' = 1200-1000 = 200.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The characteristic for which values are being derived must already exist in the Logical Data Source.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Overview</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">The user creates scripts by entering text into a script editor where mathematical, logical or string manipulation operations are applied to Logical Data Source characteristics, (<a id="h2061" class="jumpxreftemplate" title="Operators and functions" href="Operatorsandfunctions.htm" target="_self" alt="Operators and functions">Operators and functions)</a>.  </p>
+                                                        <p class="bodytext">The script editor displays characteristic names, operators, command verbs, etc., in different colours. </p>
+                                                        <p class="bodytext">The script editor has basic text manipulation such as selecting blocks of text to cut, copy, paste and delete.</p>
+                                                        <p class="bodytext">As the script must follow certain syntax rules there is an option to check the syntax of the script. For guidelines on some of the script syntax rules see <a id="h2087" class="jumpxreftemplate" title="Guidelines on script syntax" href="Guidelinesonscriptsyntax.htm" target="_self" alt="Guidelines on script syntax">Guidelines on script syntax</a>.</p>
+                                                        <p class="bodytext">The script syntax must be valid before any testing can be carried out. </p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>Any number contained in a Float characteristic is a binary representation of its decimal counterpart. Therefore, depending on the numbers involved, the result of the calculation may only be an approximation. </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>An ArrayIndexOutOfBoundsException trace is being thrown in runtime if ADDELEMENT/SETSIZE is not set for a dynamic array. Therefore, users must use ADDELEMENT/SETSIZE to initialise a dynamic array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Edit</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Editing a script involves entering the script content using the correct language and according to the correct syntax and grammar. Scripts can be edited, compiled and tested in a script editor. </p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Placeholders in functions</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">When the user first drags a function into a script the places intended for the variables are marked by short expressions such as '&lt;expr&gt;' or '&lt;stmt&gt;'. The meaning of these expressions are as follows:</p>
+                                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                                    <thead>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Expression</th>
+                                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Meaning</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">array</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">The array characteristic that you want to perform the function on.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">array1</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a fixed-size or dynamic array to use as the first source.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">array2</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a fixed-size or dynamic array to use as the second source.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">base</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">The base of the logarithm to be calculated.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">bound</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a characteristic, a literal, or an expression that equates to an Integer between 1 and the size of the array. This may be used to limit the number of elements in the array that are tested for the maximum value. For example, if the array has a size of 12 and &lt;bound&gt; is set to 10, then the Max function will only test the first 10 elements.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">calculationProfile</td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">A reference to a Date Calculation Profile that is used with the DATEPADD and DATEPDIFF functions.<br />For more information refer to the <a href="Date_Profile_Chooser_dialog.htm">Date Profile Chooser dialog</a> topic.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">char</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a function on a string characteristic, the name of the characteristic on which the function is to be performed.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">class.method</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">The name of the external calls and method to call.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">code table</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a fixed-size or dynamic array containing the Decision Reason Codes to be looked up in the table given by &lt;decision reason code&gt;.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">const</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A whole number or a piece of script that returns a constant value.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">data view embedded array</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to an embedded array of the Data View into which the separate instance will be inserted.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">date</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a DAYOFWEEK function, the date for which the day of the week is to be found.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">date1</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a DAYS or MONTHS function, the date normally expected to be the earlier of the two, i.e. that will lead to a positive number being returned if it is the earliest.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">date2</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a DAYS or MONTHS function, the date normally expected to be later of the two, i.e. that leads to a positive number being returned if it is the latest.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">datePeriod</td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Is a keyword that is used in the DATEPADD and the DATEPDIFF functions. The datePeriod takes values of DAYS, MONTHS or YEARS, either hard-coded or as a string characteristic.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">day</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">Used in a TODATE and a ISVALID function.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">desc table</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a fixed-size or dynamic array that is used by the function to write the descriptions that correspond to the matching Decision Reason Codes.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">decision reason code</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to the name of the Decision Reason Code component used for the look up.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">decision set</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to the name of a Decision Set component that is used to sort the input tables in decision category priority order. A String array may also be specified for testing purposes</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">decision category</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a String characteristic which is used by the function to store the name of the highest priority decision category, obtained from the first row of the &lt;output table&gt;</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">decision text</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a String characteristic which is used by the function to store the description of the highest priority decision category, obtained from the first row of the &lt;output&gt;</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">dest</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a function operating on an array, the new array that is to be created by the function, containing the sorted or merged array(s)</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">divisor</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">The number by which you want to divide (or a piece of script that returns that number)</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">dynamic array</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a dynamic array</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">endDate</td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Is a date type characteristic that specifies the final date used in the function</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">expr</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">Any piece of script that returns either true or false or a number</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">givendate</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In the DATE function, the known date from which an unknown date is to be found (or a piece of script that returns that date)</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">lds</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a characteristic or array, which defines the separate instance to be inserted into the embedded array</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">ldm array</td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">A reference to a fixed-size or dynamic array of a Logical Data Model.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">length</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a SUBSTRING function, the length of the substring to be taken</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">max</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a characteristic, a literal, or an expression that equates to an Integer type, and which is used to define the maximum value which could be selected for the random number.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">modality</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">The characteristic that will hold the number of modes</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">modalValues</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">The characteristic that will hold a list of the modes</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">month</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">Used in TODATE and ISVALID function</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">multiple</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a rounding function, the input is rounded to a number divisible by the multiple</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">numberPeriods</td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Is a hard-coded value (supports zero and negative or positive values) or a characteristic of integer type that is used in the DATEPADD function.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">order</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a sort function, a letter code that denotes how the array is to be sorted</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">output table</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a String array, which is used by the function to store the merge of &lt;table1&gt; and &lt;table2&gt;</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">period</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a DATE function, the number of days after the given date that the date to be found is (or a piece of script that returns that number)</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">power</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a characteristic, a literal, or an expression that equates to a numeric type, and which is used to define the power</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">reason code table</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a String array which is used by the function to store the reason codes, obtained from the &lt;output table&gt;</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">script.filename</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">The name of the external script file</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">size</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a characteristic, a literal, or an expression that equates to an Integer, which is used to define the size of the dynamic array</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">start</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a SUBSTRING function, the position in the original string of the first character of the substring</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">startDate</td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">Is a date type characteristic that specifies the first date used in the function</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">stmt</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">Any piece of script that performs a task, such as assigning a value to one or more characteristics</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">table1</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a String array, which contains the values of the first decision results table</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">table2</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a String array, which contains the values of the second decision results table</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">tail</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In topping and tailing; the number of the highest entries to ignore</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">top</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In topping and tailing; the number of lowest entries to ignore</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">toptaildev or toptailstd</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In topping and tailing by standard deviations; the number of standard deviations from the mean outside of which values should be ignored</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">value</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">The individual value that is to be found in the given array (or a piece of script that returns that value)</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">value1</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a STRING function, the character string that will form the first part of the new string (or a piece of script that returns that string)</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">value2</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">In a STRING function, the character string that will form the second part of the new string (or a piece of script that returns that string)</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                                <p class="bodytext">variable_name</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                                <p class="bodytext">A reference to a characteristic or a string literal, which is the name of the required environment variable</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                                <p class="bodytext">year</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                                <p class="bodytext">Used in TODATE and ISVALID function</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Create a Derived Data Script </a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A Derived Data Script can be created from the Explorer window. </p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You will only be able to add a component type that has been allowed for the selected folder. If it is not allowed it will not be listed and therefore cannot be selected. </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To create a Derived Data Script </p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">From the Explorer window right click at the required folder level and select Add component.</li>
+                                                                    <li class="listnumber" value="2">Select Derived Data Script.</li>
+                                                                    <li class="listnumber" value="3">In the Create component dialog enter the name of the Derived Data Script.</li>
+                                                                    <li class="listnumber" value="4">If you wish to have the new component display in the Main editor on creation, ensure that the Open new components in component editor tick box is selected.</li>
+                                                                    <li class="listnumber" value="5">Click OK.<p class="listcontinue">The Derived Data Script editor will open allowing you to edit script, compile and test the Derived Data Script.<br />The Derived Data Script name will be listed in the Explorer window under the selected folder level. The component is identified by the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/1948.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="18" data-mc-height="18" src="Images/1948_thumb_0_150.jpg" alt="" tabindex="" /></a> icon.</p></li>
+                                                                </ol>
+                                                                <p class="bodytext">If you do not wish the editor to open, de-select the tick box. From the Explorer window select the Derived Data Script and select Open. </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="bodytext">See the topic <a id="h1901" class="jumpxreftemplate" title="Operators and functions" href="Operatorsandfunctions.htm" target="_self" alt="Operators and functions">Operators and functions</a> for details of the operators, functions and statements that can be used in the script editor.</p>
+                                                        <p class="procedureheading"><a name="edit_derived_data"></a>To edit a Derived Data Script</p>
+                                                        <p>With the Derived Data Script editor open you can add script freehand or using the required resources from the Resources window you can.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_characteristic"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add a characteristic to a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">The script editor must be open for editing.</p>
+                                                                <p class="procedureheading"><a name="auto_complete"></a>To add a characteristic using auto complete</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Press Ctrl+Space to display the list of all available Logical Data Sources and functions. <p class="listcontinue">or</p><p class="listcontinue">Press the quote (') key to display only the list of available Logical Data Sources.</p></li>
+                                                                    <li class="listnumber" value="2">Use the down arrow or mouse to select a data source from the list, and press enter. The data source is added to the script.</li>
+                                                                    <li class="listnumber" value="3">With the cursor positioned after the data source name, press the full stop key (.) to display the list of available characteristics:</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/list_char.png"><img class="MCPopupThumbnail img" data-mc-width="390" data-mc-height="114" src="../Images/list_char_thumb_0_150.png" tabindex="" /></a>
+                                                                    <br />
+                                                                    <li class="listnumber" value="4">Use the down arrow or mouse to select a characteristic from the list, and press enter. The characteristic is added to the script.</li>
+                                                                    <li class="listnumber" value="5">If the selected characteristic contains further child characteristics (such characteristics are identified by not having a closing quote (') after the name), you can again press the full stop key (.) to display the list of available characteristics.</li>
+                                                                    <li class="listnumber" value="6">If the selected characteristic is an array characteristic (such characteristics are identified by brackets [ ] after the name), you can position the cursor inside the brackets and then use auto completion to add a characteristic for the index, if dynamic indexing is required (as opposed to using static, constant numbers).</li>
+                                                                </ol>
+                                                                <p class="procedureheading"><a name="resources_window"></a>To add a characteristic to a script from the Resources window</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Click on the Expand (+) button to display the contents of the Logical Data Source in the Resources window.</li>
+                                                                    <li class="listnumber" value="2">Drag the required Logical Data Source and drop it onto the script at the required position.</li>
+                                                                    <li class="listnumber" value="3">The Select Characteristic dialog opens</li>
+                                                                    <li class="listnumber" value="4">In the Search field <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/search_characteristic.jpg"><img class="MCPopupThumbnail img" data-mc-width="60" data-mc-height="20" src="../Images/global/search_characteristic_thumb_0_150.jpg" tabindex="" /></a> type the word or part of a word that makes up the name of the characteristic.<br />The Select Characteristic dialog will focus in on a particular characteristic or set of characteristics that match this word.<br /></li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">If the Select Characteristic dialog is displaying the characteristics in a tree view, the Logical Data Source will need to be fully expanded to see all the characteristics that match the word(s).</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <li class="listnumber" value="5">Select the characteristic you require.</li>
+                                                                    <li class="listnumber" value="6">Click OK. The Select Characteristic dialog closes and the characteristics you have selected will be added.</li>
+                                                                </ol>
+                                                                <p class="procedureheading"><a name="freehand"></a>To add a characteristic to a script freehand</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Enter the name of the characteristic.</li>
+                                                                </ol>
+                                                                <p class="bodytext">Characteristics must always be in single quotes (including the Logical Data Source name).</p>
+                                                                <p class="procedureheading"><a name="drag_and_drop"></a>To add an array characteristic to a script using drag and drop</p>
+                                                                <p class="bodytext">You can add an array characteristic to a script using auto complete, or you can use drag and drop as described here. Drag and drop is appropriate primarily for adding constant arrays (see <a id="h8474" class="jumpxreftemplate" title="Declaring characteristic variables within scripts" target="_self" alt="Declaring characteristic variables within scripts" href="Declaringcharacteristicvariableswithinscripts.htm">Declaring characteristics variables within a script</a> for more on this).</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Click on the Expand (+) button to display the contents of the Logical Data Source in the Resources window.</li>
+                                                                    <li class="listnumber" value="2">Drag the required Logical Data Source and drop it onto the script at the required position.</li>
+                                                                    <li class="listnumber" value="3">The Select Characteristic dialog opens.</li>
+                                                                    <li class="listnumber" value="4">Locate the required array element and click on the OK button.</li>
+                                                                    <ul>
+                                                                        <li class="listnumber">when selecting a leaf characteristic array, the syntax will be:<br></br>'temp.data[1]'</li>
+                                                                        <li class="listnumber">when selecting a leaf characteristic array within a group array, the syntax will be:<br />'temp.array[1].data[1]'</li>
+                                                                    </ul>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The above syntax examples can be manually changed to use other characteristics to define the desired array index. See following syntax example: 'temp.array'['temp.index1'].'data['temp.index2']'</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </ol>
+                                                                <p class="bodytext">The Select Characteristic dialog will close and the array characteristic you have chosen will be added to the script.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Copy items within a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Single text items or contiguous strings of text items can be copied and pasted in a script using standard keyboard copy and paste facilities.</p>
+                                                                <p class="procedureheading">To copy script item(s)</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">The script must be open for editing.</li>
+                                                                    <li class="listnumber" value="2">Highlight the required script item or string of items.</li>
+                                                                    <li class="listnumber" value="3">Press Ctrl+C to copy the item(s).</li>
+                                                                    <li class="listnumber" value="4">Click on the point in the script you wish to copy to.</li>
+                                                                    <li class="listnumber" value="5">Press Ctrl+V to paste.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The item(s) will be copied.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Use auto complete within a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Users can create scripts more quickly by using auto complete to locate specific functions, data sources and characteristics. Auto complete is context sensitive, in that it takes into account the character preceding the cursor in filtering what options are displayed to the user.</p>
+                                                                <p class="procedureheading">To launch auto complete</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Press Ctrl+Space to display the list of all available Logical Data Sources, characteristics, and/or functions. <p class="listcontinue">or</p><p class="listcontinue">Press the quote (') key to display only the list of available Logical Data Sources.</p><p class="listcontinue">Which Logical Data Sources are displayed depends on the publishing rules associated with the folder in which you are creating the script. Logical data sources and characteristics are displayed in alphabetical order; functions are arranged in the same order in which they appear in the Palette.</p><p class="listcontinue"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/7050.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="223" data-mc-height="205" src="Images/7050_thumb_0_150.jpg" alt="" tabindex="" /></a></p></li>
+                                                                    <li class="listnumber" value="2">Use the down arrow or mouse to select a data source or function from the list, and press enter. The data source or function is added to the script.</li>
+                                                                    <li class="listnumber" value="3">If a data source was selected:<br />With the cursor positioned after the data source name, press the full stop key (.) to display the list of available characteristics:<p class="listcontinue"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/7051.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="390" data-mc-height="114" src="Images/7051_thumb_0_150.jpg" alt="" tabindex="" /></a></p></li>
+                                                                    <li class="listnumber" value="4">Use the down arrow or mouse to select a characteristic from the list, and press enter. The characteristic is added to the script.</li>
+                                                                    <li class="listnumber" value="5">If the selected characteristic contains further child characteristics (such characteristics are identified by a full stop (.) after the name), you can again press the full stop key (.) to display the list of available characteristics.</li>
+                                                                </ol>
+                                                                <p class="procedureheading">To Filter list contents</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">To filter the contents of a list, begin typing in the name of an item; the list of displayed items is narrowed as you type:<p class="listcontinue"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/6697.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="345" data-mc-height="152" src="Images/6697_thumb_0_150.jpg" alt="" tabindex="" /></a></p></li>
+                                                                    <li class="listnumber" value="2">Use the down arrow or mouse to select an item from the list, and press enter. The item is added to the script.</li>
+                                                                </ol>
+                                                                <p class="bodytext">You can continue using auto complete to build the script; for more information see using auto complete in context.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="use_autocomplete"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Use auto complete in context</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">The contents of the auto complete drop down list depends on the position of the cursor in the line of script, and what text precedes the cursor. </p>
+                                                                <ul class="listbullet">
+                                                                    <li class="listbullet">If you press Ctrl+Space at the beginning of a line, the drop down list appears with the list of all available Logical Data Sources, characteristics, and functions. </li>
+                                                                    <li class="listbullet">If you press the quote (') key, only the list of available Logical Data Sources is displayed.</li>
+                                                                    <li class="listbullet">If you select a Logical Data Source from the list, it will be entered into the script. If you then press the full stop, only the list of characteristics associated with that Logical Data Source is displayed:<p class="listcontinue"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/6698.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="389" data-mc-height="133" src="Images/6698_thumb_0_150.jpg" alt="" tabindex="" /></a></p><p class="listcontinue">The nature of the characteristic is displayed: if it ends in a quote (‘), it is a leaf characteristic; if it ends in a [ ] it is an array characteristic; if it ends in a full stop (.) there are further leaf characteristics after it.</p></li>
+                                                                    <li class="listbullet">Similarly, if you type the Logical Data Source name into the script freehand (with no full stop after it), then press the full stop (.) key, only the list of characteristics associated with that Logical Data Source is displayed.</li>
+                                                                    <li class="listbullet">Ctrl+Space can be used at any point in the script to launch auto-complete, and will calculate and display a list of possible options depending on the cursor position. If no auto-complete options are applicable then no list will be displayed.</li>
+                                                                    <li class="listbullet">When you have an array characteristic -- such as 'Application.Missing info'[ ] -- you can position the cursor within the brackets, and press the quote (') key, then select a Logical Data Source and characteristic within the array brackets.</li>
+                                                                    <li class="listbullet">After completing a part of the script in the editor, you must add a space before Ctrl+Space or the quote (') key will again activate auto complete:<p class="listcontinue"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/6699.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="525" data-mc-height="127" src="Images/6699_thumb_0_150.jpg" alt="" tabindex="" /></a></p></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_lds"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add a Logical Data Source to a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">The script must be open for editing.</p>
+                                                                <p class="procedureheading">To add a Logical Data Source to a script</p>
+                                                                <ol>
+                                                                    <li value="1">Press the quote (') key to display only the list of available Logical Data Sources.</li>
+                                                                    <li value="2">Use the down arrow or mouse to select the Logical Data Source from the list and press enter. The Logical Data Source is added to the script.</li>
+                                                                </ol>
+                                                                <p>A Logical Data Source needs to be added to a script if, for example, the Logical Data Source is being used by a User Defined Function that is being called by the script.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Add a Semi Structured Data Definition characteristic to a script by writing a Get and Set Payload script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="procedureheading">To add a Semi Structured Data Definition (SSDD) characteristic to a script by writing a Get and Set payload script</p>
+                                                                <p>The script must be open for editing</p>
+                                                                <p><strong>Get SSDD Payload</strong>
+                                                                </p>
+                                                                <ol>
+                                                                    <li value="1">
+                                                                        <p>The SSDD payload can be obtained by assigning its characteristic to another string or a SSDD characteristic.</p>
+                                                                    </li>
+                                                                </ol>
+                                                                <p class="CodeIndent2">// assign SSDD characteristic to another string or SSDD characteristic</p>
+                                                                <p class="CodeIndent2"><span style="color: #008000;">'LDS.str'</span> = <span style="color: #008000;">'LDS.ssdd'</span></p>
+                                                                <p class="CodeIndent2"><span style="color: #008000;">'LDS.ssdd1'</span> = <span style="color: #008000;">'LDS.ssdd2'</span></p>
+                                                                <p><strong>Set SSDD Payload</strong>
+                                                                </p>
+                                                                <ol>
+                                                                    <li value="1">
+                                                                        <p>The SSDD payload can be set by assigning a string literal or string characteristic value to a SSDD characteristic</p>
+                                                                    </li>
+                                                                </ol>
+                                                                <p class="CodeIndent2">// assign a constant value expression to SSDD</p>
+                                                                <p class="CodeIndent2"><span style="color: #008000;">'LDS.ssdd'</span> = <span style="color: #ff8c00;">"{\"rootChar1\":2}"</span></p>
+                                                                <p class="CodeIndent2">// assign string characteristic to SSDD</p>
+                                                                <p class="CodeIndent2"><span style="color: #008000;">'LDS.ssdd'</span> = <span style="color: #008000;">'LDS.str'</span></p>
+                                                                <ol data-mc-continue="true">
+                                                                    <li value="2">
+                                                                        <p>Add the Semi Structured Data Definition Logical Data Source characteristic using one of the following:</p>
+                                                                    </li>
+                                                                </ol>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p><a href="#freehand">freehand</a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><a href="#auto_complete">auto complete</a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><a href="#drag_and_drop">drag and drop</a>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Validation is not supported for the Semi Structured Data Definition payload script.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_operator"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add an operator or function to a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Operators or functions can be added to a script by using the auto complete functionality; by dragging and dropping from the Palette; or by creating the script freehand.</p>
+                                                                <p class="bodytext">The script must be open for editing.</p>
+                                                                <p class="procedureheading">To add a function using auto complete</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Click on the point in the script that you wish to add or insert the function. Place the cursor either at the beginning or end of the line.</li>
+                                                                    <li class="listnumber" value="2">Press the Ctrl+Space buttons to display the available functions.</li>
+                                                                    <li class="listnumber" value="3">A drop down list of all available Logical Data Sources, characteristics, and functions is displayed. (See Using auto complete within a script for more details.)</li>
+                                                                    <li class="listnumber" value="4">Select the function you want to add, and press enter.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The function will be added to the script in addition to any parameters that are required by the function.</p>
+                                                                <p class="procedureheading">To add an operator or function to a script from the Palette</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Click on the Expand (+) button in the Palette to expand either the Operators or Functions.</li>
+                                                                    <li class="listnumber" value="2">Drag the required function or operator and drop it onto the script at the required position.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The operator or function will be added to the script.</p>
+                                                                <p class="procedureheading">To add an operator or function to a script freehand</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Type the operator or function in upper or case. </li>
+                                                                    <li class="listnumber" value="2">Where the operator or function is followed by script text, ensure there is a space after the function or operator.</li>
+                                                                    <li class="listnumber" value="3">Where the operator or function is preceded by text, ensure there is a space before the function or operator.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The operator or function will be added to the script.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                <p>A OR B is valid</p>
+                                                                                <p>AORB is invalid.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_calc_profile"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add a Date and Time function to a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="procedureheading">To add a Date and Time function</p>
+                                                                <ol>
+                                                                    <li value="1">Click on the Expand (+) button to display the contents of the Functions - Date &amp; Time function in the Palette window.</li>
+                                                                    <li value="2">Drag and drop either the Add/Subtract From Date function (DATEPADD), or the Duration Between Two Dates function (DATEPDIFF) onto the script at the required position.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/datepadd.jpg"><img class="MCPopupThumbnail img" data-mc-width="565" data-mc-height="10" src="Images/datepadd_thumb_0_150.jpg" tabindex="" /></a><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/datepdiff.jpg"><img class="MCPopupThumbnail img" data-mc-width="565" data-mc-height="10" src="Images/datepdiff_thumb_0_150.jpg" tabindex="" /></a></li>
+                                                                </ol>
+                                                                <ol data-mc-continue="true">
+                                                                    <li value="3">Replace the text and the chevrons with appropriate expressions, statements or constants until only &lt;calculationProfile&gt; remains.</li>
+                                                                </ol>
+                                                                <p class="procedureheading">To add a Date Calculation Profile using the Palette</p>
+                                                                <ol>
+                                                                    <li value="1">Click on the Expand (+) button to display the contents of the Date - Calculation - Profile in the Palette window.</li>
+                                                                    <li value="2">Drag and drop the Date Calculation Profiles on the script.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/data_calculation_profile.png"><img class="MCPopupThumbnail img" data-mc-width="471" data-mc-height="45" src="Images/data_calculation_profile_thumb_0_150.png" tabindex="" /></a><br />The Date Proflie Chooser will be displayed.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/date_profile_chooser.png"><img class="MCPopupThumbnail img" data-mc-width="388" data-mc-height="348" src="Images/date_profile_chooser_thumb_0_150.png" tabindex="" /></a></li>
+                                                                    <li value="3">Select the required calculation profile</li>
+                                                                    <li value="4">Click OK.</li>
+                                                                </ol>
+                                                                <p class="procedureheading">To add a Date Calculation Profile using auto complete</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Click on the point in the script where the &lt;calculation profile&gt; is displayed.</li>
+                                                                    <li class="listnumber" value="2">Press the Ctrl+Space.<br />A drop down list of the available Date Calculation Profiles will be displayed.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/auto-complete_profile.png"><img class="MCPopupThumbnail img" data-mc-width="208" data-mc-height="61" src="Images/auto-complete_profile_thumb_0_150.png" tabindex="" /></a></li>
+                                                                    <li value="3">Select the required calculation profile.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Auto complete for the Date Calculation Profiles  will not work if auto complete is activated outside of the range of the function, or outside of the range of the date &lt;calculationProfile&gt; function parameter.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <ol class="listnumber" data-mc-continue="true">
+                                                                    <li value="4">Press Enter.</li>
+                                                                </ol>
+                                                                <p>The function will be added to the script.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Add </a><a name="add_Segmentation"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Segmentation functions to script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_boolean"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add a Boolean Expression to a script</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <p class="bodytext">The script must be open for editing.</p>
+                                                                        <p class="ProcedureHeading">To add a Boolean Expression to a script from the Resources window</p>
+                                                                        <ol class="listnumber">
+                                                                            <li class="listnumber" value="1">Click on the Expand (+) button to display the contents of Boolean Expression in the Resources window.</li>
+                                                                            <li class="listnumber" value="2">Drag the required Boolean Expression and drop it onto the script at the required position.</li>
+                                                                        </ol>
+                                                                        <p class="bodytext">The Boolean Expression will be added to the script.</p>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">The following is an example of how this will look in the script editor:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/boolean_expression_eg.png"><img class="MCPopupThumbnail img" data-mc-width="421" data-mc-height="12" src="Images/boolean_expression_eg_thumb_0_150.png" tabindex="" /></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_class_set"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add a Class Set to a script</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <p class="bodytext">The script must be open for editing.</p>
+                                                                        <p class="procedureheading">To add a Class Set to a script from the Resources window</p>
+                                                                        <ol class="listnumber">
+                                                                            <li class="listnumber" value="1">Click on the Expand (+) button to display the contents of the Class Set library in the Resources window.</li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                            <p>There are two types of Class Set, one based on a Logical Data Source the other based on a Logical Data Model. <br />The type of Class Set used in the script will affect the number of parameters that need to be defined in the Derived Data Script.</p>
+                                                                                            <ul>
+                                                                                                <li>Logical Data Source Class Set - 1 parameter, (name of the Class Set)<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/class_set_1_parameter.png"><img class="MCPopupThumbnail img" data-mc-width="327" data-mc-height="18" src="Images/class_set_1_parameter_thumb_0_150.png" tabindex="" /></a><br /></li>
+                                                                                                <li>Logical Data Model Class Set - 2 parameters, (name of the Class Set and instance of the Logical Data Model being used in the Logical Data Source)<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/class_set_2_parameter.png"><img class="MCPopupThumbnail img" data-mc-width="646" data-mc-height="18" src="Images/class_set_2_parameter_thumb_0_150.png" tabindex="" /></a></li>
+                                                                                            </ul>
+                                                                                            <p>If the Class Set used in the script is undefined, (that is a characteristic has not been selected) it will follow the same behaviour as a Logical Data Source Class Set and only be added with 1 parameter (name of the Class Set). <br />If the Class Set is later defined against a Logical Data Model characteristic, the user will need to update the number of parameters defined in the script or re-add the Class Set to the script.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </ol>
+                                                                        <p class="SubHeading">To add a Logical Data Source Class Set</p>
+                                                                        <ol class="listnumber" start="1">
+                                                                            <li class="listnumber" value="1">Drag the required Logical Data Source Class Set and drop it onto the script at the required position.<br />The Class Set that has been created using a Logical Data Source will be added to the script.</li>
+                                                                        </ol>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">The following is an example of how this will look in the script editor:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/class_set_1_parameter.png"><img class="MCPopupThumbnail img" data-mc-width="327" data-mc-height="18" src="Images/class_set_1_parameter_thumb_0_150.png" tabindex="" /></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="SubHeading">To add a Logical Data Model Class Set<br /></p>
+                                                                        <ol class="listnumber" start="1">
+                                                                            <li class="listnumber" value="1">Drag the required Logical Data Model Class Set and drop it onto the script at the required position.<br />The studio will open the Select Characteristics dialog and list those Logical Data Sources that use the Logical Data Model characteristic that has been used to create the Logical Data Model Class Set.<br /></li>
+                                                                            <li class="listnumber" value="2">Select the instance of the characteristic that is required for the script.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SC_class_set_instance.png"><img class="MCPopupThumbnail img" data-mc-width="388" data-mc-height="274" src="Images/SC_class_set_instance_thumb_0_150.png" tabindex="" /></a></li>
+                                                                            <li class="listnumber" value="3">Click OK.<br />The Class Set that has been created using a Logical Data Model will be added to the script.</li>
+                                                                        </ol>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">The following is an example of how this will look in the script editor:<a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/class_set_2_parameter.png"><img class="MCPopupThumbnail img" data-mc-width="646" data-mc-height="18" src="Images/class_set_2_parameter_thumb_0_150.png" tabindex="" /></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_matrix"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add a Matrix to a script</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <p class="bodytext">The script must be open for editing.</p>
+                                                                        <p class="procedureheading">To add a Matrix to a script from the Resources window</p>
+                                                                        <ol class="listnumber">
+                                                                            <li class="listnumber" value="1">Click on the Expand (+) button to display the contents of the Matrix library in the Resources window.</li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                            <p>There are three types of Matrix, one based on Logical Data Source Class Sets, one based on a Logical Data Model Class Sets and a mixed type, a Matrix that is based on both a Logical Data Source Class Set and a Logical Data Model Class Set. <br />The type of Matrix used in the script will affect the number of parameters that need to be defined in the Derived Data Script.</p>
+                                                                                            <ul>
+                                                                                                <li>Logical Data Source Matrix - 1 parameter, (name of the Matrix)<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/matrix_lds_script.png"><img class="MCPopupThumbnail img" data-mc-width="341" data-mc-height="20" src="Images/matrix_lds_script_thumb_0_150.png" tabindex="" /></a><br /></li>
+                                                                                                <li>Logical Data Model Matrix - 3 parameters, (name of the Matrix and the Logical Data Source instance of the Logical Data Model being used for the column and then for the row)<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/matrix_ldm_script.png"><img class="MCPopupThumbnail img" data-mc-width="645" data-mc-height="33" src="Images/matrix_ldm_script_thumb_0_150.png" tabindex="" /></a></li>
+                                                                                                <li>Mixed Matrix - 2 parameters, (name of the Matrix and the second parameter for whichever axis the Logical Data Model Class Set has been applied)<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/matrix_mixed_script.png"><img class="MCPopupThumbnail img" data-mc-width="693" data-mc-height="17" src="Images/matrix_mixed_script_thumb_0_150.png" tabindex="" /></a><br /></li>
+                                                                                            </ul>
+                                                                                            <p>If the Matrix used in the script does not have two Class Sets defined, or at least one of the selected Class Sets is undefined, (that is a characteristic has not been selected) it will follow the same behaviour as a Logical Data Source Matrix and only be added with 1 parameter (name of the Matrix). <br />If the Matrix is later defined against a Logical Data Model Class Set, the user will need to update the number of parameters defined in the script or re-add the Matrix to the script.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </ol>
+                                                                        <p class="SubHeading">To add a Logical Data Source Matrix</p>
+                                                                        <ol class="listnumber" start="1">
+                                                                            <li class="listnumber" value="1">Drag the required Logical Data Source Matrix and drop it onto the script at the required position.<br />The Matrix that has been created using a Logical Data Source will be added to the script.</li>
+                                                                        </ol>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                                        <p>The following is an example of how this will look in the script editor:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/matrix_lds_script.png"><img class="MCPopupThumbnail img" data-mc-width="341" data-mc-height="20" src="Images/matrix_lds_script_thumb_0_150.png" tabindex="" /></a></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="SubHeading">To add a Logical Data Model Matrix<br /></p>
+                                                                        <ol class="listnumber" start="1">
+                                                                            <li class="listnumber" value="1">Drag the required Logical Data Model Matrix and drop it onto the script at the required position.<br />The studio will open  the Select Column Characteristic dialog and list those Logical Data Sources that use the Logical Data Model characteristic that has been used to create the Logical Data Model Matrix.</li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The Select Column Characteristic dialog or Select Row Characteristic dialog is the Select Characteristics dialog that has been renamed to help the user select the correct characteristic for the Matrix.</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </ol>
+                                                                        <ol class="listnumber" data-mc-continue="true">
+                                                                            <li class="listnumber" value="2">Select the instance of the characteristic that is required for the script.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SC_column_matrix.png"><img class="MCPopupThumbnail img" data-mc-width="388" data-mc-height="274" src="Images/SC_column_matrix_thumb_0_150.png" tabindex="" /></a></li>
+                                                                            <li class="listnumber" value="3">Click OK.<br />The studio will open the Select Row Characteristic dialog.</li>
+                                                                        </ol>
+                                                                        <ol class="listnumber" data-mc-continue="true">
+                                                                            <li class="listnumber" value="4">Select the instance of the characteristic that is required for the row of the matrix and required for the script.</li>
+                                                                        </ol>
+                                                                        <ol class="listnumber" data-mc-continue="true">
+                                                                            <li class="listnumber" value="5">Click OK.</li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">If the Matrix contains only one Logical Data Model Class Set, the Select Characteristics dialog will only be displayed once, for either the column or the row depending on which axis the Logical Data Model Class Set has been assigned.</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </ol>
+                                                                        <p>The Matrix that has been created using Logical Data Model Class Sets will be added to the script.</p>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">The following is an example of how this will look in the script editor:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/matrix_ldm_script.png"><img class="MCPopupThumbnail img" data-mc-width="645" data-mc-height="33" src="Images/matrix_ldm_script_thumb_0_150.png" tabindex="" /></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="SubHeading">To add a mixed Matrix, a Matrix that contains both a Logical Data Source Class Set and a Logical Data Model Class Set</p>
+                                                                        <ol class="listnumber" start="1">
+                                                                            <li value="1"> Drag the required Logical Data Model Matrix and drop it onto the script at the required position.<br />The studio will open either the Select Column Characteristic dialog or the Select Row Characteristic dialog depending on which axis uses a Logical Data Model Class Set.</li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The Select Column Characteristic dialog or the Select Row Characteristic dialog is the Select Characteristics dialog that has been renamed to help the user select the correct characteristic for the Matrix.</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </ol>
+                                                                        <ol class="listnumber" start="2">
+                                                                            <li value="2">Select the instance of the characteristic that is required for the script.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SC_column_matrix.png"><img class="MCPopupThumbnail img" data-mc-width="388" data-mc-height="274" src="Images/SC_column_matrix_thumb_0_150.png" tabindex="" /></a></li>
+                                                                            <li value="3">Click OK.</li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">If the Matrix contains only one Logical Data Model Class Set, the Select Characteristics dialog will only be displayed once, for either the column or the row depending on which axis the Logical Data Model Class Set has been assigned.</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </ol>
+                                                                        <p>The Matrix that has been created using both Logical Data Model Class Sets and Logical Data Source Class Sets will be added to the script.</p>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">The following is an example of how this will look in the script editor:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/matrix_mixed_script.png"><img class="MCPopupThumbnail img" data-mc-width="693" data-mc-height="17" src="Images/matrix_mixed_script_thumb_0_150.png" tabindex="" /></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_index_table"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add an Index Table to a script</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <p class="bodytext">The script must be open for editing.</p>
+                                                                        <p class="procedureheading">To add an index table to a script from the Resources window</p>
+                                                                        <ol class="listnumber">
+                                                                            <li class="listnumber" value="1">Click on the Expand (+) button to display the contents of the Index Table library in the Resources window.</li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                            <p>There are two types of Index Table, one based on Logical Data Source characteristics the other based on Logical Data Model characteristics. <br />The type of Matrix used in the script will affect the number of parameters that need to be defined in the Derived Data Script.</p>
+                                                                                            <ul>
+                                                                                                <li>Logical Data Source Index Table - 1 parameter, (name of the Index Table)<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/index_table_1_parameter.png"><img class="MCPopupThumbnail img" data-mc-width="362" data-mc-height="18" src="Images/index_table_1_parameter_thumb_0_150.png" tabindex="" /></a><br /></li>
+                                                                                                <li>Logical Data Model Index Table - 3 parameters, (name of the Index Table, the Logical Data Source instance of the Logical Data Model and characteristic being used for the Input column and the Logical Data Source instance of the Logical Data Model that contains the characteristic(s) assigned to the Output column(s))<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/index_table_3_parameter.png"><img class="MCPopupThumbnail img" data-mc-width="764" data-mc-height="34" src="Images/index_table_3_parameter_thumb_0_150.png" tabindex="" /></a></li>
+                                                                                            </ul>
+                                                                                            <p>If the Index Table used in the script is undefined, (that is a characteristic has not been selected) it will follow the same behaviour as a Logical Data Source Index Table and only be added with 1 parameter (name of the Index Table). <br />If the Index Table is later defined against a Logical Data Model characteristic, the user will need to update the number or parameters defined in the script or re-add the Index Table to the script.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </ol>
+                                                                        <p class="SubHeading">To add a Logical Data Source Index Table</p>
+                                                                        <ol class="listnumber" start="1">
+                                                                            <li class="listnumber" value="1">Drag the required Index Table and drop it onto the script at the required position.</li>
+                                                                        </ol>
+                                                                        <p class="bodytext">The Index Table will be added to the script.</p>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">The following is an example of how this will look in the script editor:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/index_table_1_parameter.png"><img class="MCPopupThumbnail img" data-mc-width="362" data-mc-height="18" src="Images/index_table_1_parameter_thumb_0_150.png" tabindex="" /></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="SubHeading">To add a Logical Data Model Index Table</p>
+                                                                        <ol class="listnumber" start="1">
+                                                                            <li value="1">Drag the required Logical Data Model Index Table and drop it onto the script at the required position.<br />The studio will open  the Select Input Characteristic dialog and list the Logical Data Model characteristic that are available for selection.</li>
+                                                                            <li value="2">Select the Input column characteristic that is required for the script.<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/CDM_index_table_instance.png"><img class="MCPopupThumbnail img" data-mc-width="388" data-mc-height="274" src="Images/CDM_index_table_instance_thumb_0_150.png" tabindex="" /></a></li>
+                                                                            <li value="3">Click OK.<br />The studio will open the Select Output Logical Data Model dialog.</li>
+                                                                            <li value="4">Select the Logical Data Model that is required for the script.</li>
+                                                                        </ol>
+                                                                        <ol class="listnumber" data-mc-continue="true">
+                                                                            <li class="listnumber" value="5">Click OK.<br />The Index Table that has been created using the Logical Data Models will be added to the script.</li>
+                                                                        </ol>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">The following is an example of how this will look in the script editor:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/index_table_ldm_script.png"><img class="MCPopupThumbnail img" data-mc-width="905" data-mc-height="19" src="Images/index_table_ldm_script_thumb_0_150.png" tabindex="" /></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Add_template"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add a template to a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A template is a helper for entering a language statement in a script.</p>
+                                                                <p class="bodytext">The script must be open for editing.</p>
+                                                                <p class="procedureheading">To add a template to a script from the Palette</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Click on the point in the script that you wish to add or insert the template.</li>
+                                                                    <li class="listnumber" value="2">Click on the Expand (+) button in the Palette to expand the Templates.</li>
+                                                                    <li class="listnumber" value="3">Drag the required template and drop it onto the script at the required position.</li>
+                                                                    <li class="listnumber" value="4">Replace the text and the chevrons with appropriate expressions, statements or constants.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The template will be added to the script.</p>
+                                                                <p class="procedureheading">To add a template to a script freehand</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Type the required language statement ensuring that you follow the correct syntax.</li>
+                                                                </ol>
+                                                                <p class="bodytext">There are templates for <a id="h1841" class="jumpxreftemplate" title="IF" href="IF.htm" target="_self">IF</a>, <a id="h1843" class="jumpxreftemplate" title="IF THEN ELSE" href="IFTHENELSE.htm" target="_self">IF..ELSE</a>, <a id="h1839" class="jumpxreftemplate" title="EVALUATE WHEN" href="EVALUATEWHEN.htm" target="_self">Evaluate</a>, <a id="h1845" class="jumpxreftemplate" title="REPEAT UNTIL" href="REPEATUNTIL.htm" target="_self">Repeat</a> and <a id="h1847" class="jumpxreftemplate" title="WHILE DO" href="WHILEDO.htm" target="_self">While</a> language statements.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Move items within a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Single text items or contiguous strings of text items can be moved within a script using standard keyboard cut and paste facilities.</p>
+                                                                <p class="procedureheading">To move script item(s)</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">The script must be open for editing.</li>
+                                                                    <li class="listnumber" value="2">Highlight the required script item or string of items.</li>
+                                                                    <li class="listnumber" value="3">Press Ctrl+X to cut the item(s).</li>
+                                                                    <li class="listnumber" value="4">Click on the point in the script you wish to move to.</li>
+                                                                    <li class="listnumber" value="5">Press Ctrl+V to paste.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The item will be moved.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Delete items within a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Single text items or contiguous strings of text items can be deleted in a script using the delete button on the keyboard or the standard keyboard cut facility.</p>
+                                                                <p class="procedureheading">To delete script item(s)</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">The script must be open for editing.</li>
+                                                                    <li class="listnumber" value="2">Highlight the required script item or string of items.</li>
+                                                                    <li class="listnumber" value="3">Press Delete on the keyboard, or press Ctrl+X.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The item or string of items will be deleted.</p>
+                                                            </div>
+                                                        </div>
+                                                        <p>Click on the Compile Script <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/compile.jpg"><img class="MCPopupThumbnail img" data-mc-width="24" data-mc-height="24" src="../Images/global/compile_thumb_0_150.jpg" tabindex="" /></a> button to <a href="Check_the_script_syntax.htm">check the script.</a></p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Save a script</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A script must be saved before it can be used.</p>
+                                                                <p class="procedureheading">To save a script</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">To save any changes without exiting the editor click on the save <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/2028.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="21" data-mc-height="22" src="Images/2028_thumb_0_150.jpg" alt="" tabindex="" /></a> icon.</li>
+                                                                    <li class="listnumber" value="2">Click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/close_cross.jpg"><img class="MCPopupThumbnail img" data-mc-width="15" data-mc-height="17" src="../Images/global/close_cross_thumb_0_150.jpg" tabindex="" /></a> icon on the editor tab to close the script editor. If you have not saved already, you will be asked to save any changes made:<p class="listcontinue"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/10088.png"><img class="MCPopupThumbnail img" data-mc-width="271" data-mc-height="173" src="../Images/global/10088_thumb_0_150.png" tabindex="" /></a></p></li>
+                                                                    <li class="listnumber" value="3">Click <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/2031.jpg"><img class="MCPopupThumbnail img" data-mc-width="68" data-mc-height="24" src="../Images/global/2031_thumb_0_150.jpg" tabindex="" /></a> to save with errors.</li>
+                                                                    <li class="listnumber" value="4">Click <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/2032.jpg"><img class="MCPopupThumbnail img" data-mc-width="68" data-mc-height="23" src="../Images/global/2032_thumb_0_150.jpg" tabindex="" /></a> to discard any changes made.</li>
+                                                                </ol>
+                                                                <p class="bodytext">The script editor will close, saving the script.</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="bodytext">The Derived Data Script can now be used within other components.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Test</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Once the user has successfully compiled a Derived Data Script, the user will be able to test it using the Batch or Interactive Tester. </p>
+                                                        <p class="bodytext">The user can test a Derived Data Script either by manually typing in data  referenced in the Derived Data Script or by performing a test against a known data source.</p>
+                                                        <p class="procedureheading">To perform an interactive test</p>
+                                                        <p class="bodytext">To test a Derived Data Script manually by entering data into the relevant fields for the input characteristics, use the <a href="../Tester/InteractiveTesteroverview.htm">Interactive Tester.</a></p>
+                                                        <p class="procedureheading">To perform a batch test</p>
+                                                        <p class="bodytext">To test a Derived Data Script using data from a .csv file, from the Explorer window, right click on the component and select New Test Project to use the <a href="../TestProject/TestProjectoverview.htm">Batch Tester</a>.</p>
+                                                    </div>
+                                                </div>
+                                                <p><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Script validation error - Line has no effect|Scriptvalidationerror-Linehasnoeffect.htm||Guidelines on script syntax|Guidelinesonscriptsyntax.htm||Search/Replace within a script|Search_Replacewithinascript.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

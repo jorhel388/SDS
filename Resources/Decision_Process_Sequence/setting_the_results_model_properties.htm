@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Product.Strategy Design Studio,Product.Originations,Product.Customer Management,Capability_Function Set.Strategy Definition,Product.Debt Management,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Set the results model properties for the full scorecard results logical data model" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Setting the results model properties</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="cMVSG8a5CkqS1mRoX4Q83w">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="cMVSG8a5CkqS1mRoX4Q83w:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Setting the results model properties</h1>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Full scorecard results logical data model</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">To ensure that the correct results will be returned when the scorecard process is executed, when a full scorecard results logical data model is added, the system will indicate in the Mapped Characteristics area of the Define Results Mapping dialog those characteristics for which properties need to be defined.</p>
+                                                        <p class="SubHeading">Full Scorecard Result Logical Data Model</p>
+                                                        <p class="bodytext">For the full scorecard results logical data model, the Score, Scoring Results Table, Ranked Adverse Reason Code and Ranked Score Deviation properties will need confirming:<br></br><br></br><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/full_scr_model.jpg" data-mc-popup-alt="Full_scr_model"><img class="MCPopupThumbnail img" data-mc-width="756" data-mc-height="169" src="Images/full_scr_model_thumb_0_150.jpg" alt="Full_scr_model" tabindex="" /></a></p>
+                                                        <p class="bodytext"><strong class="specialbold">Score - </strong>The user can choose Float, Decimal or Integer type for a Score. <br></br>To handle the maximum length that can be input or calculated for a score it is recommended that the Decimal type is selected with a length of 17. The actual length and decimal place selected will be dependent on the requirements of the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Scoring Results Table</strong> - The user must define the size of the array. The recommended number is 2 plus the number of rules contained in the scorecard being processed, since the Scorecard Results Table contains a header and a footer field that hold the results from the Initial score and the Transformed score.<br></br>The following illustrates the format of the Scoring Results Table:<br></br><br></br><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/scorecard_results_table.jpg" data-mc-popup-alt="Scoring_Results_Table_eg"><img class="MCPopupThumbnail img" data-mc-width="918" data-mc-height="320" src="Images/scorecard_results_table_thumb_0_150.jpg" alt="Scoring_Results_Table_eg" tabindex="" /></a><br></br></p>
+                                                        <p class="bodytext"><strong class="specialbold">Ranked Adverse Reason Code</strong> - The user must define the size of this array. The recommended number is the number of rules contained in the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Ranked Score Deviation</strong> - The user can choose Float, Decimal or Integer type for the Ranked Score Deviation. <br></br>To handle the maximum length that can be input or calculated for a score it is recommended that the Decimal type is selected with a length of 17. The actual length and decimal place selected will be dependent on the requirements of the scorecard being processed and should match those set for the Score. The user must also define the size of the array. The recommended number is the number of rules contained in the scorecard being processed.</p>
+                                                        <p class="procedureheading">To set the results properties for the full scorecard results logical data model</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Define Results Mapping dialog open.</li>
+                                                            <li class="listnumber" value="2">In the Mapped Characteristics area, for the Score characteristic, in the "Type" column select Decimal from the drop down list.</li>
+                                                            <li class="listnumber" value="3">In the "Length" column type the length you require.</li>
+                                                            <li class="listnumber" value="4">In the "Scale" column type the number of decimal places you require.</li>
+                                                            <li class="listnumber" value="5">For the Scoring Results Table characteristic, in the "Array Size" column, type the number you require.</li>
+                                                            <li class="listnumber" value="6">For the Ranked Adverse Reason Code characteristic, in the "Array Size" column, type the number you require.<br></br><br></br></li>
+                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1">
+                                                                </col>
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2">
+                                                                </col>
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Even when you have chosen to switch off the Adverse Reason Code processing you will still need to define a length for the array. It is recommended that you type 1 to reduce the size of this field to a minimum.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+&#160;
+            <li class="listnumber" value="7">For the Ranked Score Deviation characteristic, in the "Type" column select Decimal from the drop down list, in the "Length" column type the length you require, in the "Scale" column type the number of decimal places you require and in the "Array Size" column type the number you require.</li><li class="listnumber" value="8">Click on the Save button.</li><li class="listnumber" value="9">Click on the Close button.</li></ol>
+                                                        <p class="bodytext">The Define Results Mapping dialog will close and the properties will be updated.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Minimum scorecard results logical data model</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">To ensure that the correct results will be returned when the scorecard process is executed, when a minimum scorecard results logical data model is added, the system will indicate in the Mapped Characteristics area of the Define Results Mapping dialog those characteristics for which properties need to be defined.</p>
+                                                        <p class="SubHeading">Minimum Scorecard Results Logical Data Model</p>
+                                                        <p class="bodytext">For the minimum scorecard results logical data model, only the Score properties will need confirming:</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Decision_Process_Flow/Images/min_scr_model.jpg" data-mc-popup-alt="Min_Scr_model"><img class="MCPopupThumbnail img" data-mc-width="756" data-mc-height="169" src="../Decision_Process_Flow/Images/min_scr_model_thumb_0_150.jpg" alt="Min_Scr_model" tabindex="" /></a>
+                                                        </p>
+                                                        <p class="bodytext"><strong class="specialbold">Score Properties - </strong>The user can choose, Float, Decimal or Integer type for a Score. <br />To handle the maximum length that can be input or calculated for a score it is recommended that the Decimal type is selected with a length of 17. The actual length and decimal place selected will be dependent on the requirements of the scorecard being processed.</p>
+                                                        <p class="procedureheading">To set the results properties for the minimum scorecard results logical data model</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Define Results Mapping dialog open.</li>
+                                                            <li class="listnumber" value="2">In the Mapped Characteristics area, for the score characteristic in the "Type" column select Decimal from the drop down list.</li>
+                                                            <li class="listnumber" value="3">In the "Length" column type the length you require.</li>
+                                                            <li class="listnumber" value="4">In the "Scale" column type the number of decimal places you require.</li>
+                                                            <li class="listnumber" value="5">Click on the Save button.</li>
+                                                            <li class="listnumber" value="6">Click on the Close button.</li>
+                                                        </ol>
+                                                        <p class="bodytext">The Define Results Mapping dialog will close and the properties will be updated.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Scoring results table results</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">In addition to mapping either the minimum, typical or full scorecard results the user can also map either the whole Scoring Results Table Results block or individual elements from this block to characteristics in the logical data source enabling additional information to be returned when the scorecard process is executed.</p>
+                                                        <p class="SubHeading">Scoring Results Table Results Logical Data Model</p>
+                                                        <p class="bodytext">For the full scoring results table results logical data model, the Type, Adverse Reason Code, Element, Outcome, Score Value Deviation Score, Value 1 and Value 2 will need confirming:<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/results_table.png" data-mc-popup-alt="Results_Table"><img class="MCPopupThumbnail img" data-mc-width="809" data-mc-height="189" src="Images/results_table_thumb_0_150.png" alt="Results_Table" tabindex="" /></a></p>
+                                                        <p class="bodytext"><strong class="specialbold">Type </strong>- the type of scoring element that has been processed, e.g. Initial Score (I), Class Set (C), Scoring function (N), boolean expression (S), matrix (M), transformation function (T) will be returned to this field. The user needs to set the array size. The recommended number is the number of rules contained in the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Adverse Reason Code</strong> - the adverse reason code is returned to this field. The user needs to define the size of this array. The recommended number is the number of rules contained in the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Element</strong> - the name of the scoring element that has been processed. The user needs to define the size of this array. The recommended number is the number of rules contained in the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Outcome</strong> - the outcome or interval that is processed for a particular record. For example the scoring element type could be a class set called Gross Annual Income and the interval that is used for a particular record could &gt;=25,000&lt;=34,999, &gt;=25,000&lt;=34,999 would be returned as the outcome. The user needs to define the size of this array. The recommended number is the number of rules contained in the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Score Value - </strong>the score value that is returned for the specific outcome.<strong class="specialbold"></strong>The user can choose Float, Decimal or Integer type for the Score Value.<br />To handle the maximum length that can be input or calculated for a score it is recommended that the Decimal type is selected with a length of 17. The actual length and decimal place selected will be dependent on the requirements of the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Deviation Score</strong> - the value returned is the deviation of the actual score from the expected score. <strong class="specialbold"></strong>The user can choose Float, Decimal or Integer type for the Score Value.<br />To handle the maximum length that can be input or calculated for a score it is recommended that the Decimal type is selected with a length of 17. The actual length and decimal place selected will be dependent on the requirements of the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Value 1 and Value 2 </strong>- for type C (class set) value 1 is the value of the input characteristic and value 2 will not be populated. For type M (matrix) value 1 is the input characteristic for the x axis and value 2 is the value for the y axis classing. For type S (boolean expression), if there are multiple characteristics referenced no values will be returned, if a single characteristic is referenced this value will be returned to value 1</p>
+                                                        <p class="procedureheading">To set the results properties for the scoring results table logical data model</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Define Results Mapping dialog open.</li>
+                                                            <li class="listnumber" value="2">In the Mapped Characteristics area, for the Type characteristic, in the "Array Size" column, type the number you require.</li>
+                                                            <li class="listnumber" value="3">For the Adverse Reason Code characteristic, in the "Array Size" column, type the number you require.<br /><br /></li>
+                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Even when you have chosen to switch off the Adverse Reason Code processing you will still need to define a length for the array. It is recommended that you type 1 to reduce the size of this field to a minimum.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>&#160;
+            <li class="listnumber" value="4">For the Element characteristic, in the "Array Size" column type the number you require.</li><li class="listnumber" value="5">For the Outcome characteristic, in the "Array Size" column type the number you require.</li><li class="listnumber" value="6">For the Score Value characteristic, in "Type" column type.</li><li class="listnumber" value="7">For the Score characteristic, in the "Type" column select Decimal from the drop down list, in the "Length" column type the length you require and in the "Scale" column type the number of decimal places you require.</li><li class="listnumber" value="8">For the Deviation Score characteristic, in the "Type" column select Decimal from the drop down list, in the "Length" column type the length you require and in the "Scale" column type the number of decimal places you require.</li><li class="listnumber" value="9">For the Value 1 characteristic, in the "Array Size" column type the number you require.</li><li class="listnumber" value="10">For the Value 2 characteristic, in the "Array Size" column type the number you require.</li><li class="listnumber" value="11">Click on the Save button.</li><li class="listnumber" value="12">Click on the Close button.</li></ol>
+                                                        <p class="bodytext">The Define Results Mapping dialog will close and the properties will be updated.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Typical decision setter results data model</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">To ensure that the correct results will be returned when the decision setter process is executed, when a typical decision results logical data model is added, (that is for a results model that contains an array or when the user needs to be able to amend length/type/scale), the system will indicate in the Mapped Characteristics area of the Define Results Mapping dialog those characteristics for which properties need to be defined.</p>
+                                                        <p class="SubHeading">Typical Decision Setter Results Logical Data Model</p>
+                                                        <p class="bodytext">For the typical decision setter results logical data model, the Sorted Reason Code Table and the Sorted Decision Table properties will need confirming:</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/typical_dsr_model.jpg" data-mc-popup-alt="Dec_setter_typical_model"><img class="MCPopupThumbnail img" data-mc-width="756" data-mc-height="169" src="Images/typical_dsr_model_thumb_0_150.jpg" alt="Dec_setter_typical_model" tabindex="" /></a>
+                                                        </p>
+                                                        <p class="bodytext"><strong class="specialbold">Sorted Reason Code Table </strong>- The user must define the size of this array. The size is dependent on the number of reason codes that need to be returned.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Sorted Decision Table</strong> - The user must define the size of this array. The size is dependent on the number of reason codes that need to be returned.</p>
+                                                        <p class="procedureheading">To set the results properties for the typical decision setter results logical data model</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Define Results Mapping dialog open.</li>
+                                                            <li class="listnumber" value="2">In the Mapped Characteristics area, for the Sorted Reason Code Table characteristic, in the "Array Size" column, type the number you require.</li>
+                                                            <li class="listnumber" value="3">For the Sorted Decision Table characteristic, in the "Array Size" column, type the number you require.</li>
+                                                            <li class="listnumber" value="4">Click on the Save button.</li>
+                                                            <li class="listnumber" value="5">Click on the Close button.</li>
+                                                        </ol>
+                                                        <p class="bodytext">The Define Results Mapping dialog will close and the properties will be updated.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Typical scorecard results logical data model</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">To ensure that the correct results will be returned when the scorecard process is executed, when a typical scorecard results logical data model is added, the system will indicate in the Mapped Characteristics area of the Define Results Mapping dialog those characteristics for which properties need to be defined.</p>
+                                                        <p class="SubHeading">Typical Scorecard Result Logical Data Model</p>
+                                                        <p class="bodytext">For the typical scorecard results logical data model, the Score, Scoring Results and Ranked Adverse Reason Code properties will need confirming:</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/typ_scr_model.jpg" data-mc-popup-alt="Typical_scr_model"><img class="MCPopupThumbnail img" data-mc-width="756" data-mc-height="169" src="Images/typ_scr_model_thumb_0_150.jpg" alt="Typical_scr_model" tabindex="" /></a>
+                                                        </p>
+                                                        <p class="bodytext"><strong class="specialbold">Score - </strong>The user can choose Float, Decimal or Integer type for a Score. <br />To handle the maximum length that can be input or calculated for a score it is recommended that the Decimal type is selected with a length of 17. The actual length and decimal place selected will be dependent on the requirements of the scorecard being processed.</p>
+                                                        <p class="bodytext"><strong class="specialbold">Score Results Table</strong> - The user must define the size of the array. The recommended number is 2 plus the number of rules contained in the scorecard being processed, since the Scorecard Results Table contains a header and a footer field that hold the results from the Initial score and the Transformed score.<br />The following illustrates the format of the Score Results Table.<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/scorecard_results_table.jpg" data-mc-popup-alt="Scoring_Results_Table_eg"><img class="MCPopupThumbnail img" data-mc-width="918" data-mc-height="320" src="Images/scorecard_results_table_thumb_0_150.jpg" alt="Scoring_Results_Table_eg" tabindex="" /></a></p>
+                                                        <p class="bodytext"><strong class="specialbold">Ranked Adverse Reason Code</strong> - The user must define the size of this array. The recommended number is the number of rules contained in the scorecard being processed.</p>
+                                                        <p class="procedureheading">To set the results properties for the typical scorecard results logical data model</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Define Results Mapping dialog open.</li>
+                                                            <li class="listnumber" value="2">In the Mapped Characteristics area, for the Score characteristic, in the "Type" column select Decimal from the drop down list.</li>
+                                                            <li class="listnumber" value="3">In the "Length" column type the length you require.</li>
+                                                            <li class="listnumber" value="4">In the "Scale" column type the number of decimal places you require.</li>
+                                                            <li class="listnumber" value="5">For the Scoring Results Table characteristic, in the "Array Size" column, type the number you require.</li>
+                                                            <li class="listnumber" value="6">For the Ranked Adverse Reason Code characteristic, in the "Array Size" column, type the number you require.<br /><br /></li>
+                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Even when you have chosen to switch off the Adverse Reason Code processing you will still need to define a length for the array. It is recommended that you type 1 to reduce the size of this field to a minimum.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>&#160;
+            <li class="listnumber" value="7">Click on the Save button.</li><li class="listnumber" value="8">Click on the Close button.</li></ol>
+                                                        <p class="bodytext">The Define Results Mapping dialog will close and the properties will be updated.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Product.Strategy Design Studio,Product.Originations,Product.Customer Management,Capability_Function Set.Scoring and Decisioning,Product.Debt Management,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Define a Treatment Table Column using the Column View" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Define a Treatment Table Column using the Column View</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="ylmZMDol50S-Ef0wshFukA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="ylmZMDol50S-Ef0wshFukA:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Define a Treatment Table Column using the Column View</h1>
+                                                <p class="bodytext">Treatment Tables are designed using the Treatment Table Design component. </p>
+                                                <p class="bodytext">When the Treatment Table Design editor is opened the Column View Table will be displayed. Each row created in the Treatment Table Design will form a column in the Treatment Table. Each collection of column names in the Column View will represent a Treatment in the Treatment Table.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Create Treatment Table Design</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">A Treatment Table Design can be created from the Explorer window. </p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You will only be able to add a component type that has been allowed for the selected folder. If it is not allowed it will not be listed and therefore cannot be selected. </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="procedureheading">To create a treatment table design </p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">From the Explorer window right click at the required folder level and select Add a component.</li>
+                                                            <li class="listnumber" value="2">Select Treatment Table Design from the list of available components.</li>
+                                                            <li class="listnumber" value="3">In the Create component dialog enter the name of the Treatment Table Design.</li>
+                                                            <li class="listnumber" value="4">Select the Open new components in component editor check box.</li>
+                                                            <li class="listnumber" value="5">Click OK.<br />The <a id="h4496" class="jumpxreftemplate" title="Treatment Table Design editor" href="TreatmentTableDesigneditor.htm" target="_self">Treatment Table Design editor</a> will open allowing you to edit the  Treatment Table Design.<br />The  Treatment Table Design name will be listed in the Explorer under the selected folder level. The component is identified by the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/treatment_table_des_icon.jpg" data-mc-popup-alt="treatment_table_design_icon"><img class="MCPopupThumbnail img" data-mc-width="16" data-mc-height="16" src="Images/treatment_table_des_icon_thumb_0_150.jpg" alt="treatment_table_design_icon" tabindex="" /></a> icon.</li>
+                                                        </ol>
+                                                        <p class="bodytext">If you do not wish the editor to open, keep the check box de-selected. From the Explorer window right click on the treatment table design and select Open. </p>
+                                                    </div>
+                                                </div>
+                                                <p class="procedureheading">To define a Treatment Table column </p>
+                                                <p>With the Treatment Table Design editor open and the Column View Table active, </p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Define a column name</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Treatment Tables are designed using the Treatment Table Design component. </p>
+                                                        <p class="bodytext">When the Treatment Table Design editor is opened the Column View Table will be displayed. Each row created in the Treatment Table Design will form a column in the Treatment Table. Each name in the column name column will represent a Treatment in the Treatment Table.</p>
+                                                        <p class="procedureheading">To define a column name - the name for each Treatment</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, in the Column Name column, type the name of the column.</li>
+                                                            <li class="listnumber" value="2">Press Enter</li>
+                                                        </ol>
+                                                        <p class="bodytext">The name will be applied and used as the name of the column of the Treatment in the Treatment Table.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Assign a Characteristic Mapping to a row</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Treatment Tables are designed using the Treatment Table Design component. </p>
+                                                        <p class="bodytext">When the Treatment Table Design editor is opened the Column View Table will be displayed. Each row created in the Treatment Table Design will form a column in the Treatment Table. Each name in the column name column will represent a Treatment in the Treatment Table.</p>
+                                                        <p class="bodytext">How you wish the column to be executed/used will effect the type of characteristic mapped to the row. There are two types of characteristic:</p>
+                                                        <ul class="listbullet2">
+                                                            <li class="MadCap1">Logical Data Source characteristic - values created or entered in the Treatment Table will be returned to this characteristic at runtime</li>
+                                                            <li class="MadCap1">Local characteristic - values assigned to this characteristic are used in Execution script to enable calculations to be performed whose results will eventually be returned to an additional local characteristic using the script defined in the Execution Script tab. It is the local characteristic that will hold the initial value when the execution script for the Treatment is executed at runtime</li>
+                                                        </ul>
+                                                        <p class="procedureheading">To assign a Characteristic Mapping to a row</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, in the Characteristic Mapping column, right click and select Assign Characteristic.<br></br>The Select Characteristic dialog will open.</li>
+                                                            <li class="listnumber" value="2">In the Search field <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/search_characteristic.jpg"><img class="MCPopupThumbnail img" data-mc-width="60" data-mc-height="20" src="../Images/global/search_characteristic_thumb_0_150.jpg" tabindex="" /></a> type the word or part of a word that makes up the name of the characteristic.<br />The Select Characteristic dialog will focus in on a particular characteristic or set of characteristics that match this word.</li>
+                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">If the Select Characteristic dialog is displaying the characteristics in a tree view, the Logical Data Source will need to be fully expanded to see all the characteristics that match the word(s).</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </ol>
+                                                        <ol class="listnumber" data-mc-continue="true">
+                                                            <li class="listnumber" value="3">Select the characteristic you require.</li>
+                                                            <li class="listnumber" value="4">Click OK.</li>
+                                                            <li class="listnumber" value="5">The Select Characteristic dialog closes and the characteristics you have selected will be added to the column.<br></br>Either String or Numeric will be assigned to the Data Type column depending on the characteristic chosen.</li>
+                                                        </ol>
+                                                        <p class="bodytext">It is this characteristic that the values will be returned to when the Treatment is processed.</p>
+                                                        <p class="procedureheading">To assign a local characteristic to a row</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, in the Characteristic Mapping column, right click and select Assign for 'Local' use.<br></br><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/local_charac.jpg" data-mc-popup-alt="local_characteristic"><img class="MCPopupThumbnail img" data-mc-width="121" data-mc-height="36" src="Images/local_charac_thumb_0_150.jpg" alt="local_characteristic" tabindex="" /></a></li>
+                                                            <li class="listnumber" value="2">Since the characteristic will not have a predefined type, from the Data Type drop down box, select either String, Integer, Float, Decimal or Date.</li>
+                                                            <li class="listnumber" value="3">Define the other properties for this characteristic as required.</li>
+                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">In order to assign a specific row to a Slider control the data type selected must be integer.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </ol>
+                                                        <p class="bodytext">It is this characteristic that the values will be returned.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Select the Control Type for the Column</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">The Treatment Table Design - Column Table View editor enables the user to name the Treatment and define the rules for how the values entered in each Treatment will be processed at runtime.</p>
+                                                        <p class="bodytext">Using the Control Type column the user can define whether a combo box or a text box will be set for the Treatment and the properties for this Control and which data type these controls will support.</p>
+                                                        <p class="procedureheading">To define a string combo box control</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, click in the Control Type column and select Combo box from the drop down list.<br></br>The Properties window will change to correspond to the control type you have selected and the data type of characteristic that has been mapped to this field.<br></br><br></br>Within the Properties window, for the String Combo box the following information will be taken from the row itself, so cannot be configured:<ul class="listbullet2"><li class="MadCap1">Column Name - name entered in the Column Name cell for the selected row.</li><li class="MadCap1">Data Type - data type chosen from the Data Type column for the selected row.</li><li class="MadCap1">Control Type - type of control selected from the Control Type column for the selected row.</li><li class="MadCap1">Tool tip - displays the tool tip for the selected row.</li><li class="MadCap1">Panel Mapping (Name)</li></ul></li>
+                                                            <li class="listnumber" value="2">Within the Properties window, for the String Combo box the following information will either be taken from the logical data characteristic assigned to the row, or will need to be configured: <ul class="listbullet2"><li class="MadCap1">Field Size - if a local characteristic has been mapped to the row, either type directly into the field or click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button to open the Default Data dialog and enter the value you require.<br />                - if a logical data source characteristic has been mapped to the row the field size displayed will correspond to the length defined in the logical data source.</li><li class="MadCap1">Mandatory Field - select to force the user of the Treatment table to select a value. </li><li class="MadCap1">Default Data - either type directly into the field or click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button to open the Default Data dialog to define the value that is to be seen in this column when the user first accesses the treatment.</li><li class="MadCap1">Allow free text - select to allow the user to enter a value. (The default for a combo box is that the user will not be allowed to enter values). </li></ul></li>
+                                                        </ol>
+                                                        <p class="bodytext">The Treatment table will use a combo box using the properties you have defined to display the values.</p>
+                                                        <p class="procedureheading">To define a numeric combo box control</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, click in the Control Type column and select Combo box from the drop down list.<br></br>The Properties window will change to correspond to the control type you have selected and the data type of characteristic that has been mapped to this field.<br></br><br></br>Within the Properties window, for the Numeric Combo box the following information will be taken from the row itself, so cannot be configured:<ul class="listbullet2"><li class="MadCap1">Column Name - name entered in the Column Name cell for the selected row.</li><li class="MadCap1">Data Type - data type chosen from the Data Type column for the selected row.</li><li class="MadCap1">Control Type - type of control selected from the Control Type column for the selected row.</li><li class="MadCap1">Tool tip - displays the tool tip for the selected row.</li><li class="MadCap1">Panel Mapping (Name)</li></ul></li>
+                                                            <li class="listnumber" value="2">With the Properties window, for the Numeric Combo box the following information will either be taken from the logical data characteristic assigned to the row, or will need to be configured:<ul class="listbullet2"><li class="MadCap1">Field Size - if a local characteristic has been mapped to the row, either type directly into the field or click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button to open the Default Data dialog and enter the value you require.<br />                - if a logical data source characteristic has been mapped to the row the field size displayed will correspond to the length defined in the logical data source.</li><li class="MadCap1">Range - type the range of values that can be entered into the numeric Combo box. The value range will be validated by the field type, length and precision of the characteristic assigned.</li><li class="MadCap1">Mandatory Field - select to force the user of the Treatment table to select a value. </li><li class="MadCap1">Default Data - either type directly into the field or click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button to open the Default Data dialog to define the value that is to be seen in this column when the user first accesses the treatment.</li><li class="MadCap1">Allow free text - select to allow the user to enter a value. (The default for a combo box is that the user will not be allowed to enter values).</li></ul></li>
+                                                        </ol>
+                                                        <p class="bodytext">The Treatment table will use a combo box using the properties you have defined to display the values.</p>
+                                                        <p class="procedureheading">To configure a string text box</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, click in the Table Control column and select Text Box from the drop down list.<br></br>The Properties window will change to correspond to the control type you have selected and the data type of the field.<br></br><br></br>Within the Properties window, for the String Text box the following information will be taken from the row itself, so cannot be configured:<ul class="listbullet2"><li class="MadCap1">Column Name - name entered in the Column Name cell for the selected row.</li><li class="MadCap1">Data Type - data type chosen from the Data Type column for the selected row.</li><li class="MadCap1">Control Type - type of control selected from the Control Type column for the selected row.</li><li class="MadCap1">Tool tip - displays the tool tip for the selected row.</li><li class="MadCap1">Panel Mapping (Name)</li></ul></li>
+                                                            <li class="listnumber" value="2">Within the Properties window, for a String Text box the following information will either be taken from the logical data characteristic assigned to the row, or will need to be configured:<ul class="listbullet2"><li class="MadCap1">Field Size - if a local characteristic has been mapped to the row, either type directly into the field or click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button to open the Default Data dialog and enter the value you require.<br />                - if a logical data source characteristic has been mapped to the row the field size displayed will correspond to the length defined in the logical data source.</li><li class="MadCap1">Mandatory Field - selected to force the user of the Treatment table to select a value. </li><li class="MadCap1">Default Data - either type directly into the field or click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button to open the Default Data dialog to define the value that is to be seen in this column when the user first accesses the treatment.</li></ul></li>
+                                                        </ol>
+                                                        <p class="bodytext">The Treatment table will use a combo box using the properties you have defined to display the values.</p>
+                                                        <p class="procedureheading">To configure a numeric text box</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, click in the Table Control column and select Text Box from the drop down list.<br></br>The Properties window will change to correspond to the control type you have selected and the data type of the field.<br></br><br></br>Within the Properties window, for the Numeric Text box the following information will be taken from the row itself, so cannot be configured:<ul class="listbullet2"><li class="MadCap1">Column Name - name entered in the Column Name cell for the selected row.</li><li class="MadCap1">Data Type - data type chosen from the Data Type column for the selected row.</li><li class="MadCap1">Control Type - type of control selected from the Control Type column for the selected row.</li><li class="MadCap1">Tool tip - displays the tool tip for the selected row.</li><li class="MadCap1">Panel Mapping (Name)</li></ul></li>
+                                                            <li class="listnumber" value="2">Within the Properties window, for a Numeric Text box the following information will either be taken from the logical data characteristic assigned to the row, or will need to be configured:<ul class="listbullet2"><li class="MadCap1">Range - type the range of values that can be entered into the numeric Text box. The value range will be validated by the field type, length and precision of the characteristic assigned.</li><li class="MadCap1">Mandatory Field - selected to force the user of the Treatment table to select a value. </li><li class="MadCap1">Default Data - either type directly into the field or click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button to open the Default Data dialog to define the value that is to be seen in this column when the user first accesses the treatment.</li></ul></li>
+                                                        </ol>
+                                                        <p class="bodytext">The Treatment table will use a text box using the properties you have defined to display the values.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Adding the values to column</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Treatment Tables are designed using the Treatment Table Design component. </p>
+                                                        <p class="bodytext">When the Treatment Table Design editor is opened the Column View Table will be displayed. Each row created in the treatment table design will form a column in the Treatment Table. </p>
+                                                        <p class="bodytext">Values can be entered into this column. When valid values exist, the user can delete valid values from the list, but not add any additional ones. Values can be populated into this cell using an external file.</p>
+                                                        <p class="procedureheading">To add values to a column</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, in the Value column, type the values that the user will select when they define the treatment.<br />Individual values should be separated with a semi-colon. For example:<br />Yes;No <br />18;24;36</li>
+                                                        </ol>
+                                                        <p class="bodytext">The values that have been entered will be available for selection by the user of the Treatment Table.</p>
+                                                        <p class="bodytext">Values that are added using an external file will not be listed in the Column View Table or Panel Designer. They will be available for selection from the Treatment Table either from the Column view or the Panel view.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Adding a list file to a column view table row</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Treatment Tables are designed using the Treatment Table Design component. </p>
+                                                        <p class="bodytext">When the Treatment Table Design editor is opened the Column View Table will be displayed. Each row created in the treatment table design will form a column in the Treatment Table. </p>
+                                                        <p class="bodytext">In the Treatment Table a list of values can be presented to the user from which they can choose a particular value. These values can be manually entered into the Treatment Table Design or can be populated from an external lookup file. If the row in the Treatment Table Design is mapped to a logical data source characteristic which is assigned valid values, then the user cannot specify values that are outside of these valid values. </p>
+                                                        <p class="procedureheading">To add a list file to a column view table row</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, and the cell in the Value column selected, within the Properties window click on the Use File check box.</li>
+                                                            <li class="listnumber" value="2">Next to the List File Name field, click on the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/ellipsis.png"><img class="MCPopupThumbnail img" data-mc-width="13" data-mc-height="15" src="../Images/global/ellipsis_thumb_0_150.png" tabindex="" /></a> button and locate the external list file.</li>
+                                                            <li class="listnumber" value="3">Click OK. <br />The full path and file name will be listed in the List File Name field and the values will be displayed in the List Value field and the Value cell in the Column View Table.</li>
+                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                            <p>The system provides a layer of security by preventing users from having access to files and folders they are not permitted to.</p>
+                                                                            <p>The List File Name value is only visible to the current user if the specified path is either the Shared directory or the user’s directory.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </ol>
+                                                        <p class="bodytext">The values that have been entered will be available for selection by the user of the Treatment Table.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Adding a tooltip to a treatment</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">Treatment Tables are designed using the Treatment Table Design component. </p>
+                                                        <p class="bodytext">For each column a Tooltip can be created that will be displayed to assist the user when they hover their mouse over a column in the Treatment Table. Once a tool tip has been assigned in the Treatment Table Design editor the following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/tooltip_icon.jpg" data-mc-popup-alt="tooltip_icon"><img class="MCPopupThumbnail img" data-mc-width="16" data-mc-height="16" src="Images/tooltip_icon_thumb_0_150.jpg" alt="tooltip_icon" tabindex="" /></a> will be displayed in the column.</p>
+                                                        <p class="procedureheading">To add a tooltip to a treatment</p>
+                                                        <ol class="listnumber">
+                                                            <li class="listnumber" value="1">With the Treatment Table Design editor open, click in the "Tooltip" column.<br />The Tooltip Text dialog will be opened.</li>
+                                                            <li class="listnumber" value="2">Type a suitable tool tip, for example:<br />In order to enter a Bad Debt Provisioning Percentage of 5% enter 5 not 0.05</li>
+                                                            <li class="listnumber" value="3">Click OK.<br />The Tooltip Text dialog will close.</li>
+                                                        </ol>
+                                                        <p class="bodytext">The following icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/tooltip_icon.jpg" data-mc-popup-alt="tooltip_icon"><img class="MCPopupThumbnail img" data-mc-width="16" data-mc-height="16" src="Images/tooltip_icon_thumb_0_150.jpg" alt="tooltip_icon" tabindex="" /></a> will be displayed in the column to indicate that a tool tip has been defined.</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">If rules need to be created to define how the values entered in each treatment will be processed or additional calculations need to be performed further definition needs to be carried out in the Treatment Table Design - Script Panel of the Treatment Table Design.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <p class="bodytext">Now that the Treatment Table Design is complete it can be used to create a Treatment Table.</p>
+                                                <p class="bodytext"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Control Properties|ControlProperties.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

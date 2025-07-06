@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Product.Connectivity,Product.Connectivity and Enrichment,Product.Customer Management,Product.Originations,Product.Originations Lite,Product.Pre-Screening,Product.Strategy Design Studio,Capability_Function Set.Framework,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="CRON expression formats" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>CRON expression formats</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Example.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Header.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="CjMErB3UK0mU2bZ6jEz27A">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="CjMErB3UK0mU2bZ6jEz27A:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>CRON expression formats</h1>
+                                                <p class="bodytext">The final step of <a id="h5556" class="jumpxreftemplate" title="Schedule a batch process job" href="BatchProcessFlowoverview.htm#BatchPF_Schedule_batch_process_job" target="_self" alt="Schedule a batch process job">scheduling a batch job</a> for execution is setting up the schedule. The software uses CRON as its scheduling tool; CRON uses "CRON expressions" to create execution schedules.</p>
+                                                <p class="bodytext">The following explanation of CRON expression formatting is taken from the Wikipedia entry "CRON expression", which can be found at http://en.wikipedia.org/wiki/CRON_expression.</p>
+                                                <p class="SubHeading">Description</p>
+                                                <p class="bodytext">A CRON expression is a string of 6 or 7 fields separated by space. It represents a set of times, normally as a schedule to execute some routine.</p>
+                                                <p class="SubHeading">Format</p>
+                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Field name</th>
+                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Mandatory?</th>
+                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Allowed values</th>
+                                                            <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Allowed special characters</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Seconds</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Yes</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">0-59</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                <p class="tablebodytext">* / , -</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Minutes</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Yes</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">0-59</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                <p class="tablebodytext">* / , -</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Hours</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Yes</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">0-23</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                <p class="tablebodytext">* / , -</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Day of month</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Yes</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">1-31</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                <p class="tablebodytext">* / , -&#160;? L W</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Month</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Yes</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">1-12 or JAN-DEC</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                <p class="tablebodytext">* / , -</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Day of week</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">Yes</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                <p class="tablebodytext">1-7 or SUN-SAT</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                <p class="tablebodytext">* / , -&#160;? L #</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                <p class="tablebodytext">Year</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                <p class="tablebodytext">No</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                <p class="tablebodytext">1970–2099</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                <p class="tablebodytext">* / , -</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="SubHeading">Special Characters</p>
+                                                <p class="bodytext"><strong class="specialbold">Asterisk (*)</strong>
+                                                </p>
+                                                <p class="bodytext">The asterisk indicates that the CRON expression will match for all values of the field. For example, using an asterisk in the 5th field (month) would indicate every month.</p>
+                                                <p class="bodytext"><strong class="specialbold">Forward slash (/)</strong>
+                                                </p>
+                                                <p class="bodytext">Forward slashes are used to describe increments. For example 0/15 in the 1st field (seconds) would indicate the 0th second of the minute and every 15 seconds thereafter. The form "*/..." is equivalent to the form "0/...".</p>
+                                                <p class="bodytext"><strong class="specialbold">Comma (,)</strong>
+                                                </p>
+                                                <p class="bodytext">Commas are used to separate items of a list. For example, using "MON,WED,FRI" in the 6th field (day of week) would mean Mondays, Wednesdays and Fridays.</p>
+                                                <p class="bodytext"><strong class="specialbold">Hyphen (-)</strong>
+                                                </p>
+                                                <p class="bodytext">Hyphens are used to define ranges. For example, 2000-2010 would indicate every year between 2000 and 2010 CE inclusive.</p>
+                                                <p class="bodytext"><strong class="specialbold">Question mark (?)</strong>
+                                                </p>
+                                                <p class="bodytext">The '?' character is used to omit the specification of a value for the day-of-month and day-of-week fields. Since it's not valid to specify values for both fields, '?' becomes necessary to omit one of either ('*' is considered a specific value).</p>
+                                                <p class="bodytext"><strong class="specialbold">L</strong>
+                                                </p>
+                                                <p class="bodytext">'L' stands for "last". When used in the day-of-week field, it allows you to specify constructs such as "the last Friday" of a given month. In the month field, it specifies the last day of the month.</p>
+                                                <p class="bodytext"><strong class="specialbold">W</strong>
+                                                </p>
+                                                <p class="bodytext">The 'W' character is allowed for the day-of-month field. This character is used to specify the weekday (Monday-Friday) nearest the given day. As an example, if you were to specify "15W" as the value for the day-of-month field, the meaning is: "the nearest weekday to the 15th of the month". So if the 15th is a Saturday, the trigger will fire on Friday the 14th. If the 15th is a Sunday, the trigger will fire on Monday the 16th. If the 15th is a Tuesday, then it will fire on Tuesday the 15th. However if you specify "1W" as the value for day-of-month, and the 1st is a Saturday, the trigger will fire on Monday the 3rd, as it will not 'jump' over the boundary of a month's days. The 'W' character can only be specified when the day-of-month is a single day, not a range or list of days.</p>
+                                                <p class="bodytext"><strong class="specialbold">Pound (#)</strong>
+                                                </p>
+                                                <p class="bodytext">'#' is allowed for the day-of-week field, and must be followed by a number between one and five. It allows you to specify constructs such as "the second Friday" of a given month.</p>
+                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');border-left-style: none;border-left-color: #ffffff;border-right-style: none;border-right-color: #ffffff;border-top-style: none;border-top-color: #ffffff;border-bottom-style: none;border-bottom-color: #ffffff;" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                    <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                    <col class="TableStyle-DATableStyle_Example-Column-Column2" style="width: 209px;" />
+                                                    <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Example-BodyE-Column1-Body1" rowspan="5">
+                                                                <p class="Example_No_Image">&#160;</p>
+                                                                <p class="Example_No_Image">&#160;</p>
+                                                                <p class="Example_No_Image">&#160;</p>
+                                                                <p class="Example_No_Image">&#160;</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Example-BodyF-Column2-Body1">
+                                                                <p class="Example_No_Image">Examples:</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Example-BodyD-Column2-Body1">
+                                                                <p class="Example_No_Image">&#160;</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Example-BodyF-Column2-Body1">
+                                                                <p class="Example_No_Image">* * * * * ?</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Example-BodyD-Column2-Body1">
+                                                                <p>every second</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Example-BodyF-Column2-Body1">
+                                                                <p class="Example_No_Image">0 * * * * ?</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Example-BodyD-Column2-Body1">
+                                                                <p class="Example_No_Image">every minute</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Example-BodyF-Column2-Body1">
+                                                                <p class="Example_No_Image">00 23 ? * MON-FRI</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Example-BodyD-Column2-Body1">
+                                                                <p class="Example_No_Image">23:00:00 every weekday night</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                            <td class="TableStyle-DATableStyle_Example-BodyC-Column2-Body1">
+                                                                <p class="Example_No_Image">0 2/3 1,9,22 11-26 1-6 ? 2010</p>
+                                                            </td>
+                                                            <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                <p class="Example_No_Image">in 2010 on the 11th to 26th of each month in Jauary to June every third minute starting from 2 past 1am, 9am and 10pm</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

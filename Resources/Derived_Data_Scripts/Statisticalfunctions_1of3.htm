@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-conditions="Capability_Function Set.Common Data Management,Product.Connectivity,Product.Customer Management,Product.Originations,Product.Strategy Design Studio,Product.Connectivity and Enrichment,Product.Originations Lite,Product.Pre-Screening,Product.Debt Management,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Statistical functions - 1 of 3" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Statistical functions - 1 of 3</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Example.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Header.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="Sb8TIt0MZkCBiW8ufcYgJg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="Sb8TIt0MZkCBiW8ufcYgJg:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Statistical functions - 1 of 3</h1>
+                                                <p class="bodytext">In all of the following:</p>
+                                                <ul class="listbullet">
+                                                    <li class="listbullet">array is a single row table characteristic containing numeric values</li>
+                                                    <li class="listbullet">bound is a limitation on the number of entries in the array on which the function will be based. For example a bound value of 10 will return the result based on the first 10 values. If no bound is entered then the function will be performed on all values in the array.</li>
+                                                </ul>
+                                                <p>The below series of drop downs provide detailed information on each array function.</p>
+                                                <p>For information on the Palette availability tables, see <a href="palette_availability.htm">Palette availability</a>.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"> Mean (Returns the average value for an array)</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <h2>Mean</h2>
+                                                        <table style="float: right;width: 228px;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th colspan="6" style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                                                                        <p colspan="6" style="font-weight: bold;">
+                        Palette availability
+                    </p>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/bhus_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/bhus_on_thumb_0_150.png" style="width: 37px;height: 48px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/bs_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/bs_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/be_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/be_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/dds_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/dds_on_thumb_0_150.png" style="width: 37px;height: 48px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/f_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/f_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/m_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/m_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/pr_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/pr_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/sf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/sf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/tf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/tf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/ttd_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/ttd_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/udbf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/udbf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/udf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/udf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="description">The <code><span class="blue" style="color: #0000cd;">MEAN</span></code> function returns the mean or average value contained in a numeric array.</p>
+                                                        <h3>Syntax</h3>
+                                                        <p class="code"><span class="blue" style="color: #0000cd;">MEAN</span><span class="monospaced">( &lt;</span><span class="blue" style="color: #0000cd;">array</span><span class="monospaced">&gt;, &lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt; )</span>
+                                                        </p>
+                                                        <p>or
+                </p>
+                                                        <p><code><span class="blue" style="color: #0000cd;">MEAN</span>( &lt;<span class="blue" style="color: #0000cd;">ldm array</span>&gt;, &lt;<span class="blue" style="color: #0000cd;">characteristic</span>&gt;, &lt;<span class="blue" style="color: #0000cd;">bound</span>&gt; )</code>
+                                                        </p>
+                                                        <p>&#160;</p>
+                                                        <h3>For usage of Mean( &lt;array&gt;, &lt;bound&gt; )</h3>
+                                                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Parameter or Return
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Data Type
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                        Description
+                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">array</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a fixed-size or dynamic array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric (Integer)</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a characteristic; a literal; or an expression that equates to an integer value. It must have a value of between 1 and the size of the array. It may be used to limit the number of elements in the array that are used to calculate the mean value. For example, if the array has a size of 12 and the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> is set to 10, then the <code><span class="blue" style="color: #0000cd;">MEAN</span></code> function will only use the first 10 elements.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p><code>Return</code>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>Numeric</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                        <p>The mean value for the array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h3>For usage of MEAN( &lt;ldm array&gt;, &lt;characteristic&gt;, &lt;bound&gt; )</h3>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">This usage is not supported in the Behavioural History Update Script, Behavioural Script or User Defined Behavioural Script components</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>This usage requires access to hierarchical group characteristics, which are only supported by scripts directly processed by the Enrichment Agent and the Decision Agent. Usage in an unsupported context will result in a deployment failure.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Parameter or Return
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Data Type
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                        Description
+                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">ldm array</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Array of an LDM</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a fixed-size or dynamic array of a Logical Data Model.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">&lt;<code><span style="color: #0000cd;">characteristic</span></code>&gt;</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">Numeric or String</td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">A reference to a &lt;<code><span style="color: #0000cd;">characteristic</span></code>&gt; which must be held within the <code>&lt;<span style="color: #0000cd;">ldm array</span>&gt;</code>, not in a subordinate Logical Data Model. This is the &lt;<code><span style="color: #0000cd;">characteristic</span></code>&gt; that the <code><span class="blue" style="color: #0000cd;">MEAN</span></code> will be executed against.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric (Integer)</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a characteristic; a literal; or an expression that equates to an integer value. It must have a value of between 1 and the size of the array. It may be used to limit the number of elements in the array that are tested for the maximum value. For example, if the array has a size of 12 and <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> is set to 10, then the <code><span style="color: #0000cd;">MEAN</span></code> function will only test the first 10 elements.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="code">Return</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>Numeric</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                        <p>The mean value of the elements in the LDM array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h3>Remarks</h3>
+                                                        <p>Currently dynamic arrays are only supported by scripts directly processed by the Enrichment Agent and the Decision Agent. For further details about the use and restrictions of dynamic arrays, see the Arrays topic in the Arrays topic in the Experian Domain Scripting Language (EDSL) User Guide. Dynamic arrays are not supported by the Scoring Function and Transformation Function components.</p>
+                                                        <p>The result can be stored in a numeric characteristic; passed as an argument into another function; or used as part of an expression.</p>
+                                                        <p>The <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> parameter specifies the upper element limit in an array. This is useful for arrays that contain sequential information such as the balance information for each month of a year, where it may be required to only find the mean value for a shorter period than a year.</p>
+                                                        <p>The mean value for the whole array can be obtained by using the Size function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> value to the size of the array. For further information, see the Size topic in the Experian Domain Scripting Language (EDSL) User Guide.</p>
+                                                        <p>The function should not be used on uninitialised arrays otherwise an error will be produced.</p>
+                                                        <p>Rounding is automatically applied to the nearest multiple if required. If the mean is midway between an upper and lower multiple, the mean is rounded up to the upper multiple. For example, a mean value of 10.5 would be rounded up to 11.</p>
+                                                        <p>The function cannot be used with Date or String arrays.</p>
+                                                        <p>It is recommended that the <code><span class="blue" style="color: #0000cd;">MEAN</span></code> function is used instead of the deprecated <code>AVGLASTN</code> function used by CMDS.</p>
+                                                        <p>If the <code><span class="blue" style="color: #0000cd;">MEAN</span></code> function is used in a Behavioural History Update Script, Behavioural Script or a User Defined Behavioural Function, the Customer Management runtime traps any on size error or divide by zero error and defers the record (known as a Behavioural Variable Deferral or BVD). An on size error occurs if the absolute value of the result of an arithmetic evaluation, after decimal point alignment, exceeds the largest value that can be contained in the result field.</p>
+                                                        <h3>Examples for MEAN ( &lt;array&gt;, &lt;bound&gt; )</h3>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                        <p>The following example uses an array called <code><span class="green" style="color: #228b22;">Example.Integerarray</span></code> which has 3 elements containing the values 5, 40 and 15 respectively. The <code><span class="blue" style="color: #0000cd;">MEAN</span></code>function is used to return the maximum value for all elements by using the Size function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> parameter. The result is 20 and is stored in the Integer characteristic called <code><span class="green" style="color: #228b22;">Example.Meanvalue</span></code>.</p>
+                                                                        <p class="code"><span class="green" style="color: #228b22;">'Example.Meanvalue'</span> = <span class="blue" style="color: #0000cd;">MEAN</span>(<span class="green" style="color: #228b22;">'Example.Integerarray'</span>, <span class="blue" style="color: #0000cd;">SIZE</span>(<span class="green" style="color: #228b22;">'Example.Integerarray'</span>))</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h3>Examples for MEAN( &lt;ldm array&gt;, &lt;characteristic&gt;, &lt;bound&gt; )</h3>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Example-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Example-BodyD-Column2-Body1">
+                                                                        <p>The following example uses an LDM array called <code><span class="blue" style="color: #0000cd;">Applicant</span></code> which contains an applicant's income information. The <code><span class="blue" style="color: #0000cd;">MEAN</span></code> function calculates the mean income over all applicants using a <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> defined based on the size of the LDM array. The result is stored in <code><span class="green" style="color: #228b22;">Application LDS.Mean Income</span></code>.</p>
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/applicant_ldm_array.png"><img class="MCPopupThumbnail img" data-mc-width="522" data-mc-height="126" src="../Images/applicant_ldm_array_thumb_0_150.png" tabindex="" /></a>
+                                                                        </p>
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/application_lds_array.png"><img class="MCPopupThumbnail img" data-mc-width="521" data-mc-height="183" src="../Images/application_lds_array_thumb_0_150.png" tabindex="" /></a>
+                                                                        </p>
+                                                                        <p class="code"><span class="green" style="color: #228b22;">'Application LDS.Ave Income'</span> = <span class="blue" style="color: #0000cd;">MEAN</span>(<span class="green" style="color: #228b22;">'Application LDS.Applicant'</span>, <span class="green" style="color: #228b22;">'Application LDS.Applicant'[1].'Income'</span>,<span class="blue" style="color: #0000cd;">SIZE</span>(<span class="green" style="color: #228b22;">'Application LDS.Applicant'</span>) )</p>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The characteristic being assessed, <code><span class="green" style="color: #228b22;">'Application LDS.Applicant'[1].'Income'</span></code>, refers to the first element in the LDM array. However, any of the elements in the LDM array can be used.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">
+                                                                        <p>&#160;</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                        <p>The following is an invalid example in which the income characteristics are not a direct child of the Applicant LDM.</p>
+                                                                        <p class="code"><span class="green" style="color: #228b22;">'Application LDS with Two Level LDM.Ave Income'</span> = <span class="blue" style="color: #0000cd;">MEAN</span> (<span class="green" style="color: #228b22;">'Application LDS with Two Level LDM.Applicant'</span>,<span class="green" style="color: #228b22;">'Application LDS with Two Level LDM.Applicant'[1]</span>.<span class="green" style="color: #228b22;">'Applicant Information.Income'</span>, 6)</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Median (Returns the middle value in the array)</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <h2>Median</h2>
+                                                        <p class="description">The <code><span class="blue" style="color: #0000cd;">MEDIAN</span></code> function returns the median or middle value of the values held in a numeric array. </p>
+                                                        <table style="float: right;width: 228px;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col style="width: 50px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 51px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col style="width: 38px;" class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th colspan="6" style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                        Palette availability
+                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/bhus_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/bhus_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/bs_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/bs_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/be_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/be_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/dds_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/dds_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/f_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/f_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/m_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/m_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/pr_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/pr_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/sf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/sf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/tf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/tf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/ttd_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/ttd_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/udbf_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/udbf_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/udf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/udf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h4>Syntax</h4>
+                                                        <p class="code"><span class="blue" style="color: #0000cd;">MEDIAN</span><span class="monospaced">( &lt;</span><span class="blue" style="color: #0000cd;">array</span><span class="monospaced">&gt;, &lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt; )</span>
+                                                        </p>
+                                                        <p>&#160;</p>
+                                                        <p>&#160;</p>
+                                                        <p>&#160;</p>
+                                                        <p>&#160;</p>
+                                                        <p>&#160;</p>
+                                                        <p>&#160;</p>
+                                                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Parameter or Return
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Data Type
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                        Description
+                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">array</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a fixed-size or dynamic array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric (Integer)</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a characteristic; a literal; or an expression that equates to an integer value. It must have a value of between 1 and the size of the array. It may be used to limit the number of elements in the array that are used to calculate the median value. For example, if the array has a size of 12 and the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> is set to 10, then the <code><span class="blue" style="color: #0000cd;">MEDIAN</span></code> function will only use the first 10 elements.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p><code>Return</code>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>Numeric</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                        <p>The median value for the array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h3>Remarks</h3>
+                                                        <p>Currently dynamic arrays are only supported by scripts directly processed by the Enrichment Agent and the Decision Agent. For further details about the use and restrictions of dynamic arrays, see the Arrays topic in the Experian Domain Scripting Language (EDSL) User Guide. Dynamic arrays are not supported by the Scoring Function and Transformation Function components.</p>
+                                                        <p>The result can be stored in a numeric characteristic; passed as an argument into another function; or used as part of an expression.</p>
+                                                        <p>The <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> parameter specifies the upper element limit in an array. This is useful for arrays that contain sequential information such as the balance information for each month of a year, where it may be required to only find the median value for a shorter period than a year.</p>
+                                                        <p>The median value for the whole array can be obtained by using the <code><span class="blue" style="color: #0000cd;">SIZE</span></code> function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> value to the size of the array. For further information, see the Size topic in the Experian Domain Scripting Language (EDSL) User Guide. </p>
+                                                        <p>If an even number of elements is used the median value is rounded up, i.e. the two middle numbers are added together, divided by 2, and rounded up.</p>
+                                                        <p>The function should not be used on uninitialised arrays otherwise an error will be produced.</p>
+                                                        <p>The function cannot be used with Date or String arrays.</p>
+                                                        <h3>Examples</h3>
+                                                        <p>The following example uses an array called <code><span class="green" style="color: #228b22;">Example.Integerarr</span></code> which is assumed to have a size of 11 and contains the following values: 3, 7, 5, 21, 23, 39, 23, 40, 23, 14 and 12. The <code><span class="blue" style="color: #0000cd;">MEDIAN</span></code> function is used to return the median value for all elements by using the Size function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> value. The result is 21 and is stored in the Integer characteristic called <code><span class="green" style="color: #228b22;">Example.Medianvalue</span></code>.</p>
+                                                        <p class="code"><span class="green" style="color: #228b22;">'</span><span class="green" style="color: #228b22;">Example.Medianvalue</span><span class="green" style="color: #228b22;">'</span> = <code><span class="blue" style="color: #0000cd;">MEDIAN</span></code>(<span class="green" style="color: #228b22;">'</span><span class="green" style="color: #228b22;">Example.Integerarr</span><span class="green" style="color: #228b22;">'</span>, <span class="blue" style="color: #0000cd;">SIZE</span>(<span class="green" style="color: #228b22;">'</span><span class="green" style="color: #228b22;">Example.Integerarray</span><span class="green" style="color: #228b22;">'</span>))</p>
+                                                        <p>The following example uses an array called <code><span class="green" style="color: #228b22;">Example.Integerarr</span></code> which is assumed to have a size of 12 and contains the following values: 3, 7, 5, 13, 20, 23, 39, 23, 40, 23, 14 and 12. The <code><span class="blue" style="color: #0000cd;">MEDIAN</span></code> function is used to return the median value for all elements by using the Size function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> value. The result is 17 and is stored in the Integer characteristic called <code><span class="green" style="color: #228b22;">Example.Medianvalue</span></code>.</p>
+                                                        <p class="code"><span class="green" style="color: #228b22;">'</span><span class="green" style="color: #228b22;">Example.Medianvalue</span><span class="green" style="color: #228b22;">'</span> = <span class="blue" style="color: #0000cd;">MEDIAN</span>(<span class="green" style="color: #228b22;">'</span><span class="green" style="color: #228b22;">Example.Integerarr</span><span class="green">'</span>, <span class="blue" style="color: #0000cd;">SIZE</span>(<span class="green" style="color: #228b22;">'</span><code style="color: #228b22;">Example.Integerarray</code><span class="green" style="color: #228b22;">'</span>))</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Mode (Returns the most common value in the array)</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <h2>Mode</h2>
+                                                        <table style="float: right;margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th colspan="6" style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                        Palette availability
+                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/bhus_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/bhus_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/bs_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/bs_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/be_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/be_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/dds_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/dds_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/f_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/f_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/m_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/m_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/pr_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/pr_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/sf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/sf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/tf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/tf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/ttd_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/ttd_on_thumb_0_150.png" style="width: 37px;height: 48px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/udbf_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/udbf_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/udf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/udf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="description">The <code><span class="blue" style="color: #0000cd;">MODE</span></code> function returns the first most common value in a numeric array. Parameters are also available for capturing the number of modes and their values.</p>
+                                                        <h3>Syntax</h3>
+                                                        <p class="code"><span class="blue" style="color: #0000cd;">MODE</span><span class="monospaced">( &lt;</span><span class="blue" style="color: #0000cd;">array</span><span class="monospaced">&gt;, &lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt;, &lt;</span><span class="blue" style="color: #0000cd;">modality</span><span class="monospaced">&gt;, </span>
+                                                            <br /><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">modalValues</span><span class="monospaced">&gt; </span><span class="monospaced">)</span>
+                                                        </p>
+                                                        <p>&#160;</p>
+                                                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Parameter or Return
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Data Type
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                        Description
+                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">array</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a fixed-size or dynamic array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric (Integer)</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a characteristic; a literal; or an expression that equates to an integer value. It must have a value of between 1 and the size of the array. It may be used to limit the number of elements in the array that are used to find the mode(s). For example, if the array has a size of 12 and the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> is set to 10, then the <code><span class="blue" style="color: #0000cd;">MODE</span></code> function will only use the first 10 elements.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">modality</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric (Integer)</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to an Integer characteristic. This is used by the <code><span class="blue" style="color: #0000cd;">MODE</span></code> function to store the number of modes found in the array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">modalValues</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to the fixed-size or dynamic array. This is used by the <code><span class="blue" style="color: #0000cd;">MODE</span></code> function to store the value of modes found in the array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>Return</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>Numeric</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                        <p>The first mode found in the array, i.e. the one with the lowest value.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h3>Remarks</h3>
+                                                        <p>Currently dynamic arrays are only supported by scripts directly processed by the Enrichment Agent and the Decision Agent. For further details about the use and restrictions of dynamic arrays, For further details about the use and restrictions of dynamic arrays, see the Arrays topic in the Experian Domain Scripting Language (EDSL) User Guide. Dynamic arrays are not supported by the Scoring Function and Transformation Function components.</p>
+                                                        <p>The result can be stored in a numeric characteristic; passed as an argument into another function; or used as part of an expression.</p>
+                                                        <p>The <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> parameter specifies the upper element limit in an array. </p>
+                                                        <p>The mode values for the whole array can be obtained by using the <code><span class="blue" style="color: #0000cd;">SIZE</span></code> function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> value to the size of the array. For further information, see the Size topic in the Experian Domain Scripting Language (EDSL) User Guide.</p>
+                                                        <p>The function should not be used on uninitialised arrays otherwise an error will be produced.</p>
+                                                        <p>The function cannot be used with Date or String arrays.</p>
+                                                        <p class="bodytext">As MODE has a number of optional parameters (i.e., bound, modality, and modalValues) the following example will explain this function more clearly:</p>
+                                                        <p class="bodytext">Where there is more than one most common value in the array, the first value (in ascending order) will be returned. A modality characteristic can optionally be entered to show how many most common values were found. A modalValues array characteristic can be entered to show what those most common values are.</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                        <p>If you write </p>
+                                                                        <p>     'Most Common Value' = MODE ('Array 1', 100, 'How Many Values', 'Values' )</p>
+                                                                        <p>The script will evaluate the most common value in the first 100 values for 'Array 1'. In 'Array 1' there are two most common values; 215 and 400.</p>
+                                                                        <p>The values returned would therefore be:</p>
+                                                                        <p>     'Most Common Value' = 215</p>
+                                                                        <p>     'How Many Values' = 2</p>
+                                                                        <p>    'Values' = 215, 400</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h3>Example</h3>
+                                                        <p>The following example uses an array called <code><span class="green" style="color: #228b22;">Example.Integerarr</span></code> which is assumed to have a size of 12 and contains the following values: 3, 7, 5, 13, 20, 23, 39, 39, 40, 23, 14 and 12. It can be seen from these values, that there are two modes 23 and 39, i.e. it is bimodal.</p>
+                                                        <p>The <code><span class="blue" style="color: #0000cd;">MODE</span></code> function is used to return the modes for all elements by using the <code><span class="blue" style="color: #0000cd;">SIZE</span></code> function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> value.</p>
+                                                        <p>The return value is 23 and is stored in the Integer characteristic called <code><span class="green" style="color: #228b22;">Example.FirstMode</span></code>. The Integer characteristic <code><span class="green" style="color: #228b22;">Example.NumModes</span></code> is used by the function to store the number of modes found, i.e. 2.</p>
+                                                        <p>The Integer array <code><span class="green" style="color: #228b22;">Example.ModeValues</span></code> is used by the function to store the value of each mode: i.e. 23 and 39.</p>
+                                                        <p class="code"><span class="green" style="color: #228b22;">'Example.FirstMode</span><span class="green"><span style="color: #228b22;">'</span></span> = <span class="blue" style="color: #0000cd;">MODE</span>(<span style="color: #228b22;">'Example.Integerarr'</span>, <span class="blue" style="color: #0000cd;">SIZE</span>(<span class="green" style="color: #228b22;">'Example.Integerarray'</span>), <span class="green" style="color: #228b22;">'Example.NumModes', 'Example.ModeValues'</span>)</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Std (Returns the standard deviation of the values held in the array)</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <h2>Std</h2>
+                                                        <table style="float: right;margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th colspan="6" style="text-align: center;" class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                        Palette availability
+                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/bhus_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/bhus_on_thumb_0_150.png" style="width: 37px;height: 48px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/bs_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/bs_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/be_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/be_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/dds_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/dds_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/f_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/f_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/m_off.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/m_off_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/pr_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/pr_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/sf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/sf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/tf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/tf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/ttd_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/ttd_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/udbf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/udbf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1" style="text-align: center;">
+                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/udf_on.png"><img class="MCPopupThumbnail img" data-mc-width="38" data-mc-height="50" src="../Images/udf_on_thumb_0_150.png" style="width: 38px;height: 50px;" tabindex="" /></a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="description">The <code><span class="blue" style="color: #0000cd;">STD</span></code> function returns the standard deviation for the values in a specified numeric array.</p>
+                                                        <h3>Syntax</h3>
+                                                        <p class="code"><span class="blue" style="color: #0000cd;">STD</span><span class="monospaced">( &lt;</span><span class="blue" style="color: #0000cd;">array</span><span class="monospaced">&gt;, &lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt; )</span>
+                                                        </p>
+                                                        <p>&#160;</p>
+                                                        <p>&#160;</p>
+                                                        <p>&#160;</p>
+                                                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Parameter or Return
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">
+                        Data Type
+                    </th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">
+                        Description
+                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">array</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric array</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a fixed-size or dynamic array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="code"><span class="monospaced">&lt;</span><span class="blue" style="color: #0000cd;">bound</span><span class="monospaced">&gt;</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p>Numeric (Integer)</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1">
+                                                                        <p>A reference to a characteristic; a literal; or an expression that equates to an integer value. It must have a value of between 1 and the size of the array. It may be used to limit the number of elements in the array that are used to calculate the standard deviation. For example, if the array has a size of 12 and the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> is set to 10, then the <code><span class="blue" style="color: #0000cd;">STD</span></code> function will only use the first 10 elements.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="code">Return</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p>Numeric</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyA-Column1-Body1">
+                                                                        <p>The standard deviation for the array.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h3>Remarks</h3>
+                                                        <p>Currently dynamic arrays are only supported by scripts directly processed by the Enrichment Agent and the Decision Agent. For further details about the use and restrictions of dynamic arrays, see the Arrays topic in the Experian Domain Scripting Language (EDSL) User Guide. Dynamic arrays are not supported by the Scoring Function and Transformation Function components.</p>
+                                                        <p>The result can be stored in a numeric characteristic; passed as an argument into another function; or used as part of an expression.</p>
+                                                        <p>For the Behavioural History Update Script, Behavioural Script, User Defined Behavioural Script components, the <code><span class="blue" style="color: #0000cd;">STD</span></code> function is limited by months since open. History record elements are initialised to zeroes. This means the <code><span class="blue" style="color: #0000cd;">STD</span></code> function can include all History elements up to the number of months since open even when the History hasn't been stored yet.</p>
+                                                        <p>The <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> parameter specifies the upper element limit in an array. This is useful for arrays that contain sequential information such as the balance information for each month of a year, where it may be required to only find the standard deviation for a shorter period than a year.</p>
+                                                        <p>The standard deviation for the whole array can be obtained by using the <code><span class="blue" style="color: #0000cd;">SIZE</span></code> function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> value to the size of the array. For further information, see the Size topic in the Experian Domain Scripting Language (EDSL) User Guide.</p>
+                                                        <p>The function should not be used on uninitialised arrays otherwise an error will be produced.</p>
+                                                        <p>The properties of the characteristic used to store the return value must also be set to values that are appropriate to the expected returned data.</p>
+                                                        <p>If the <code><span class="blue" style="color: #0000cd;">STD</span></code> function is used in a Behavioural History Update Script, Behavioural Script or a User Defined Behavioural Function, the Customer Management runtime traps any on size error or divide by zero error and defers the record (known as a Behavioural Variable Deferral or BVD). An on size error occurs if the absolute value of the result of an arithmetic evaluation, after decimal point alignment, exceeds the largest value that can be contained in the result field.</p>
+                                                        <h3>Example</h3>
+                                                        <p>The following example uses an array called <code><span class="green" style="color: #228b22;">Example.Integerarr</span></code>which is assumed to have a size of 12 and contains the following values: 12, 7, 5, 13, 20, 23, 39, 23, 40, 23, 14 and 12. The <code><span class="blue" style="color: #0000cd;">STD</span></code> function is used to return the standard deviation for all elements by using the <code><span class="blue" style="color: #0000cd;">SIZE</span></code> function to set the <span class="monospaced">&lt;</span><code style="color: #0000cd;">bound</code><span class="monospaced">&gt;</span> value. The result is 11.234 and is stored in the Float characteristic called <code>Example.Std</code>. This characteristic has a length of 6 and a scale of 3.</p>
+                                                        <p class="code"><span class="green" style="color: #228b22;">'</span><span class="green" style="color: #228b22;">Example.Std</span><span class="green" style="color: #228b22;">'</span> = <span class="blue" style="color: #0000cd;">STD</span>(<span class="green" style="color: #228b22;">'</span><span class="green" style="color: #228b22;">Example.Integerarr</span><span class="green" style="color: #228b22;">'</span>, <span class="blue" style="color: #0000cd;">SIZE</span>(<span class="green" style="color: #228b22;">'</span><span class="green" style="color: #228b22;">Example.Integerarray</span><span class="green" style="color: #228b22;">'</span>))</p>
+                                                    </div>
+                                                </div>
+                                                <p><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Statistical functions - 2 of 3|Statisticalfunctions_2of3.htm||Statistical functions - 3 of 3|Statisticalfunctions_3of3.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

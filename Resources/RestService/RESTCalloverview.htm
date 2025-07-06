@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Building a solution|[%=System.LinkedTitle%]" data-mc-conditions="Product.Originations,Product.Connectivity,Product.Connectivity and Enrichment,Product.Originations Lite,Product.Strategy Design Studio,Product.Customer Management,Product.Collections,Capability_Function Set.Common Data Management" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Data Copy overview" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>REST Call  overview </title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Example.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Tip.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Caution.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="1qKEFI8F-UO0v8W570avaA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="1qKEFI8F-UO0v8W570avaA:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="heading1">REST&#160;Call </h1>
+                                                <p>The REST Call component can be used in a process node within the following flow(s) to call the external service defined in a Swagger component:</p>
+                                                <ul>
+                                                    <li data-mc-conditions="Product.Originations,Product.Collections,Product.Strategy Design Studio,Product.Customer Management">Decision Process Flow</li>
+                                                </ul>
+                                                <p>The diagram below illustrates at a high level the REST&#160;Call process. </p>
+                                                <p data-mc-conditions="Product.Strategy Design Studio,Product.Customer Management"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/overview_diagram_DPF.png"><img class="MCPopupThumbnail img" data-mc-width="810" data-mc-height="623" src="Images/overview_diagram_DPF_thumb_0_150.png" tabindex="" /></a>
+                                                </p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Overview</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The REST Call component is used to call the external service defined in a Swagger component. It takes the data from the Logical Data Source component and uses it to create the call request and then maps the response back to the component.</p>
+                                                        <p>The <a href="RESTCallEditor.htm">REST Call editor</a> allows the user to define the REST Call component definition. This includes assigning the service provider by selecting:</p>
+                                                        <ul>
+                                                            <li>the Swagger component</li>
+                                                            <li>the associated Logical Data Source to use for the input and output data</li>
+                                                            <li>the service to call</li>
+                                                        </ul>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyE-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyD-Column2-Body1">
+                                                                        <p>The Logical Data Model output will contain some common  REST API characteristics. For more information, refer to the <a href="CommonRESTAPICharacteristics.htm">Common REST API characteristics</a> topic.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>The connection information and security settings must be configured for the REST Call outbound in the runtime environment. For more information, refer to the following documentation(s):</p>
+                                                                        <ul>
+                                                                            <li>Configuring the REST Call outbound topic in the Business Process Server Configuration Guide</li>
+                                                                            <li>Configuring the Decision Agent topic in the Decision Agent Guide</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>Before the REST Call component can be tested  in a flow using the Interactive Tester, users must either configure the <b>scl.cfg</b> file, or associate a Connection Profile to the Swagger component, see the Configuring a REST Call in preparation for testing a flow section below.</p>
+                                                        <h2>Swagger component</h2>
+                                                        <p>The Swagger component links the REST service data contained in a Swagger specification file to a Logical Data Model component.</p>
+                                                        <p>Swagger is an open-source software framework which is used to describe an API using a human- and machine-readable common language, and is supported by a wide range of third party tools. Swagger is a specification file created and provided by a service or an API provider (for example, Experian, Amazon). This file contains the information that standardises API practices to provide access to the services using REST protocols. This file includes information such as the available entry points (or services) including their URL and authentication, input and output parameters.</p>
+                                                        <p>The <a href="SwaggerEditor.htm">Swagger editor</a> allows the user to attach a Swagger definition file and launch the Swagger wizard or Swagger Update wizard:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><a href="SwaggerWizard.htm">Swagger wizard</a> - generates the service components for the selected service. The generated service components are linked to the selected service and include a Logical Data Model, a Logical Data Source, and a REST Call.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><a href="swagger_update_wizard.htm">Swagger Update wizard</a> - updates the Logical Data Model structure of services with changes defined in the attached Swagger definition file supplied by their Third-Party provider. These changes may include for example updates in the Data Model, such as newly added characteristics or modification of existing characteristic definitions.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Define a REST&#160;Call using the Swagger wizard</a><a name="Use_wizard"></a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The following steps provide instructions on using the Swagger wizard to generate service components and to update the generated REST service components such as when linking the REST Call component to an existing Logical Data Source without affecting the selected Logical Data Source.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Create a Swagger Component</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1">From the Explorer window, right click at the required folder level and select Add component.</li>
+                                                                    <li value="2">Select Swagger.</li>
+                                                                    <li value="3">In the Create component dialog enter the name of the Swagger component.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Caution.css');" class="TableStyle-DATableStyle_Caution" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Caution-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Caution-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Caution-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Caution-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Caution-BodyA-Column2-Body1">
+                                                                                    <p>Only alphanumeric letters (A-Z or a-z), digits (0-9), parentheses (()), space ( ), underscore (_) and dash (-) are allowed in the Swagger component name.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <li value="4">Select the Open new components in component editor checkbox.</li>
+                                                                    <li value="5">Click OK. The <a href="SwaggerEditor.htm">Swagger editor</a> will be open allowing you to edit the Swagger. The Swagger component name will be listed in the Explorer window under the selected folder level and is identified by the  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerIcon.png"><img class="MCPopupThumbnail img" data-mc-width="20" data-mc-height="20" src="Images/SwaggerIcon_thumb_0_150.png" tabindex="" /></a> icon.</li>
+                                                                </ol>
+                                                                <p>If you do not wish the editor to open, keep the check box de-selected. From the Explorer window right click on the Swagger component and select Open.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Define a Swagger component</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1">With the <a href="RESTCallEditor.htm">Swagger editor</a> open, click Attach…<br />The software opens the Attach dialog from where you can navigate to the file you require.</li>
+                                                                    <li value="2">Select the required Swagger specification file (.json or .yaml format) and click Attach.<br />The Attach dialog will close and populate the Swagger editor with the information contained in the attached Swagger specification file.</li>
+                                                                    <li value="3">Within the Name column, double click on the cell and type the name for the service you wish to use.</li>
+						
+						
+					An invalid Logical Data Model icon appears in the Logical Data Model column.
+                                      <table style="mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0"><col class="TableStyle-DATableStyle_Tip-Column-Column1" /><col class="TableStyle-DATableStyle_Tip-Column-Column2" /><tbody><tr class="TableStyle-DATableStyle_Tip-Body-Body1"><td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td><td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1"><p>To remove a service name, right click on the service and select Clear Service Name. The same action is available in the toolbar.</p></td></tr></tbody></table><table style="mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0"><col class="TableStyle-DATableStyle_Tip-Column-Column1" /><col class="TableStyle-DATableStyle_Tip-Column-Column2" /><tbody><tr class="TableStyle-DATableStyle_Tip-Body-Body1"><td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td><td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1"><p>Use the Validation functionality to view information relating to an error.</p></td></tr></tbody></table><br /><li value="4"> Optionally, repeat step 3 to define the required services.</li><li value="5">Save the changes.</li></ol>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Use_swagger_wizard"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Use the Swagger Wizard to generate the service components</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="procedureheading">To use the Swagger wizard to generate the service components</p>
+                                                                <ol>
+                                                                    <li value="1">Within the Swagger editor, right click on the service name for which you want to generate the associated service components and select Generate service components or select the following icon in the toolbar <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerWizardLauncher.png"><img class="MCPopupThumbnail img" data-mc-width="22" data-mc-height="22" src="Images/SwaggerWizardLauncher_thumb_0_150.png" tabindex="" /></a>.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Tip-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Tip-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Tip-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1">
+                                                                                    <p>For information on the service details (for example, Index, Path, Method), refer to the Table Columns section in the Swagger editor topic.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <p>The <a href="SwaggerWizard.htm">Swagger wizard</a> will be displayed.</p>
+                                                                    <li value="2">In the Service Components screen, within the Logical Data Model section of the wizard, click on the ellipsis button and select the target folder in the solution to store the Logical Data Model component that will be generated. </li>
+                                                                    <li value="3">The default component name is displayed in the Component field (for example, &lt;service name&gt; LDM).
+Optionally, type the component name you want to use in the Component field.</li>
+                                                                    <ol>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Tip-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Tip-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Tip-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1">
+                                                                                        <p> Information relating to the configuration can be viewed in the information area below the Component field.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </ol>
+                                                                    <li value="4">Repeat the above steps to define the Logical Data Source and REST Call components.</li>
+                                                                    <ol>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Tip-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Tip-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Tip-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1">
+                                                                                        <p>From step 1 of the wizard, you can use an existing Logical Data Source component and link it to the REST&#160;Call component that will be created. The content of the selected Logical Data Source will not be affected.</p>
+                                                                                        <p>To enable the Define Logical Data Source in REST Call section in the next screen, deselect only the Logical Data Source checkbox.</p>
+                                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerWizardStep1_UseExistingLDS.png"><img class="MCPopupThumbnail img" data-mc-width="905" data-mc-height="597" src="Images/SwaggerWizardStep1_UseExistingLDS_thumb_0_150.png" tabindex="" /></a>
+                                                                                        </p>
+                                                                                        <p>In Step 2. Additional Information of the wizard.</p>
+                                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerWizardStep2_DefineLDSSection_epp.png"><img class="MCPopupThumbnail img" data-mc-width="1355" data-mc-height="738" src="Images/SwaggerWizardStep2_DefineLDSSection_epp_thumb_0_150.png" tabindex="" /></a>
+                                                                                        </p>
+                                                                                        <p>The Logical Data Model content type section allows you to select the content type to generate.</p>
+                                                                                        <p>From the Define Logical Data Source in REST Call section, you can select the folder that contains the existing Logical Data Source using the Browse button. Then select the Logical Data Source that will be linked to the REST&#160;Call component from the drop down list in the Component field.</p>
+                                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                            <tbody>
+                                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                                        <p>The Component field will be disabled if there is no Logical Data Source in the selected folder.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </ol>
+                                                                    <li value="5">Click Next.</li>
+                                                                    <li value="6">The Additional Information screen will be displayed and the Logical Data Model Classic content will be selected as the default setting. <br />If you wish to generate the Logical Data Model component with JSON content (or with Semi Structured Data Definition content), from the Logical Data Model content type section of the <a href="SwaggerWizard.htm">wizard</a>, select the radio button corresponding to the required content type.<br /></li>
+                                                                    <ol data-mc-continue="true">
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Example.css');" class="TableStyle-DATableStyle_Example" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Example-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Example-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Example-BodyA-Column2-Body1">
+                                                                                        <p>
+                                   The Logical Data Model will be generated with JSON content based on two characteristics, one for the request and the other for the response.
+These characteristics are stored in a string and share the same name ‘PlainTextJson’. They are in the same Logical Data Model (input and output) but are in different sub-Logical Data Models. An example is shown below.</p>
+                                                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerWizardJSONExamples.png"><img class="MCPopupThumbnail img" data-mc-width="609" data-mc-height="212" src="Images/SwaggerWizardJSONExamples_thumb_0_150.png" tabindex="" /></a>
+                                                                                        </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" style="width: 922px;" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                        <p>The next page of the wizard (Step 3. Logical Data Model Content) will only appear, if the content to be generated requires additional user input to complete any missing information.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </ol>
+                                                                    <li value="7">Click Next. </li>
+                                                                    <li value="8">The Logical Data Model Content screen will be displayed. Click on the characteristic string length or array size (applicable to Classic content only) that you want to edit and type the new value.
+
+							
+							By default, characteristic string values that are not specified in the attached Swagger specification file will be set to a value of 1 (for example, length and array size). All other characteristic types are set to their maximum value (ready only).</li>
+                                                                    <li value="9">Repeat step 8 until all the required values are set.</li>
+                                                                    <li value="10">Optionally, to edit multiple string values, hold down the Ctrl key and select the required characteristic row(s).</li>
+                                                                    <li value="11">
+                                                                        <p>Click on the Edit selected nodes <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerWizardStep3_EditPropertyValue_Icon.png"><img class="MCPopupThumbnail img" data-mc-width="19" data-mc-height="20" src="Images/SwaggerWizardStep3_EditPropertyValue_Icon_thumb_0_150.png" tabindex="" /></a> icon in the toolbar. The <a href="EditPropertyValuesDialog.htm">Edit Property Values dialog</a> appears displaying the editable value(s). </p>
+                                                                        <ol data-mc-continue="true">
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                            <p>Depending on the selected row(s), the Edit Property Values dialog will display:</p>
+                                                                                            <ul>
+                                                                                                <li>both editable values, if the selection contains both values which are not greyed out.</li>
+                                                                                                <li>one editable value, if the selection contains only one value that is not greyed out.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </ol>
+                                                                    </li>
+                                                                    <li value="12">Type the new values in the Length and/or Array Size fields.</li>
+                                                                    <li value="13">Click OK.</li>
+                                                                    <li value="14">Click Next</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                    <p>The Logical Data Model output will contain some common  REST API characteristics. For more information, refer to the <a href="CommonRESTAPICharacteristics.htm">Common REST API characteristics</a> topic.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <br />
+                                                                    <li value="15">The Summary screen will be displayed. This screen includes information such as the components to be generated, details of each component, etc. If required, this information can be copied and pasted into Word or Excel.By default, only characteristic string values (length and array size) that requires user input are highlighted in yellow. Click Finish. The service components will be generated. <br />Once the components have been generated successfully the Information dialog appears.</li>
+                                                                    <li value="16">Click OK to close the Information dialog.</li>
+                                                                    <li value="17">Save the Swagger component, this will avoid having errors in the REST&#160;Call component.</li>
+                                                                </ol>
+                                                                <p>The generated service components are automatically linked to the REST Call component and appear in the Explorer window, for example, &lt;service name&gt; LDM, &lt;service name&gt; LDS and &lt;service name&gt; REST Call.</p>
+                                                                <p>The associated Logical Data Model is automatically assigned to the selected service and appears in the Logical Data Model column of the Swagger editor. </p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Tip-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Tip-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Tip-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyE-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyD-Column2-Body1">
+                                                                                <p>From the Swagger editor, you can assign a Logical Data Model component to a REST service. To be compatible, the input and output definitions in both the Logical Data Model and&#160;REST&#160;service must match.</p>
+                                                                                <p>To assign a Logical Data Model component to a REST service, drag and drop the new component from the Resources window onto the current component in the Logical Data Model column cell.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Tip-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1">
+                                                                                <p>To open a Logical Data Model in its editor from the Swagger editor, right click on the row with the Logical Data Model and select Open Logical Data Model.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Use the Swagger wizard to update the REST Service components</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>The wizard can be used to update the generated REST service components. For example, when linking the REST Call component to an existing Logical Data Source. In this scenario the content of the selected Logical Data Source will not be affected.</p>
+                                                                <p class="procedureheading">To update the REST Service components using the Swagger Wizard</p>
+                                                                <ol>
+                                                                    <li value="1">Within the Swagger editor, right click on the service name you want to update and select Generate service components or select the following icon in the toolbar <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerWizardLauncher.png"><img class="MCPopupThumbnail img" data-mc-width="22" data-mc-height="22" src="Images/SwaggerWizardLauncher_thumb_0_150.png" tabindex="" /></a>. The Service Components screen of the Swagger wizard is displayed.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                    <p>By default, if the selected service contains an existing Logical Data Model both the Browse button and the Existing checkbox will be disabled in the Logical Data Model section.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <li value="2">Optionally, to update the current Logical Data Model, select the Logical Data Model checkbox to enable this section.</li>
+                                                                    <ol>
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                        <p>If the service contains an existing Logical Data Model the Existing check box will be selected by default. Unselecting the Existing check box will activate the Component field allowing you to create a new Logical Data Model.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </ol>
+                                                                    <li value="3">From the Logical Data Source section, deselect the Logical Data Source checkbox to disable this section.</li>
+                                                                    <li value="4">From the REST Call section: </li>
+                                                                    <p>
+                                                                        <ol style="list-style-type: lower-alpha;">
+                                                                            <li value="1">Click on the Browse button and select the folder that contains the REST&#160;Call component.</li>
+                                                                            <li value="2">Click on the Component field and select the REST&#160;Call to be updated via the drop down list.</li>
+                                                                        </ol>
+                                                                    </p>
+                                                                    <li value="5">Click Next.</li>
+                                                                    <li value="6">The Additional Information screen is displayed. From the Define Logical Data Source in REST Call section:</li>
+                                                                    <p>
+                                                                        <ol style="list-style-type: lower-alpha;">
+                                                                            <li value="1">Click on the Browse button and select the folder that contains the Logical Data Source component. </li>
+                                                                            <li value="2">Click on the Component field and select the Logical Data Source that will be linked to the REST&#160;Call component via the drop down list. The content of the selected Logical Data Source will not be affected.</li>
+                                                                        </ol>
+                                                                    </p>
+                                                                    <li value="7">Click Next.</li>
+                                                                    <li value="8">The Logical Data Model Content screen will be displayed. Optionally, click on a characteristic string length or array size  to edit and type the new value.</li>
+                                                                    <ol data-mc-continue="true">
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                        <p>Dynamic array can be used by setting the array size to a star (*).</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </ol>
+                                                                    <li value="9">Repeat the above step until all the required values are set.</li>
+                                                                    <li value="10">Optionally, to edit multiple string values in one shot, hold down the Ctrl key and select the required characteristic row(s).</li>
+                                                                    <li value="11">Click on the Edit selected nodes <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerWizardStep3_EditPropertyValue_Icon.png"><img class="MCPopupThumbnail img" data-mc-width="19" data-mc-height="20" src="Images/SwaggerWizardStep3_EditPropertyValue_Icon_thumb_0_150.png" tabindex="" /></a> icon in the toolbar. The <a href="EditPropertyValuesDialog.htm">Edit Property Values dialog</a> appears displaying the editable value(s). </li>
+                                                                    <ol data-mc-continue="true">
+                                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                            <tbody>
+                                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                        <p>Depending on the selected row(s), the Edit Property Values dialog will display:</p>
+                                                                                        <ul>
+                                                                                            <li>both editable values, if the selection contains both values which are not greyed out.</li>
+                                                                                            <li>one editable value, if the selection contains only one value that is not greyed out.</li>
+                                                                                        </ul>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </ol>
+                                                                    <li value="12">Type the new values in the Length and/or Array Size fields.</li>
+                                                                    <li value="13">Click OK.</li>
+                                                                    <li value="14">Click Next.</li>
+                                                                    <li value="15">
+                                                                        <p>The Summary screen will be displayed, click Finish.</p>
+                                                                    </li>
+                                                                    <li value="16">Click OK to close the Information dialog.</li>
+                                                                    <li value="17">
+                                                                        <p>Save the Swagger component, this will avoid having errors in the REST&#160;Call component.</p>
+                                                                    </li>
+                                                                </ol>
+                                                                <p>The updated service components are automatically linked to the REST Call component. </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="swagger_update_wizard"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Use the Swagger Update wizard to update the LDM structure to match the Swagger definition</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>The Swagger Update wizard can be used to update the Logical Data Model structure of services with changes defined in the attached Swagger definition file supplied by their Third-Party provider. These changes may include updates in the Data Model, such as newly added characteristics or the modification of existing characteristic definitions.</p>
+                                                                <p class="procedureheading">To update your Logical Data Model (LDM) Swagger definition using the Swagger Update wizard</p>
+                                                                <ol>
+                                                                    <li value="1">
+                                                                        <p>Within the <a href="SwaggerEditor.htm">Swagger editor</a>, right click on the LDM and select Update Logical Data Model (or use either the shortcut key (Alt+U), or click the Swagger Update wizard icon <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/swagger_update_wizard_icon.png"><img class="MCPopupThumbnail img" data-mc-width="25" data-mc-height="24" src="Images/swagger_update_wizard_icon_thumb_0_150.png" tabindex="" /></a> in the toolbar).</p>
+                                                                    </li>
+                                                                    <li value="2">
+                                                                        <p>In the Logical Data Model Content screen of the <a href="swagger_update_wizard.htm">Swagger Update wizard</a>:</p>
+                                                                        <ol style="list-style-type: lower-alpha;">
+                                                                            <li value="1">
+                                                                                <p>Optionally, click on a characteristic string length or array size to edit and type the new value.</p>
+                                                                            </li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                            <p>Dynamic array can be used by setting the array size to a star (*).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <li value="2">
+                                                                                <p>Repeat the above step until all the required values are set.</p>
+                                                                            </li>
+                                                                            <li value="3">
+                                                                                <p>Optionally, to edit lengths and/or array sizes for the selected characteristics in a single action, hold down the Ctrl key and select the required characteristic row(s).</p>
+                                                                            </li>
+                                                                            <li value="4">
+                                                                                <p>Click on the Edit selected nodes <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/SwaggerWizardStep3_EditPropertyValue_Icon.png"><img class="MCPopupThumbnail img" data-mc-width="19" data-mc-height="20" src="Images/SwaggerWizardStep3_EditPropertyValue_Icon_thumb_0_150.png" tabindex="" /></a> icon in the toolbar. The <a href="EditPropertyValuesDialog.htm">Edit Property Values dialog</a> appears displaying the editable value(s). </p>
+                                                                            </li>
+                                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                                <tbody>
+                                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                            <p>Depending on the selected row(s), the Edit Property Values dialog will display:</p>
+                                                                                            <ul>
+                                                                                                <li>both editable values, if the selection contains both values which are not greyed out.</li>
+                                                                                                <li>one editable value, if the selection contains only one value that is not greyed out.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <li value="5">
+                                                                                <p>Type the new value(s) in the length and/or array size fields.</p>
+                                                                            </li>
+                                                                            <li value="6">
+                                                                                <p>Click OK.</p>
+                                                                            </li>
+                                                                            <li value="7">
+                                                                                <p>Click Next.</p>
+                                                                            </li>
+                                                                        </ol>
+                                                                    </li>
+                                                                    <li value="3">
+                                                                        <p>The Summary screen will be displayed, click Finish.</p>
+                                                                    </li>
+                                                                    <li value="4">
+                                                                        <p>Click OK to close the Information dialog.</p>
+                                                                    </li>
+                                                                </ol>
+                                                                <p>The Logical Data Model Swagger definition is updated to include the latest changes.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Define a REST Call using the REST Call editor</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="procedureheading">To define a REST Call via the REST&#160;Call editor</p>
+                                                        <ol>
+                                                            <li value="1">From the Explorer window, right click at the required folder level and select Add component.</li>
+                                                            <li value="2">Select REST Call.</li>
+                                                            <li value="3">Enter the name of the REST Call.</li>
+                                                            <li value="4">Ensure the Open new components in component editor checkbox is selected.</li>
+                                                            <li value="5">Click OK. The component appears in the editor. The REST Call name is listed in the Explorer window under the selected folder level and is identified by the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/RestCallIcon.png"><img class="MCPopupThumbnail img" data-mc-width="20" data-mc-height="21" src="Images/RestCallIcon_thumb_0_150.png" tabindex="" /></a> icon.</li>
+                                                            <li value="6">Click on the Swagger Expand (+) button in the Resources window.</li>
+                                                            <li value="7">Drag and drop the required Swagger component onto the Swagger field in the REST Call editor.</li>
+                                                            <li value="8">Click on the REST Service field in the REST Call editor and select the required REST service name via the drop down list.</li>
+                                                            <li value="9">Click on the Logical Data Source Expand (+) button in the Resources window.</li>
+                                                            <li value="10">Drag and drop the associated Logical Data Source onto the Logical Data Model field.</li>
+                                                            <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                        <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                            <p>For the Logical Data Model to be compatible with a REST Call component, their input and output definitions must match.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <li value="11">Save the changes.</li><![CDATA[                        ]]></ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Configuring a REST Call in preparation for testing a flow </a><a name="Configuring_cfg"></a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>During the solution deployment process, the <a href="SCLConfigProperties.htm">Swagger Client Library (SCL) configuration keys</a> are generated into a template file (for example, scl.cfg.update, scl.&lt;alias&gt;.cfg.update). Once the SCL configuration properties file has been deployed successfully, it can be found in the Output files area of the Job Submission Console.</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" style="width: 944px;" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                        <p>When calling a  HTTPS service using the REST Call component, a trust store certificate is required in the following:</p>
+                                                                        <ul>
+                                                                            <li>Decision Analytics Server trust store </li>
+                                                                            <li data-mc-conditions="Product.Customer Management,Product.Originations,Product.Collections,Product.Strategy Design Studio">Decision Agent standalone</li>
+                                                                        </ul>
+                                                                        <p>For further information, refer to the following:</p>
+                                                                        <ul>
+                                                                            <li>Decision Analytics Servers Installation and Configuration Guide
+                                    </li>
+                                                                            <li data-mc-conditions="Product.Collections,Product.Customer Management,Product.Originations,Product.Strategy Design Studio">Decision Agent Guide
+                                    </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>To test  <MadCap:conditionalText data-mc-conditions="Product.Originations,Product.Collections,Product.Customer Management,Product.Strategy Design Studio">a Decision Process Flow </MadCap:conditionalText>that contains a REST Call outbound using the Interactive Tester, users must either configure the <b>scl.cfg</b> file or associate a Connection Profile to the Swagger component. The <b>scl.cfg</b> file or the Connection Profile is used to establish a connection to an external service.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">To configure the <b>scl.cfg</b> file for testing a Decision Process Flow</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1">Open the scl.&lt;alias&gt;.cfg.update file in a text editor.</li>
+                                                                    <li value="2">Copy and paste the content of this file into the <b>scl.cfg</b> file located in the etc folder (Studio: \&lt;installation path&gt;\etc).</li>
+                                                                    <li value="3">Depending on the remote service(s) defined in the Swagger file, configure the required properties in the <b>scl.cfg</b> file. </li>
+                    For an example template of the properties file, refer to the Configuring the Decision Agent topic in the Decision Agent Guide.<li value="4">Save the changes.</li></ol>
+                                                                <p>The Decision Process Flow can now be tested using the Interactive Tester. For more information, refer to the <a href="../Decision_Process_Flow/Testacompletedecisionprocessflow.htm">Test a complete Decision Process Flow</a> topic.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">To configure a HTTPS&#160;call in the Studio for a Decision Process Flow</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1">Update the <b>scl.cfg</b> file located in the etc folder (Studio: \&lt;installation path&gt;\etc) with the HTTPS URL and use port 443.</li>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" style="width: 944px;" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                    <p>The trust store location and password used by the studio are defined in the eda-server.properties file. This file is located in the user directory.</p>
+                                                                                    <p>Any changes made to the eda-server.properties file will require a studio restart for the changes to take effect.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" style="width: 944px;" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                    <p>The certificate should be provided or recovered from the calling service website.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <li value="2">Add the certificate into the trust store file  using the Java Keytool or KeyStore Explorer.</li>
+                                                                </ol>
+                                                                <p>The Decision Process Flow can now be tested using the Interactive Tester. For more information, refer to the <a href="../Decision_Process_Flow/Testacompletedecisionprocessflow.htm">Test a complete Decision Process Flow</a> topic</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Associating a connection profile with a Swagger component</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>A REST component can use the connection profile after it is associated with a Swagger component. This feature introduces a new property in the Swagger component in its properties panel called connection profile.</p>
+                                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/AssociateSwagger_ConnectionProfile.png"><img class="MCPopupThumbnail img" data-mc-width="378" data-mc-height="286" src="Images/AssociateSwagger_ConnectionProfile_thumb_0_150.png" tabindex="" /></a>
+                                                                </p>
+                                                                <p>The connection profile property is optional. If the property is not defined, the REST component will take the parameters from the existing  <b>scl.cfg</b> file. This is to support backward compatibility for the existing solution. </p>
+                                                                <p>The list will display all available individual connection profiles. When the Studio executes the REST component, the individual connection profile will be combined with the global connection profile.</p>
+                                                                <p>For more information about Connection Profiles, refer to the <a href="../Studio_Basics/ServerConnectionProfilesOverview.htm">Server Connection Profiles Overview</a>.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

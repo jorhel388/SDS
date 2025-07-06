@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="_Skins_2019_topnav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Supplementary Features|Logical Data" data-mc-conditions="Capability_Function Set.Logical Data,Product.Connectivity,Product.Connectivity and Enrichment,Product.Customer Management,Product.Debt Management,Product.Originations,Product.Originations Lite,Product.Pre-Screening,Product.Strategy Design Studio,Product.Collections" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Keywords" content="Logical Data Model overview" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title> Logical Data Model overview </title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Stylesheets/new_experian_styles_2019.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Stylesheets/DATableStyle_Caution.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Row_and_ColumnHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Tip.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_Header.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Stylesheets/DATableStyle_ColumnHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+			//script block edited 2019/26/06 10:26
+			//called as the window loads up
+			window.onload = function() {
+			logSearch();
+			};
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../SDS_Help_System_overview.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="4" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NewRowClass2">
+                                        <div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_toolbar mc-component nocontent" style="mc-topic-toolbar-items: Separator Home Separator QuickSearch Separator Back Separator Forward Separator;">
+                                                <div class="button-group-container-left">
+                                                    <div class="button-separator">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_search_proxy mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div data-sticky-container="" id="w63Z6svDjUSVo-_aWGzx6g">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="w63Z6svDjUSVo-_aWGzx6g:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_side_menu_skin mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/sub_in_context.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Logical Data Models</h1>
+                                                <p class="bodytext">A Logical Data Model is a template data definition structure which can be used to define all or part of the content of a Logical Data Source. Characteristics are created within Logical Data Models, however it is not until these Logical Data Models are referenced from within Logical Data Sources that these characteristics can be used to describe and reference the data used.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Overview</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">A Logical Data Model can contain subordinate (embedded) Logical Data Models. Embedded Logical Data Models can be created within a Logical Data source. </p>
+                                                        <p class="bodytext">Studio performance will degrade with very large numbers of characteristics in Logical Data Sources and Logical Data Models. Because of this, the general recommendations would be:</p>
+                                                        <ul>
+                                                            <li>to have up to 1000 characteristics in each level of a data model (referenced or embedded), including in the first (root) level of the Logical Data Source</li>
+                                                            <li>to have no more than 10 levels in a data source (a warning will be generated when the user tries to add 20 embedded levels)</li>
+                                                            <li>to have no more than 10,000 characteristics in total in each Logical Data Source</li>
+                                                            <li>to restrict the total number of characteristics in Logical Data Sources published to a folder to 100,000 - though the Logical Data Source selector in the Characteristic Chooser can be used to improve the usability of the chooser with a very large number of data sources and characteristics</li>
+                                                        </ul>
+                                                        <p>These limits can be exceeded, but slower studio performance when opening/closing other components and selecting characteristics may occur. In addition, the studio memory configuration (see the Decision Analytics Servers Configuration Guide) should be increased when working with solutions which have large numbers of data sources or characteristics.</p>
+                                                        <p>&#160;</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Caution.css');" class="TableStyle-DATableStyle_Caution" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Caution-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Caution-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Caution-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Caution-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Caution-BodyA-Column2-Body1">Each Logical Data Source should not exceed 40,000 characteristics due to performance issues.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="SubHeading"><a name="Characteristic_properties"></a>Characteristic properties</p>
+                                                        <p class="bodytext">Each characteristic has certain properties defined by the user when it is created. These properties consist of:</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_ColumnHeader.css');" class="TableStyle-DATableStyle_ColumnHeader_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_ColumnHeader_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_ColumnHeader_eds-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyE-Column1-Body1" role="rowheader">
+                                                                        <p class="tablebodytext"><strong class="specialbold">Name</strong>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyD-Column2-Body1">
+                                                                        <p class="tablebodytext">Unique alphanumeric name</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_ColumnHeader_eds-Body-Body2">
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyE-Column1-Body2" role="rowheader">
+                                                                        <p class="tablebodytext"><strong class="specialbold">Type</strong>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyD-Column2-Body2">
+                                                                        <p class="tablebodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/string.jpg" data-mc-popup-alt="string"><img class="MCPopupThumbnail img" data-mc-width="14" data-mc-height="14" src="Images/string_thumb_0_150.jpg" alt="string" tabindex="" /></a> String , <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/integer.jpg" data-mc-popup-alt="integer"><img class="MCPopupThumbnail img" data-mc-width="14" data-mc-height="14" src="Images/integer_thumb_0_150.jpg" alt="integer" tabindex="" /></a> Integer, <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/float.jpg" data-mc-popup-alt="float"><img class="MCPopupThumbnail img" data-mc-width="14" data-mc-height="14" src="Images/float_thumb_0_150.jpg" alt="float" tabindex="" /></a> Float, Decimal, <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/date.jpg" data-mc-popup-alt="date"><img class="MCPopupThumbnail img" data-mc-width="14" data-mc-height="17" src="Images/date_thumb_0_150.jpg" alt="date" tabindex="" /></a> Date, <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../SSDD/images/ssdd.png"><img class="MCPopupThumbnail img" data-mc-width="20" data-mc-height="20" src="../SSDD/images/ssdd_thumb_0_150.png" tabindex="" /></a> Semi Structured Data Definition, <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/emb_ldm.png"><img class="MCPopupThumbnail img" data-mc-width="19" data-mc-height="17" src="Images/emb_ldm_thumb_0_150.png" style="width: 18px;height: 16px;" tabindex="" /></a>Embedded or <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/ref_ldm.png"><img class="MCPopupThumbnail img" data-mc-width="17" data-mc-height="16" src="Images/ref_ldm_thumb_0_150.png" tabindex="" /></a> referenced Logical Data Model Name(s)</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyE-Column1-Body1" role="rowheader">
+                                                                        <p class="tablebodytext"><strong class="specialbold">Length</strong>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyD-Column2-Body1">
+                                                                        <p class="tablebodytext">The number of digits or characters the field can hold (this includes any decimal component).</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_ColumnHeader_eds-Body-Body2">
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyE-Column1-Body2" role="rowheader">
+                                                                        <p class="tablebodytext"><strong class="specialbold">Scale</strong>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyD-Column2-Body2">
+                                                                        <p class="tablebodytext">The number of decimal places required</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyB-Column1-Body1" role="rowheader">
+                                                                        <p class="tablebodytext"><strong class="specialbold">Array Size</strong>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_ColumnHeader_eds-BodyA-Column2-Body1">
+                                                                        <p class="tablebodytext">The number of times a characteristic appears in an array.<br />If the characteristic is not an array, this is set to 0.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>The sizing for arrays is shown below:</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Row_and_ColumnHeader.css');" class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Column-Column2" />
+                                                            <col class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Column-Column2" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-HeadE-Column1-Header1">&#160;</th>
+                                                                    <th class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-HeadF-Column2-Header1">Static</th>
+                                                                    <th class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-HeadD-Column2-Header1">Dynamic</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyH-Column1-Body1" role="rowheader">Characteristic arrays</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyI-Column2-Body1">Unlimited</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyG-Column2-Body1">Unlimited</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyB-Column1-Body1" role="rowheader">Logical Data Model arrays</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyC-Column2-Body1">Limited to 999</td>
+                                                                    <td class="TableStyle-DATableStyle_Row_and_ColumnHeader_eds-BodyA-Column2-Body1">Unlimited</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>A  Logical Data Model can be temporarily&#160;sorted on any of the&#160;characteristic properties. For example, left clicking the column header for the 'Name' characteristic property&#160;will sort the rows in ascending Name order and clicking it&#160;a second time will change the sort to descending Name order. Clicking a column header a&#160;third time will remove sorting and return the  Logical Data Model rows to their&#160;original indexed order. Any sorting applied to a Logical Data Model is&#160;temporary and the original indexed order&#160;will be retained&#160;the next time the component is opened, even if changes were saved.</p>
+                                                        <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                    <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Drag and drop reordering of rows is not available when a Logical Data Model has sorting applied to any column. The sort must be removed before drag and drop can be used.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="SubHeading">Invalid characters</p>
+                                                        <p class="bodytext">Characteristic names can not contain invalid characters. If the user enters a name that contains an invalid character a warning message will be displayed.</p>
+                                                        <p class="bodytext">Invalid characters include the following: "$%*+=[]:'#\ /,&lt;&gt;?.= (including the " and the .)</p>
+                                                        <p class="bodytext">A space or a blank is not an invalid character. </p>
+                                                        <p class="SubHeading">Characteristic definitions</p>
+                                                        <p class="bodytext">A characteristic name is defined using the following elements: logical data source, name e.g. App Data.Credit Card Balances</p>
+                                                        <table style="mc-table-style: url('../Stylesheets/DATableStyle_Header.css');" class="TableStyle-DATableStyle_Header_eds" cellspacing="0">
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <col class="TableStyle-DATableStyle_Header_eds-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Head-Header1">
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Structure</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadE-Column1-Header1">Example</th>
+                                                                    <th class="TableStyle-DATableStyle_Header_eds-HeadD-Column1-Header1">Full Characteristic Name</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext"><strong class="specialbold">Logical Data Source</strong>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyE-Column1-Body1">
+                                                                        <p class="tablebodytext">App Data</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyD-Column1-Body1" rowspan="2">App Data.Credit Card Balances</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-DATableStyle_Header_eds-Body-Body1">
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="tablebodytext"><strong class="specialbold">Item Name</strong>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-DATableStyle_Header_eds-BodyB-Column1-Body1">
+                                                                        <p class="tablebodytext">Credit Card Balances</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="bodytext">The following diagram illustrates how referenced and embedded logical data models are displayed in a logical data source.</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/referenced_ldms_2013r1.jpg" data-mc-popup-alt="referenced_ldms_2013R1"><img class="MCPopupThumbnail img" data-mc-width="831" data-mc-height="305" src="Images/referenced_ldms_2013r1_thumb_0_150.jpg" alt="referenced_ldms_2013R1" tabindex="" /></a>
+                                                        </p>
+                                                        <p class="bodytext">When a characteristic is used in a component it can be identified by its full name. <br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/characteristic_name_eg.jpg" data-mc-popup-alt="characteristic_name_eg"><img class="MCPopupThumbnail img" data-mc-width="283" data-mc-height="20" src="Images/characteristic_name_eg_thumb_0_150.jpg" alt="characteristic_name_eg" tabindex="" /></a></p>
+                                                        <p class="bodytext">When a characteristic originally created in a logical data model is used in a Logical Data Source, the system still uses the same structure to identify the characteristic. However, rather than list numerous Logical Data Models in the characteristic's name, the system omits the Logical Data Model name from the full characteristic name. For example:</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/characteristic_name_eg_2.jpg" data-mc-popup-alt="char_eg_2"><img class="MCPopupThumbnail img" data-mc-width="283" data-mc-height="20" src="Images/characteristic_name_eg_2_thumb_0_150.jpg" alt="char_eg_2" tabindex="" /></a>
+                                                            <br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/characteristic_name_eg_3.jpg" data-mc-popup-alt="char_eg_3"><img class="MCPopupThumbnail img" data-mc-width="283" data-mc-height="20" src="Images/characteristic_name_eg_3_thumb_0_150.jpg" alt="char_eg_3" tabindex="" /></a>
+                                                            <br />Although the same characteristic (Occupation Code, in the App Data Generic Logical Data Model) is used twice in the App Data Logical Data Source, the above example shows that the two characteristics can easily be identified by their unique names within the App Data Logical Data Source.</p>
+                                                        <p class="bodytext">When an array characteristic is used that is held in a Logical Data Model, the system will still use the same structure to identify the characteristic.</p>
+                                                        <p class="bodytext"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/array_name.jpg" data-mc-popup-alt="array_example"><img class="MCPopupThumbnail img" data-mc-width="283" data-mc-height="20" src="Images/array_name_thumb_0_150.jpg" alt="array_example" tabindex="" /></a>
+                                                            <br />The above example illustrates that the second element has been selected.</p>
+                                                        <p class="bodytext">For more information on how characteristic names are constructed see <a id="h3204" class="jumpxreftemplate" title="Characteristic name examples" href="Characteristicnameexamples.htm" target="_self">Characteristic name examples</a>.</p>
+                                                        <p class="bodytext"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics=" Logical Data Source overview |LogicalDataSourceoverview.htm||Characteristic name examples|Characteristicnameexamples.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownh2_dropdown"><span class="MCDropDownHead dropDownHead dropDownHeadH2_dropdown"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspoth2_hotspot MCDropDownHotSpot_ MCDropDownHotSpot_h2_dropdown H2_dropdown MCHotSpotImage" href="#" aria-expanded="false">Edit a Logical Data Model</a><a name="Edit_LDM"></a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="bodytext">A Logical Data Model is a template data definition structure which can be used to define all or part of the content of a Logical Data Source. Characteristics are created within Logical Data Models, however it is not until these Logical Data Models are referenced from within Logical Data Sources that these characteristics can be used to describe and reference the data used.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Create a Logical Data Model</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A Logical Data Model can be created from the Explorer window.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You will only be able to add a component type that has been allowed for the selected folder. If it is not allowed it will not be listed and therefore cannot be created.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To create a Logical Data Model</p>
+                                                                <ol class="table">
+                                                                    <li value="1">From the Explorer right click at the required folder level and select Add a component.</li>
+                                                                    <li value="2">Select Logical Data Model from the list of available components.</li>
+                                                                    <li value="3">In the Create a Component screen enter the name for this Logical Data Model.</li>
+                                                                    <li value="4">Select the Open new components in component editor check box.</li>
+                                                                    <li value="5">Click on the OK button.<br />The Logical Data Model Editor will open allowing you to edit a Logical Data Model.<br />The Logical Data Model name will be listed in the Explorer under the selected folder level. The component is identified by the <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/ldm_icon_2013r1.jpg" data-mc-popup-alt="ldm_icon_2013R1"><img class="MCPopupThumbnail img" data-mc-width="16" data-mc-height="16" src="Images/ldm_icon_2013r1_thumb_0_150.jpg" alt="ldm_icon_2013R1" tabindex="" /></a> icon.</li>
+                                                                </ol>
+                                                                <p class="bodytext">If you do not wish the editor to open, keep the check box de-selected. From the Explorer window right click on the Logical Data Model and select Open. </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="procedureheading">To edit a Logical Data Model</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Create a characteristic in a Logical Data Model</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">A Logical Data Model is a template data definition structure which can be used to define all or part of the content of a Logical Data Source. Characteristics are created within Logical Data Models, however it is not until these Logical Data Models are referenced from within Logical Data Sources that these characteristics can be used to describe and reference the data used.</p>
+                                                                <p class="procedureheading">To create a characteristic</p>
+                                                                <ol class="table">
+                                                                    <li value="1">With the Logical Data Model editor open, in the "Name" column, type the name of the characteristic in the first row.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The name needs to be unique in one nested level of Logical Data Model.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <ol class="table" data-mc-continue="true">
+                                                                    <li value="2">Using your Tab key, move the cursor to the "Type" column and select a type for this characteristic.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">You can type the first letter of the "Type" followed by the Tab key to select the type you require quickly. Select:<br />- "S" for String<br />- "I" for Integer<br />- "F" for Float<br />- "D" for Decimal or Date. Use the down arrow to select Date.<br />Typing a letter may also list a Logical Data Model or Semi Structured Data Definition if the letter is appropriate, see  reference a Logical Data Model from within a Logical Data Model</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p>Enter the Length, Scale and Array Size (if applicable) for the characteristic. If the array size is not known or is dynamic enter *. Non arrays will default to 0.</p>
+                                                                <ol class="table" data-mc-continue="true">
+                                                                    <li class="listnumber" value="3">To be able to create another characteristic, another row will need to be added, either:<ul style="list-style-type: square;"><li class="MadCap1">In the last row  click with your Down arrow key or right click anywhere in the last row and select Add Row</li></ul><p class="indent">or:</p><ul style="list-style-type: square;"><li class="MadCap1">In the last cell of the last row use your Tab key, or press Enter  to add a new row</li></ul></li>
+                                                                </ol>
+                                                                <ol class="table" data-mc-continue="true">
+                                                                    <li class="listnumber" value="4">Repeat steps 1 to 4 to add the characteristics you require.</li>
+                                                                </ol>
+                                                                <ol class="table" data-mc-continue="true">
+                                                                    <li class="listnumber" value="5">To change the order of the characteristics, click on the row number of the characteristic you wish to move.<br />A green arrow will be displayed.<a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/global/greenarrow.jpg"><img class="MCPopupThumbnail img" data-mc-width="73" data-mc-height="16" src="../Images/global/greenarrow_thumb_0_150.jpg" tabindex="" /></a></li>
+                                                                    <li value="6">Drag and drop this to the desired position.</li>
+                                                                    <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                        <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                                <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Drag and drop reordering of rows is not available when a Logical Data Model has sorting applied to any column. The sort must be removed before drag and drop can be used.</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </ol>
+                                                                <ol class="table" data-mc-continue="true">
+                                                                    <li class="listnumber" value="7">To insert a new row above the currently selected row, right click and select Insert Row, or Ctlr+I on your keyboard, and a new row will be inserted above the row that was highlighted.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Tip-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Tip-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Tip-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1">To insert more than one row, select the number of rows you wish to insert, right click and select Insert Row. The rows will be inserted above the highlighted rows.<br />A non-contiguous insert can be carried out using the Ctrl key, enabling any number of rows to be inserted above the rows that have been highlighted.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="bodytext">The Logical Data Model can now be referenced by a Logical Data Source; these characteristics can now be used in the system.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Copy and paste characteristics within a Logical Data Model</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>The Logical Data Model editor allows users to copy and paste characteristics using the standard copy and paste functionality.</p>
+                                                                <p class="procedureheading">To copy and paste characteristics</p>
+                                                                <ol>
+                                                                    <li value="1">Open the Logical Data Model that contains the characteristics you wish to copy.</li>
+                                                                    <li value="2">Select the row(s) that you wish to copy.</li>
+                                                                    <li value="3">Either right click and select Copy, or use Ctrl+C on your keyboard to copy these characteristics including their type, length, scale and array size.</li>
+                                                                    <li value="4">Click on the cell where you wish these characteristics to be pasted.</li>
+                                                                    <li value="5">Either right click and select Paste or use Ctrl+V on your keyboard.<br />If the Logical Data Model only contains one row the system will display the following error message:<br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/warning.png"><img class="MCPopupThumbnail img" data-mc-width="596" data-mc-height="128" src="Images/warning_thumb_0_150.png" tabindex="" /></a></li>
+                                                                    <li value="6">Click on the OK button.<br />The characteristics will be pasted into the logical data source.<br /></li>
+                                                                </ol>
+                                                                <p>Those characteristic names that are now no longer unique will be displayed in the editor and will need to be corrected before the Logical Data Model  is valid.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Rename a characteristic in the Logical Data Model</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Characteristics in the Logical Data Model can be renamed.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyE-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyD-Column2-Body1">
+                                                                                <p>Before modifying a characteristic, consider any potential impacts to the system.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">
+                                                                                <p>For a component that references a characteristic directly (e.g. a Class set), if the component editor is open, renaming the referenced characteristic should update the editor. However, for script editors (e.g. Boolean Expression, Policy Rules, Derived Data Script, etc.), if the component editor is open, and a referenced characteristic is renamed (and the changes are saved), an error will show in the editor, an example of which can be seen below. </p>
+                                                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/Rename_Note_Screenshot.png"><img class="MCPopupThumbnail img" data-mc-width="292" data-mc-height="207" src="Images/Rename_Note_Screenshot_thumb_0_150.png" tabindex="" /></a>
+                                                                                </p>
+                                                                                <p>Closing and re-opening the script editor will correct the issue and the characteristics will display renamed.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To rename a characteristic</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Logical Data Model editor open, click on the name of the characteristic you wish to rename in the Name column.</li>
+                                                                    <li class="listnumber" value="2">Edit or rename the characteristic as required</li>
+                                                                    <li class="listnumber" value="3">Press Enter and the name will be changed.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" style="width: 875px;" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">It is possible to enter duplicate names within nesting levels. However, the duplicated names will be shown with an error message. It is possible to save a Logical Data Model in an invalid state.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="bodytext">Continue editing the Logical Data Model as required.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Remove a characteristic from the Logical Data Model</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Characteristics can be removed from a Logical Data Model.</p>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1">
+                                                                    </col>
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2">
+                                                                    </col>
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Before attempting to modify a characteristic consider any potential impacts to the system.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="procedureheading">To remove a characteristic</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">With the Logical Data Model editor open, right click on the name of the characteristic you wish to remove and select Delete Row.</li>
+                                                                </ol>
+                                                                <p class="bodytext">Continue editing the Logical Data Model as required.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Specify valid values for a characteristic</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">The user can assign a list of valid values to a logical characteristic. For example, the user can specify that a valid numeric characteristic can only be one of the following: 1, 3, 5, 7, 9; or that an alpha characteristic be one of the following: B, U, X, A, C.</p>
+                                                                <p class="procedureheading">To specify valid values for a characteristic</p>
+                                                                <ol class="table">
+                                                                    <li value="1">With the Logical Data Model editor open, right click on a characteristic and select Show Details to display the <a id="h4541" class="jumpxreftemplate" title="Valid Values editor" href="ValidValueseditor.htm" target="_self">Valid Values editor</a>.</li>
+                                                                    <li value="2">Right click in the editor and select Add Row.</li>
+                                                                    <li value="3">Enter the first valid value in the Value column. Integer characteristic types will accept only numeric values, string characteristic types will accept either numeric or alpha values. The number of characters in the Value field can not exceed the length specified for the characteristic in the Logical Data Model editor.</li>
+                                                                    <li value="4">Enter a name to identify the value in the Name column.</li>
+                                                                    <li value="5">Repeat steps 2, 3 and 4 until all valid values for the characteristic have been entered.</li>
+                                                                </ol>
+                                                                <p class="bodytext">Click on the Save icon in the main tool bar to save the value assignments to the Logical Data Model.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Reference a Logical Data Model from within a Logical Data Model</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Logical Data Models can be referenced from within Logical Data Models or created as embedded Logical Data Models within a Logical Data Model. </p>
+                                                                <p class="procedureheading">To reference a Logical Data Model from within a Logical Data Model</p>
+                                                                <ol class="table">
+                                                                    <li value="1">With the Logical Data Model editor open, in the "Name" column, type the name of the characteristic in the first row.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The name needs to be unique in the instance of the Logical Data Model.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <ol class="table" data-mc-continue="true">
+                                                                    <li value="2">In the Resources window, expand the Logical Data Model list to display all the available Logical Data Models.</li>
+                                                                    <li value="3">Drag and drop the required Logical Data Model on to the "Type" column or using your Tab key, move the cursor to the "Type" column and select the Logical Data Model you require.</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">The system will not allow you to select the name of the Logical Data Model within which you are editing.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <ol class="table" data-mc-continue="true">
+                                                                    <li value="4">Repeat steps 1 to 3 as necessary.</li>
+                                                                </ol>
+                                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Tip-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Tip-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Tip-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1">A referenced Logical Data Model <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/ref_ldm.png"><img class="MCPopupThumbnail img" data-mc-width="17" data-mc-height="16" src="Images/ref_ldm_thumb_0_150.png" tabindex="" /></a> or referenced Semi Structured Data Definition <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../SSDD/images/ssdd.png"><img class="MCPopupThumbnail img" data-mc-width="20" data-mc-height="20" src="../SSDD/images/ssdd_thumb_0_150.png" tabindex="" /></a> can be opened from within the Logical Data Model editor by either right clicking on it and selecting Open, or by double clicking on one of its non-editable cells.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p class="bodytext">The characteristics within the referenced Logical Data Model can now be used in the Logical Data Model.<br /></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">Create an embedded Logical Data Model within the Logical Data Model</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">Logical Data Models can be referenced from within other Logical Data Models, which means they can be changed from outside the Logical Data Model and may be shared by other Logical Data Sources and Logical Data Models; or alternatively a Logical Data Model can be created from within the Logical Data Model editor and will be embedded into the Logical Data Model. In this case the characteristics contained in the Logical Data Model can only be used by this Logical Data Model and edited from within this Logical Data Model.</p>
+                                                                <p class="procedureheading">To insert an embedded Logical Data Model</p>
+                                                                <ol class="table">
+                                                                    <li value="1">With the Logical Data Model editor open, right click on a characteristic and select Insert (Embedded). The Insert Embedded Component dialog is displayed.<table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0"><col class="TableStyle-DATableStyle_Note-Column-Column1" /><col class="TableStyle-DATableStyle_Note-Column-Column2" /><tbody><tr class="TableStyle-DATableStyle_Note-Body-Body1"><td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td><td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">Select Add Embedded to add the Logical Data Model to the end of the list of characteristics you are creating, select Insert Embedded to insert the Logical Data Model above the row that you have selected.</td></tr></tbody></table><p class="listcontinue"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/insert_embedded_component_2013r1.png"><img class="MCPopupThumbnail img" data-mc-width="241" data-mc-height="284" src="Images/insert_embedded_component_2013r1_thumb_0_150.png" tabindex="" /></a></p></li>
+                                                                    <li value="2">Type a unique name (within the Logical Data Model) for the Logical Data Model.</li>
+                                                                    <li value="3">Click OK to confirm the selection and close the dialog.<br />The system will open the Logical Data Model editor.</li>
+                                                                    <li value="4">You will now need to edit the embedded Logical Data Model.</li>
+                                                                    <li value="5">Once you have finished defining the Logical Data Model, click on the Close Internal Editor button.<br />The logical data model will be added to the Logical Data Model. </li>
+                                                                    <li value="6">Repeat steps 1 through 5 until all the embedded Logical Data Models you require have been added.</li>
+                                                                    <li value="7">The characteristics held in the embedded Logical Data Models will now be available to use within the Logical Data Model.</li>
+                                                                </ol>
+                                                                <table style="width: 100%;mc-table-style: url('../Stylesheets/DATableStyle_Tip.css');" class="TableStyle-DATableStyle_Tip" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Tip-Column-Column1" />
+                                                                    <col class="TableStyle-DATableStyle_Tip-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Tip-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Tip-BodyA-Column2-Body1">An embedded Logical Data Model <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/emb_ldm.png"><img class="MCPopupThumbnail img" data-mc-width="19" data-mc-height="17" src="Images/emb_ldm_thumb_0_150.png" style="width: 18px;height: 16px;" tabindex="" /></a> can be opened from within the Logical Data Model editor by either right clicking on it and selecting Open, or by double clicking on one of its non-editable cells.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"></a><a name="Search_LDM"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Search within a Logical Data Model</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="bodytext">The user can search for any characters within any column within the  Logical Data Model editor, including whole words, parts of words, Type, Length even Array Size.</p>
+                                                                <p class="bodytext">The  Logical Data Model editor must be open, the focus must be on the editor.</p>
+                                                                <p class="procedureheading">To perform a search within a Logical Data Model</p>
+                                                                <ol class="listnumber">
+                                                                    <li class="listnumber" value="1">Press Ctrl+F to activate the search functionality at the bottom of the editor:<br /><a href="Images/ctrl+f.png"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/ctrl+f.png"><img class="MCPopupThumbnail img" data-mc-width="642" data-mc-height="227" src="Images/ctrl+f_thumb_0_150.png" tabindex="" /></a></a></li>
+                                                                    <li class="listnumber" value="2">Type in the word or part of a word you want to find.</li>
+                                                                    <li class="listnumber" value="3">The first instance that matches is highlighted in the editor</li>
+                                                                    <li class="listnumber" value="4">Click on Previous or Next to find other instances of a match.</li>
+                                                                </ol>
+                                                                <p class="procedureheading">To perform a search within Valid Values</p>
+                                                                <ol>
+                                                                    <li value="1">With the  Logical Data Model open, right click on a characteristic and select Show Details to display the <a id="h4541" class="jumpxreftemplate" title="Valid Values editor" href="ValidValueseditor.htm" target="_self">Valid Values editor</a>.</li>
+                                                                    <li value="2">Press Ctrl+F to activate the search functionality at the bottom of the Valid Values editor</li>
+                                                                    <li class="listnumber" value="3">Type in the word or part of a word you want to find.</li>
+                                                                    <li class="listnumber" value="4">The first instance that matches is highlighted in the editor</li>
+                                                                    <li class="listnumber" value="5">Click on Previous or Next to find other instances of a match</li>
+                                                                </ol>
+                                                                <table style="mc-table-style: url('../Stylesheets/DATableStyle_Note.css');" class="TableStyle-DATableStyle_Note" cellspacing="0">
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column1" style="width: 45px;" />
+                                                                    <col class="TableStyle-DATableStyle_Note-Column-Column2" />
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-DATableStyle_Note-Body-Body1">
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyB-Column1-Body1">&#160;</td>
+                                                                            <td class="TableStyle-DATableStyle_Note-BodyA-Column2-Body1">A search can only be activated if the required editor has focus (Logical Data Model or Valid Values). The search is only active in the editor which has focus, and cannot search both the Logical Data Model editor and the Valid Values editor at the same time.</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <p>The characteristics held in the Logical Data Model are now ready to be used in the system.</p>
+                                                    </div>
+                                                </div>
+                                                <p class="bodytext"><a href="javascript:void(0);" class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="Characteristic name examples|Characteristicnameexamples.htm|| Import a logical data source from a csv file |Importalogicaldatasourcefromacsvfile.htm||Java reserved keywords|Java_reserved_keywords.htm"><span class="MCHelpControl-RelatedHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Related Topics Link Icon" />Related Topics</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <div class="modal"><span class="question">Was this topic helpful?&#160;&#160;&#160;</span><a><span class="thumbs_up" onclick="feedbackClick(&quot;Yes&quot;, &quot;TestLabel&quot;)">Yes</span></a><a><span class="thumbs_down" onclick="feedbackClick(&quot;No&quot;, &quot;TestLabel&quot;)">No</span></a>
+                                            </div>
+                                            <p><a href="../../Copyright.htm">© <script>/* <![CDATA[ */var currentYear = new Date().getFullYear();document.write(currentYear);/* ]]> */</script>, Experian, Ltd.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../plugins_registry.js">
+                                    </script>
+                                    <script src="../../scripts.js">
+                                    </script>
+                                    <div class="NewRowClass1">
+                                        <div>&#160;</div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
